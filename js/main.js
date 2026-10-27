@@ -310,9 +310,9 @@ function viewContact(){
       </form>
       <div class="coords">
         <div class="coord"><i></i><div><div class="k">${t("k_email")}</div><div class="v" id="mail-v">${esc(EMAIL)}</div></div><button type="button" data-copy="${esc(EMAIL)}">${t("copy")}</button></div>
-        <div class="coord"><i style="border-radius:50%"></i><div><div class="k">${t("k_linkedin")}</div><div class="v">linkedin.com/in/…</div></div><a class="go" href="${LINKEDIN}" target="_blank" rel="noopener">${t("open")}</a></div>
-        <div class="coord"><i style="border-radius:12px 12px 12px 50%"></i><div><div class="k">${t("k_github")}</div><div class="v">github.com/…</div></div><a class="go" href="${GITHUB}" target="_blank" rel="noopener">${t("open")}</a></div>
-        <div class="coord"><i style="border-radius:50% 50% 12px 12px"></i><div><div class="k">${t("k_loc")}</div><div class="v">${t("loc")}</div></div></div>
+        <div class="coord"><i></i><div><div class="k">${t("k_linkedin")}</div><div class="v">linkedin.com/in/…</div></div><a class="go" href="${LINKEDIN}" target="_blank" rel="noopener">${t("open")}</a></div>
+        <div class="coord"><i></i><div><div class="k">${t("k_github")}</div><div class="v">github.com/…</div></div><a class="go" href="${GITHUB}" target="_blank" rel="noopener">${t("open")}</a></div>
+        <div class="coord"><i></i><div><div class="k">${t("k_loc")}</div><div class="v">${t("loc")}</div></div></div>
       </div>
     </div>
   </div></section>`;
