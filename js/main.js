@@ -30,14 +30,14 @@ fr:{
   g_desk:"Site desktop", g_mob:"Version mobile", g_idn:"Identité visuelle", palette:"Palette",
   prev:"Projet précédent", next:"Projet suivant",
   about_title:"À propos",
-  bio:["Je suis Pierre, étudiant en Bachelor Ingénierie des médias à la HEIG-VD. Avant le numérique, je me suis formé au graphisme : CFC de graphiste à l'École d'arts appliqués de La Chaux-de-Fonds, avec une maturité professionnelle.", "Curieux et rigoureux, j'aime faire le lien entre le design et la technique : partir d'une idée, lui donner une forme, puis la développer jusqu'au produit fini.", "Aujourd'hui, je travaille à la frontière entre la technique et la communication : je développe des applications web, je conçois des interfaces et je construis les stratégies qui les font exister.", "En parallèle des études, je travaille pour la Ville de La Chaux-de-Fonds, sur des manifestations officielles et en logistique scolaire. Ces postes m'apprennent à m'organiser sous pression, à collaborer avec des équipes très différentes et à représenter une institution face au public : des réflexes que j'applique directement dans mes projets."],
+  bio:["Je suis Pierre Matthey, étudiant en Bachelor Ingénierie des médias à la HEIG-VD. Avant le numérique, je me suis formé au graphisme : CFC de graphiste à l'École d'arts appliqués de La Chaux-de-Fonds, avec une maturité professionnelle.", "Curieux et rigoureux, j'aime faire le lien entre le design et la technique : partir d'une idée, lui donner une forme, puis la développer jusqu'au produit fini.", "Aujourd'hui, je travaille à la frontière entre la technique et la communication : je développe des applications web, je conçois des interfaces et je construis les stratégies qui les font exister.", "En parallèle des études, je travaille pour la Ville de La Chaux-de-Fonds, sur des manifestations officielles et en logistique scolaire. Ces postes m'apprennent à m'organiser sous pression, à collaborer avec des équipes très différentes et à représenter une institution face au public : des réflexes que j'applique directement dans mes projets."],
   tl:[["Formation", [["2024 – en cours", "Bachelor HES-SO en Ingénierie des médias", "HEIG-VD, Yverdon-les-Bains. Développement web et mobile, UX/UI, communication et marketing digital, gestion de projet."], ["2019 – 2023", "CFC de graphiste", "École d'arts appliqués, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Maturité professionnelle", "CPNE, La Chaux-de-Fonds."]]], ["Expérience", [["Depuis 07.2025", "Auxiliaire logistique scolaire", "École obligatoire de La Chaux-de-Fonds, en parallèle des études. Préparation et livraison des fournitures, aménagement et déménagement des classes."], ["Depuis 01.2025", "Auxiliaire manifestation", "Ville de La Chaux-de-Fonds, Chancellerie communale, en parallèle des études. Coordination logistique sur le terrain, représentation de la Ville et accueil des invités."], ["02 – 06.2024", "Opérateur en ébavurage", "EIC Ébavurage Industriel & Conseils SA. Ébavurage de pièces horlogères, préparation des colis, entretien des machines CNC."], ["12.2023 – 01.2024", "Employé en intendance", "Réseau hospitalier neuchâtelois. Entretien des chambres et des locaux, ravitaillement des étages."], ["06 – 10.2022", "Stage de graphiste", "Numéro10, agence de communication. Concepts et éléments graphiques, contenus pour les réseaux sociaux, storyboards, montage vidéo et shootings photo."]]], ["Langues & intérêts", [["Langues", "Français, anglais, allemand", "Langue maternelle · B2 · B1"], ["Intérêts", "Sport, musique, cinéma", "Boxe et football."]]]],
   values:[["Comprendre avant de produire","Chaque projet commence par le besoin réel des utilisateurs et du client."],["Livrer proprement","Code lisible, documentation, décisions justifiées. Ce qui est livré peut être repris."],["Faire avancer l'équipe","Rituels clairs, priorités visibles, communication directe."]],
-  cv:"CV bientôt disponible", photo:"Votre photo ici",
+  cv:"CV bientôt disponible", photo:"Portrait de Pierre Matthey",
   c_title1:"Parlons de votre", c_title2:'pr<i class="gl gl-o c-ink"></i>chain projet.',
   c_intro:"Un projet, une collaboration, un stage ou un emploi ? Écrivez-moi, je reviens vers vous rapidement.",
   c_type:"Votre demande concerne",
-  types:["Projet","Collaboration","Stage / Emploi","Travail de Bachelor","Autre"],
+  types:["Projet","Collaboration","Stage / Emploi","Autre"],
   c_name:"Nom", c_email:"E-mail", c_company:"Entreprise (optionnel)", c_msg:"Votre message",
   c_send:"Envoyer le message", sending:"Envoi…", sent_t:"Message envoyé.", sent_p:"Merci, je vous réponds rapidement.", send_err:"L'envoi n'a pas fonctionné. Réessayez dans un instant.",
   e_name:"Indiquez votre nom.", e_email:"Indiquez une adresse e-mail valide.", e_msg:"Écrivez quelques mots sur votre demande.",
@@ -66,14 +66,14 @@ en:{
   g_desk:"Desktop site", g_mob:"Mobile version", g_idn:"Visual identity", palette:"Palette",
   prev:"Previous project", next:"Next project",
   about_title:"About",
-  bio:["I'm Pierre, a BSc Media Engineering student at HEIG-VD in Switzerland. Before going digital, I trained as a graphic designer: a Federal VET Diploma in graphic design from the School of Applied Arts in La Chaux-de-Fonds, with a vocational baccalaureate.", "Curious and rigorous, I like bridging design and technology: taking an idea, giving it a shape, then building it into a finished product.", "Today I work where technology meets communication: I build web applications, design interfaces and shape the strategies that bring them to life.", "Alongside my studies, I work for the City of La Chaux-de-Fonds, at official events and in school logistics. These roles teach me to stay organised under pressure, work with very different teams and represent an institution in front of the public: habits I bring straight into my projects."],
+  bio:["I'm Pierre Matthey, a BSc Media Engineering student at HEIG-VD in Switzerland. Before going digital, I trained as a graphic designer: a Federal VET Diploma in graphic design from the School of Applied Arts in La Chaux-de-Fonds, with a vocational baccalaureate.", "Curious and rigorous, I like bridging design and technology: taking an idea, giving it a shape, then building it into a finished product.", "Today I work where technology meets communication: I build web applications, design interfaces and shape the strategies that bring them to life.", "Alongside my studies, I work for the City of La Chaux-de-Fonds, at official events and in school logistics. These roles teach me to stay organised under pressure, work with very different teams and represent an institution in front of the public: habits I bring straight into my projects."],
   tl:[["Education", [["2024 – ongoing", "BSc HES-SO in Media Engineering", "HEIG-VD, Yverdon-les-Bains. Web and mobile development, UX/UI, digital communication and marketing, project management."], ["2019 – 2023", "Federal VET Diploma in graphic design", "School of Applied Arts, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Vocational baccalaureate", "CPNE, La Chaux-de-Fonds."]]], ["Experience", [["Since 07.2025", "School logistics assistant", "Compulsory schools of La Chaux-de-Fonds, alongside my studies. Preparing and delivering school supplies, setting up and moving classrooms."], ["Since 01.2025", "Events assistant", "City of La Chaux-de-Fonds, Town Chancellery, alongside my studies. On-site logistics, representing the City and welcoming guests."], ["02 – 06.2024", "Deburring operator", "EIC Ébavurage Industriel & Conseils SA. Deburring watch parts, preparing parcels, maintaining CNC machines."], ["12.2023 – 01.2024", "Housekeeping staff", "Neuchâtel Hospital Network. Cleaning rooms and premises, restocking wards."], ["06 – 10.2022", "Graphic design internship", "Numéro10, communication agency. Graphic concepts and assets, social media content, storyboards, video editing and photo shoots."]]], ["Languages & interests", [["Languages", "French, English, German", "Native · B2 · B1"], ["Interests", "Sport, music, cinema", "Boxing and football."]]]],
   values:[["Understand before building","Every project starts with what users and the client actually need."],["Ship clean work","Readable code, documentation, decisions explained. What I deliver can be picked up by others."],["Move the team forward","Clear rituals, visible priorities, direct communication."]],
-  cv:"CV coming soon", photo:"Your photo here",
+  cv:"CV coming soon", photo:"Portrait of Pierre Matthey",
   c_title1:"Let's talk about", c_title2:'y<i class="gl gl-o c-ink"></i>ur next project.',
   c_intro:"A project, a collaboration, an internship or a job? Write to me and I'll get back to you quickly.",
   c_type:"Your request is about",
-  types:["Project","Collaboration","Internship / Job","Bachelor thesis","Other"],
+  types:["Project","Collaboration","Internship / Job","Other"],
   c_name:"Name", c_email:"Email", c_company:"Company (optional)", c_msg:"Your message",
   c_send:"Send the message", sending:"Sending…", sent_t:"Message sent.", sent_p:"Thanks, I'll get back to you soon.", send_err:"Sending didn't work. Please try again in a moment.",
   e_name:"Enter your name.", e_email:"Enter a valid email address.", e_msg:"Write a few words about your request.",
@@ -111,6 +111,7 @@ const shapeEl = (sh,c,cls="") => `<i class="${cls} sh-${sh}" style="background:$
 
 function rng(seed){let h=1779033703^seed.length;for(let i=0;i<seed.length;i++){h=Math.imul(h^seed.charCodeAt(i),3432918353);h=h<<13|h>>>19}return function(){h=Math.imul(h^h>>>16,2246822507);h=Math.imul(h^h>>>13,3266489909);return((h^=h>>>16)>>>0)/4294967296}}
 /* Composition géométrique (couvertures, visuels) */
+const RC = 1.2, RK = (10 - 2*RC) / 10; /* rayon des coins, en unités de tuile (10) */
 function art(seed, pal, cols, rows){
   const r = rng(seed), colors = [...pal, COL.ink, COL.cream, COL.paper];
   const pick = () => colors[Math.floor(r()*colors.length)];
@@ -120,11 +121,13 @@ function art(seed, pal, cols, rows){
     const rot = Math.floor(r()*4)*90, k = Math.floor(r()*6);
     s += `<rect x="${X}" y="${Y}" width="10" height="10" fill="${bg}"/>`;
     const g = d => `<g transform="rotate(${rot} ${cx} ${cy})">${d}</g>`;
+    /* coins arrondis : forme réduite puis contour à jointure ronde, même encombrement qu'avant */
+    const rd = d => `<g transform="translate(${cx} ${cy}) scale(${RK}) translate(${-cx} ${-cy})" stroke="${fg}" stroke-width="${2*RC/RK}" stroke-linejoin="round">${d}</g>`;
     if(k===0) s += `<circle cx="${cx}" cy="${cy}" r="4.2" fill="${fg}"/>`;
-    else if(k===1) s += g(`<path d="M${X} ${Y}A5 5 0 0 1 ${X} ${Y+10}Z" fill="${fg}"/><path d="M${X+10} ${Y}A5 5 0 0 0 ${X+10} ${Y+10}Z" fill="${fg}"/>`);
-    else if(k===2) s += g(`<path d="M${X} ${Y}H${X+10}A10 10 0 0 1 ${X} ${Y+10}Z" fill="${fg}"/>`);
-    else if(k===3) s += g(`<path d="M${X} ${Y+10}A5 5 0 0 1 ${X+10} ${Y+10}Z" fill="${fg}"/><circle cx="${cx}" cy="${Y+3}" r="1.6" fill="${fg}"/>`);
-    else if(k===4) s += `<path d="M${cx} ${Y+1}L${X+9} ${cy}L${cx} ${Y+9}L${X+1} ${cy}Z" fill="${fg}"/>`;
+    else if(k===1) s += g(rd(`<path d="M${X} ${Y}A5 5 0 0 1 ${X} ${Y+10}Z" fill="${fg}"/><path d="M${X+10} ${Y}A5 5 0 0 0 ${X+10} ${Y+10}Z" fill="${fg}"/>`));
+    else if(k===2) s += g(rd(`<path d="M${X} ${Y}H${X+10}A10 10 0 0 1 ${X} ${Y+10}Z" fill="${fg}"/>`));
+    else if(k===3) s += g(rd(`<path d="M${X} ${Y+10}A5 5 0 0 1 ${X+10} ${Y+10}Z" fill="${fg}"/><circle cx="${cx}" cy="${Y+3}" r="1.6" fill="${fg}"/>`));
+    else if(k===4) s += rd(`<path d="M${cx} ${Y+1}L${X+9} ${cy}L${cx} ${Y+9}L${X+1} ${cy}Z" fill="${fg}"/>`);
   }
   return s + `</svg>`;
 }
@@ -143,7 +146,7 @@ function screenMob(p){
   return `<svg viewBox="0 0 120 230" aria-hidden="true"><rect width="120" height="230" fill="${COL.paper}"/>
   <rect x="10" y="14" width="26" height="7" rx="3.5" fill="${COL.ink}"/><circle cx="104" cy="17" r="5" fill="${p.pal[0]}"/>
   <rect x="10" y="34" width="86" height="10" rx="2" fill="${COL.ink}"/><rect x="10" y="48" width="64" height="10" rx="2" fill="${COL.ink}"/>
-  <rect x="10" y="68" width="100" height="70" rx="10" fill="${p.pal[1]}"/><circle cx="60" cy="103" r="22" fill="${p.pal[0]}"/><path d="M60 81A22 22 0 0 1 82 103H60Z" fill="${COL.ink}"/>
+  <rect x="10" y="68" width="100" height="70" rx="10" fill="${p.pal[1]}"/><circle cx="60" cy="103" r="22" fill="${p.pal[0]}"/><path d="M60 81A22 22 0 0 1 82 103H60Z" fill="${COL.ink}" stroke="${COL.ink}" stroke-width="3" stroke-linejoin="round"/>
   <rect x="10" y="148" width="48" height="34" rx="8" fill="${p.pal[2]}"/><rect x="62" y="148" width="48" height="34" rx="8" fill="${p.pal[0]}"/>
   <rect x="10" y="192" width="100" height="22" rx="11" fill="${COL.ink}"/><rect x="40" y="200" width="40" height="6" rx="3" fill="${COL.paper}"/></svg>`;
 }
@@ -280,8 +283,8 @@ function viewProject(p){
 function viewAbout(){
   const vc = [["o","lilac"],["q","mint"],["s","peach"]];
   return `<section class="wrap about fade">
-    <div class="about-side"><div class="about-head"><span class="mono">Pierre · ${t("role")}</span><h1 style="margin-top:10px">${t("about_title")}</h1></div>
-      <div class="portrait">${art("portrait",[COL.lilac,COL.peach,COL.mint],4,5)}<span class="demo-note">${t("photo")}</span></div></div>
+    <div class="about-side"><div class="about-head"><span class="mono">Pierre Matthey · ${t("role")}</span><h1 style="margin-top:10px">${t("about_title")}</h1></div>
+      <div class="portrait"><img src="img/about/portrait.webp" alt="${t("photo")}" width="941" height="1671"></div></div>
     <div class="bio">${t("bio").map(p=>`<p>${esc(p)}</p>`).join("")}
       ${t("tl").map(g=>`<h3 class="tl-h">${esc(g[0])}</h3><div class="tl">${g[1].map(r=>`<div><span class="mono">${esc(r[0])}</span><div><b>${esc(r[1])}</b><p>${esc(r[2])}</p></div></div>`).join("")}</div>`).join("")}
       <div class="values">${t("values").map((v,k)=>`<div class="value">${shapeEl(vc[k][0],vc[k][1])}<b>${esc(v[0])}</b><p>${esc(v[1])}</p></div>`).join("")}</div>
@@ -357,6 +360,7 @@ function applyStatic(){
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-t]").forEach(el => el.innerHTML = t(el.dataset.t));
   document.querySelectorAll("[data-lang]").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang===lang));
+  document.querySelector(".lang").dataset.active = lang;
 }
 async function copyText(txt, btn){
   try{ await navigator.clipboard.writeText(txt); if(btn){ const o=btn.innerHTML; btn.textContent=t("copied"); setTimeout(()=>btn.innerHTML=o,1400);} }
@@ -409,10 +413,20 @@ function bind(){
   });
 }
 document.querySelectorAll("[data-lang]").forEach(b => b.addEventListener("click", () => {
+  /* animation seulement au changement, pas au premier affichage */
+  document.querySelector(".lang").classList.add("anim");
   lang = b.dataset.lang; try{ localStorage.setItem("pf-lang", lang); }catch(e){}
   applyStatic(); const y = scrollY; route(); window.scrollTo(0,y);
 }));
 window.addEventListener("hashchange", route);
+/* Lien vers la page déjà affichée : pas de changement de hash, on remonte en haut en douceur */
+document.addEventListener("click", e => {
+  const a = e.target.closest('a[href^="#"]'); if(!a) return;
+  const norm = h => h.replace(/^#/, "");
+  if(norm(a.getAttribute("href")) !== norm(location.hash)) return;
+  e.preventDefault();
+  window.scrollTo({top:0, behavior:"smooth"});
+});
 
 fetch("data/projects.json")
   .then(r => r.json())
