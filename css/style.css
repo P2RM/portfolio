@@ -11,7 +11,7 @@
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
-body{background:var(--cream);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 img,svg{max-width:100%}
 .wrap{max-width:1240px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
@@ -135,7 +135,7 @@ section.block{padding-block:clamp(56px,8vw,96px)}
 .more{margin-top:26px;display:flex;justify-content:flex-end}
 
 /* CTA band */
-.cta{background:var(--lilac);border-radius:var(--r);padding:clamp(32px,6vw,64px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;margin-block:clamp(56px,8vw,96px)}
+.cta{background:var(--peach);border-radius:var(--r);padding:clamp(32px,6vw,64px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;margin-block:clamp(56px,8vw,96px)}
 .cta h2{font-size:clamp(1.8rem,4.4vw,3.4rem);max-width:16ch}
 .cta p{margin-top:12px;max-width:44ch}
 @media (max-width:700px){.cta{grid-template-columns:1fr}}
@@ -216,14 +216,18 @@ section.block{padding-block:clamp(56px,8vw,96px)}
 .demo-note{display:inline-flex;gap:8px;align-items:center;font:500 .72rem var(--f-mono);background:var(--butter);padding:5px 10px;border-radius:999px}
 
 /* À propos */
-.about{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(28px,5vw,64px);padding-bottom:40px}
+.about{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(28px,5vw,64px);padding-block:clamp(40px,7vw,80px) 40px;align-items:start}
+.about-head h1{font-size:clamp(2.4rem,6vw,5rem)}
+/* Titre + photo fixes pendant que le texte défile (top calculé en JS) */
+.about-side{position:sticky;display:grid;gap:34px}
 .portrait{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;position:relative;max-width:100%}
 .portrait svg{width:100%;height:100%;display:block}
 .portrait span{position:absolute;left:14px;bottom:14px}
 .about .bio p{font-size:1.12rem;max-width:58ch}
 .about .bio p + p{margin-top:16px}
-.tl{margin-top:36px;border-top:1.5px solid var(--ink)}
-.tl div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.tl-h{margin-top:40px;font-size:1.3rem}
+.tl{margin-top:12px;border-top:1.5px solid var(--ink)}
+.tl > div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
 .tl b{font-weight:600}
 .tl p{color:var(--ink-2);font-size:.95rem}
 .values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:36px}
@@ -231,8 +235,8 @@ section.block{padding-block:clamp(56px,8vw,96px)}
 .value i{width:24px;height:24px;display:block}
 .value b{font-family:var(--f-display);font-size:1.1rem}
 .value p{font-size:.92rem;color:var(--ink-2)}
-@media (max-width:820px){.about{grid-template-columns:1fr}.portrait{max-width:380px}.values{grid-template-columns:1fr}}
-@media (max-width:480px){.tl div{grid-template-columns:1fr;gap:4px}}
+@media (max-width:820px){.about{grid-template-columns:1fr}.about-side{position:static}.portrait{max-width:380px}.values{grid-template-columns:1fr}}
+@media (max-width:480px){.tl > div{grid-template-columns:1fr;gap:4px}}
 
 /* Contact */
 .contact{background:var(--peach);padding-block:clamp(48px,8vw,96px)}
@@ -275,10 +279,44 @@ legend{padding:0;margin-bottom:12px}
 footer{padding-block:40px 34px;border-top:1.5px solid var(--ink);margin-top:20px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
 footer nav{display:flex;gap:18px;flex-wrap:wrap}
-footer nav a{text-decoration:none}
-footer nav a:hover{text-decoration:underline}
+footer nav a{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1.5px no-repeat;transition:background-size .3s ease}
+footer nav a:hover{background-size:100% 1.5px}
 .is-contact + footer{margin-top:0}
 
+
+/* Apparition au scroll (classes posées en JS) */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* Micro-animations de survol */
+.brand svg circle{transition:transform .35s ease;transform-box:fill-box;transform-origin:center}
+.brand:hover svg circle{transform:scale(1.25)}
+.lang button,.filters button{transition:background .2s,color .2s}
+.lang button:hover:not([aria-pressed="true"]),.filters button:hover:not([aria-pressed="true"]){background:rgba(33,31,44,.07)}
+.tag{transition:background .2s,box-shadow .2s}
+.tag:hover{background:var(--lilac);box-shadow:none}
+.row .meta{transition:color .3s}
+.row:hover .meta{color:var(--ink)}
+.step{transition:transform .3s ease}
+.step:hover{transform:translateY(-3px)}
+/* Valeurs : la forme tourne, comme dans les compétences (rotate garde le transform propre au losange) */
+.value i{transition:rotate .35s}
+.value:hover i{rotate:90deg}
+.tl > div > div{transition:transform .3s ease}
+.tl > div .mono{transition:color .3s}
+.tl > div:hover > div{transform:translateX(6px)}
+.tl > div:hover .mono{color:var(--ink)}
+.feat .vis svg{transition:transform .6s ease}
+.feat article:hover .vis svg{transform:scale(1.04)}
+.pn b{display:inline-block;transition:transform .3s ease}
+.pn a:hover b{transform:translateX(-6px)}
+.pn a + a:hover b{transform:translateX(6px)}
+.facts a{transition:border-color .2s}
+.facts a:hover{border-color:transparent}
+.coord{transition:background .2s}
+.coord:hover{background:rgba(250,246,238,.85)}
+.coord i::after{transition:transform .35s ease}
+.coord:hover i::after{transform:rotate(45deg)}
 
 .fade{animation:fade .5s ease both}
 @keyframes fade{from{opacity:.001;transform:translateY(8px)}}
