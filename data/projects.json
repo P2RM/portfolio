@@ -1,0 +1,816 @@
+[
+  {
+    "slug": "lumen",
+    "name": "Lumen",
+    "year": "2026",
+    "cat": "web",
+    "pal": [
+      "#C9BBF3",
+      "#F2DC86",
+      "#B5D1EE"
+    ],
+    "gal": [
+      "desk",
+      "mob"
+    ],
+    "fr": {
+      "cat": "Développement web",
+      "tag": "Plateforme de réservation pour un centre culturel régional.",
+      "client": "Centre culturel régional",
+      "role": "Développeur back-end · Scrum Master",
+      "team": "5 personnes",
+      "deliv": "Plateforme web, back-office, documentation API",
+      "ctx": "Les réservations de salles et d'ateliers passaient par téléphone et un tableur partagé. Résultat : des doublons, aucune vue d'ensemble et beaucoup de temps perdu pour l'équipe d'accueil.",
+      "quote": "Un seul outil pour réserver, gérer et piloter la programmation.",
+      "feat": [
+        [
+          "Réservation en trois étapes",
+          "Le public choisit une activité, un créneau, puis confirme. Les créneaux pleins disparaissent en temps réel."
+        ],
+        [
+          "Back-office pour l'équipe",
+          "Calendrier global, gestion des salles et export des participants en un clic."
+        ],
+        [
+          "API documentée",
+          "Une API REST documentée permet de brancher le site existant et de futurs outils."
+        ]
+      ],
+      "proc": [
+        [
+          "Cadrage",
+          "Ateliers avec l'équipe d'accueil pour lister les irritants."
+        ],
+        [
+          "Maquettes",
+          "Prototype Figma testé avec 6 utilisateurs."
+        ],
+        [
+          "Sprints",
+          "6 sprints de deux semaines, démos à chaque fin de sprint."
+        ],
+        [
+          "Livraison",
+          "Mise en production et formation de l'équipe."
+        ]
+      ],
+      "met": [
+        [
+          "3→1",
+          "outils remplacés"
+        ],
+        [
+          "6",
+          "sprints livrés"
+        ],
+        [
+          "6",
+          "tests utilisateurs"
+        ]
+      ],
+      "learn": "Animer les rituels Scrum tout en codant le back-end m'a appris à protéger le temps de développement de l'équipe et à rendre les priorités visibles pour le client."
+    },
+    "en": {
+      "cat": "Web development",
+      "tag": "Booking platform for a regional cultural centre.",
+      "client": "Regional cultural centre",
+      "role": "Back-end developer · Scrum Master",
+      "team": "5 people",
+      "deliv": "Web platform, back office, API documentation",
+      "ctx": "Room and workshop bookings were handled by phone and a shared spreadsheet. The result: double bookings, no overview and a lot of lost time for the front desk.",
+      "quote": "One tool to book, manage and run the programme.",
+      "feat": [
+        [
+          "Three-step booking",
+          "Visitors pick an activity, a slot, then confirm. Full slots disappear in real time."
+        ],
+        [
+          "Back office for the team",
+          "Global calendar, room management and one-click participant export."
+        ],
+        [
+          "Documented API",
+          "A documented REST API connects the existing website and future tools."
+        ]
+      ],
+      "proc": [
+        [
+          "Scoping",
+          "Workshops with the front desk to list pain points."
+        ],
+        [
+          "Mock-ups",
+          "Figma prototype tested with 6 users."
+        ],
+        [
+          "Sprints",
+          "6 two-week sprints with a demo at the end of each."
+        ],
+        [
+          "Launch",
+          "Production release and team training."
+        ]
+      ],
+      "met": [
+        [
+          "3→1",
+          "tools replaced"
+        ],
+        [
+          "6",
+          "sprints shipped"
+        ],
+        [
+          "6",
+          "user tests"
+        ]
+      ],
+      "learn": "Running Scrum rituals while coding the back end taught me to protect the team's development time and keep priorities visible to the client."
+    },
+    "stack": [
+      "Laravel",
+      "Vue.js",
+      "MySQL",
+      "Figma",
+      "Taiga",
+      "GitHub"
+    ]
+  },
+  {
+    "slug": "flora",
+    "name": "Flora",
+    "year": "2026",
+    "cat": "data",
+    "pal": [
+      "#B6E0C6",
+      "#F2B7C7",
+      "#F2DC86"
+    ],
+    "gal": [
+      "desk",
+      "mob"
+    ],
+    "fr": {
+      "cat": "Data visualisation",
+      "tag": "Atlas interactif de la flore d'une région.",
+      "client": "Association naturaliste",
+      "role": "Développeur data viz",
+      "team": "3 personnes",
+      "deliv": "Atlas web interactif, guide d'utilisation",
+      "ctx": "L'association disposait de milliers d'observations de plantes dans des fichiers CSV, sans moyen simple de les explorer ni de les montrer au public.",
+      "quote": "Rendre visibles des milliers d'observations en quelques clics.",
+      "feat": [
+        [
+          "Carte par commune",
+          "Une carte choroplèthe montre la richesse botanique de chaque commune."
+        ],
+        [
+          "Frise saisonnière",
+          "Les floraisons sont visibles mois par mois sur une frise interactive."
+        ],
+        [
+          "Fiches espèces",
+          "Chaque espèce a sa fiche avec ses observations et leur évolution."
+        ]
+      ],
+      "proc": [
+        [
+          "Données",
+          "Nettoyage et structuration des fichiers d'observation."
+        ],
+        [
+          "Esquisses",
+          "Choix des graphiques sur papier puis dans Figma."
+        ],
+        [
+          "Développement",
+          "Visualisations en D3.js, testées sur mobile."
+        ],
+        [
+          "Tests",
+          "Sessions avec des membres de l'association."
+        ]
+      ],
+      "met": [
+        [
+          "12 k",
+          "observations visualisées"
+        ],
+        [
+          "3",
+          "vues interactives"
+        ],
+        [
+          "4",
+          "sessions de test"
+        ]
+      ],
+      "learn": "Le plus difficile n'était pas le code D3, mais de choisir ce qu'on ne montre pas pour garder les graphiques lisibles."
+    },
+    "en": {
+      "cat": "Data visualisation",
+      "tag": "Interactive atlas of a region's flora.",
+      "client": "Naturalist association",
+      "role": "Data viz developer",
+      "team": "3 people",
+      "deliv": "Interactive web atlas, user guide",
+      "ctx": "The association had thousands of plant observations in CSV files, with no simple way to explore them or show them to the public.",
+      "quote": "Making thousands of observations visible in a few clicks.",
+      "feat": [
+        [
+          "Map by municipality",
+          "A choropleth map shows the botanical richness of each municipality."
+        ],
+        [
+          "Seasonal timeline",
+          "Flowering periods appear month by month on an interactive timeline."
+        ],
+        [
+          "Species pages",
+          "Each species has a page with its observations and how they changed."
+        ]
+      ],
+      "proc": [
+        [
+          "Data",
+          "Cleaning and structuring the observation files."
+        ],
+        [
+          "Sketches",
+          "Choosing the charts on paper, then in Figma."
+        ],
+        [
+          "Build",
+          "Visualisations in D3.js, tested on mobile."
+        ],
+        [
+          "Testing",
+          "Sessions with association members."
+        ]
+      ],
+      "met": [
+        [
+          "12k",
+          "observations visualised"
+        ],
+        [
+          "3",
+          "interactive views"
+        ],
+        [
+          "4",
+          "test sessions"
+        ]
+      ],
+      "learn": "The hard part wasn't the D3 code. It was deciding what to leave out so the charts stayed readable."
+    },
+    "stack": [
+      "D3.js",
+      "JavaScript",
+      "SVG",
+      "Figma",
+      "Excel"
+    ]
+  },
+  {
+    "slug": "tide",
+    "name": "Tide",
+    "year": "2025",
+    "cat": "ux",
+    "pal": [
+      "#B5D1EE",
+      "#C9BBF3",
+      "#B6E0C6"
+    ],
+    "gal": [
+      "mob",
+      "idn"
+    ],
+    "fr": {
+      "cat": "UX/UI design",
+      "tag": "Application mobile pour suivre sa consommation d'eau.",
+      "client": "Projet académique",
+      "role": "UX/UI designer",
+      "team": "4 personnes",
+      "deliv": "Recherche utilisateur, prototype haute fidélité, rapport de tests",
+      "ctx": "Les ménages connaissent mal leur consommation d'eau. Les factures arrivent une fois par an et ne permettent pas de changer ses habitudes.",
+      "quote": "Voir sa consommation au quotidien pour agir dessus.",
+      "feat": [
+        [
+          "Suivi quotidien",
+          "Un tableau de bord simple compare la journée à la moyenne du foyer."
+        ],
+        [
+          "Défis en famille",
+          "Des objectifs hebdomadaires partagés motivent tout le foyer."
+        ],
+        [
+          "Conseils contextuels",
+          "Des conseils courts apparaissent au bon moment, sans culpabiliser."
+        ]
+      ],
+      "proc": [
+        [
+          "Entretiens",
+          "8 entretiens pour comprendre les habitudes."
+        ],
+        [
+          "Personas",
+          "2 personas et parcours utilisateur."
+        ],
+        [
+          "Prototype",
+          "Wireframes puis prototype haute fidélité dans Figma."
+        ],
+        [
+          "Tests",
+          "2 itérations de tests d'utilisabilité."
+        ]
+      ],
+      "met": [
+        [
+          "8",
+          "entretiens"
+        ],
+        [
+          "2",
+          "itérations"
+        ],
+        [
+          "90 %",
+          "tâches réussies au 2e test"
+        ]
+      ],
+      "learn": "Les tests ont montré que nos graphiques étaient trop techniques. Les remplacer par des comparaisons simples a tout changé."
+    },
+    "en": {
+      "cat": "UX/UI design",
+      "tag": "Mobile app to track household water use.",
+      "client": "Academic project",
+      "role": "UX/UI designer",
+      "team": "4 people",
+      "deliv": "User research, high-fidelity prototype, test report",
+      "ctx": "Households barely know how much water they use. Bills arrive once a year and don't help anyone change their habits.",
+      "quote": "Seeing your daily usage so you can act on it.",
+      "feat": [
+        [
+          "Daily tracking",
+          "A simple dashboard compares today with the household average."
+        ],
+        [
+          "Family challenges",
+          "Shared weekly goals motivate the whole household."
+        ],
+        [
+          "Contextual tips",
+          "Short tips show up at the right time, without guilt-tripping."
+        ]
+      ],
+      "proc": [
+        [
+          "Interviews",
+          "8 interviews to understand habits."
+        ],
+        [
+          "Personas",
+          "2 personas and user journeys."
+        ],
+        [
+          "Prototype",
+          "Wireframes, then a high-fidelity Figma prototype."
+        ],
+        [
+          "Testing",
+          "2 rounds of usability testing."
+        ]
+      ],
+      "met": [
+        [
+          "8",
+          "interviews"
+        ],
+        [
+          "2",
+          "iterations"
+        ],
+        [
+          "90%",
+          "tasks completed in round 2"
+        ]
+      ],
+      "learn": "Testing showed our charts were too technical. Replacing them with simple comparisons changed everything."
+    },
+    "stack": [
+      "Figma",
+      "Miro",
+      "Illustrator"
+    ]
+  },
+  {
+    "slug": "cadence",
+    "name": "Cadence",
+    "year": "2026",
+    "cat": "web",
+    "pal": [
+      "#F7C2A3",
+      "#B6E0C6",
+      "#F2DC86"
+    ],
+    "gal": [
+      "desk",
+      "mob"
+    ],
+    "fr": {
+      "cat": "Web & stratégie",
+      "tag": "Refonte du site d'un club sportif et migration vers WordPress.",
+      "client": "Club sportif régional",
+      "role": "Analyse & développement",
+      "team": "4 personnes",
+      "deliv": "Audit de l'écosystème digital, nouveau site WordPress, guide éditorial",
+      "ctx": "Le club utilisait un site vieillissant, difficile à mettre à jour, et des outils déconnectés pour les inscriptions et la communication.",
+      "quote": "Un site que le club peut faire vivre lui-même.",
+      "feat": [
+        [
+          "Audit de l'écosystème",
+          "Cartographie des outils, des contenus et des publics du club."
+        ],
+        [
+          "Nouveau site WordPress",
+          "Thème sur mesure, pages modulaires et agenda des événements."
+        ],
+        [
+          "Guide éditorial",
+          "Règles simples pour que les bénévoles publient en autonomie."
+        ]
+      ],
+      "proc": [
+        [
+          "Audit",
+          "Analyse du site, des outils et des réseaux sociaux."
+        ],
+        [
+          "Recommandations",
+          "Plan de migration présenté au comité."
+        ],
+        [
+          "Développement",
+          "Thème WordPress et migration des contenus."
+        ],
+        [
+          "Formation",
+          "Atelier de prise en main pour les bénévoles."
+        ]
+      ],
+      "met": [
+        [
+          "40+",
+          "pages migrées"
+        ],
+        [
+          "1",
+          "guide éditorial"
+        ],
+        [
+          "5",
+          "bénévoles formés"
+        ]
+      ],
+      "learn": "Une migration réussie dépend autant de la formation des personnes que de la technique."
+    },
+    "en": {
+      "cat": "Web & strategy",
+      "tag": "Redesign of a sports club website and migration to WordPress.",
+      "client": "Regional sports club",
+      "role": "Analysis & development",
+      "team": "4 people",
+      "deliv": "Digital ecosystem audit, new WordPress site, editorial guide",
+      "ctx": "The club ran an ageing website that was hard to update, alongside disconnected tools for registrations and communication.",
+      "quote": "A website the club can keep alive on its own.",
+      "feat": [
+        [
+          "Ecosystem audit",
+          "Mapping of the club's tools, content and audiences."
+        ],
+        [
+          "New WordPress site",
+          "Custom theme, modular pages and an events calendar."
+        ],
+        [
+          "Editorial guide",
+          "Simple rules so volunteers can publish on their own."
+        ]
+      ],
+      "proc": [
+        [
+          "Audit",
+          "Review of the site, tools and social media."
+        ],
+        [
+          "Recommendations",
+          "Migration plan presented to the board."
+        ],
+        [
+          "Build",
+          "WordPress theme and content migration."
+        ],
+        [
+          "Training",
+          "Hands-on workshop for volunteers."
+        ]
+      ],
+      "met": [
+        [
+          "40+",
+          "pages migrated"
+        ],
+        [
+          "1",
+          "editorial guide"
+        ],
+        [
+          "5",
+          "volunteers trained"
+        ]
+      ],
+      "learn": "A successful migration depends as much on training people as on the technology."
+    },
+    "stack": [
+      "WordPress",
+      "PHP",
+      "CSS",
+      "Figma",
+      "Miro"
+    ]
+  },
+  {
+    "slug": "echo",
+    "name": "Écho",
+    "year": "2026",
+    "cat": "com",
+    "pal": [
+      "#F2B7C7",
+      "#F7C2A3",
+      "#C9BBF3"
+    ],
+    "gal": [
+      "mob",
+      "idn"
+    ],
+    "fr": {
+      "cat": "Communication digitale",
+      "tag": "Stratégie réseaux sociaux pour une agence événementielle.",
+      "client": "Agence événementielle",
+      "role": "Stratégie & création de contenu",
+      "team": "3 personnes",
+      "deliv": "Stratégie, ligne éditoriale, calendrier, templates de publication",
+      "ctx": "L'agence gérait trois marques sur les réseaux sociaux sans ligne claire. Les publications étaient irrégulières et les publics se mélangeaient.",
+      "quote": "Trois marques, trois voix, une stratégie cohérente.",
+      "feat": [
+        [
+          "Cartographie des marques",
+          "Un schéma clair des publics, des canaux et des messages de chaque marque."
+        ],
+        [
+          "Ligne éditoriale",
+          "Ton, formats et thèmes définis pour chaque marque."
+        ],
+        [
+          "Templates & calendrier",
+          "Modèles Canva et calendrier de publication sur trois mois."
+        ]
+      ],
+      "proc": [
+        [
+          "Analyse",
+          "Audit des comptes et des concurrents."
+        ],
+        [
+          "Atelier",
+          "Atelier Miro avec la cliente."
+        ],
+        [
+          "Stratégie",
+          "Objectifs, publics et piliers de contenu."
+        ],
+        [
+          "Outils",
+          "Templates et calendrier prêts à l'emploi."
+        ]
+      ],
+      "met": [
+        [
+          "3",
+          "marques clarifiées"
+        ],
+        [
+          "12",
+          "templates créés"
+        ],
+        [
+          "3 mois",
+          "de contenus planifiés"
+        ]
+      ],
+      "learn": "Travailler directement avec la cliente m'a appris à traduire des intuitions en objectifs mesurables."
+    },
+    "en": {
+      "cat": "Digital communication",
+      "tag": "Social media strategy for an events agency.",
+      "client": "Events agency",
+      "role": "Strategy & content creation",
+      "team": "3 people",
+      "deliv": "Strategy, editorial line, calendar, post templates",
+      "ctx": "The agency ran three brands on social media with no clear direction. Posting was irregular and audiences overlapped.",
+      "quote": "Three brands, three voices, one consistent strategy.",
+      "feat": [
+        [
+          "Brand map",
+          "A clear chart of each brand's audiences, channels and messages."
+        ],
+        [
+          "Editorial line",
+          "Tone, formats and themes defined for each brand."
+        ],
+        [
+          "Templates & calendar",
+          "Canva templates and a three-month posting calendar."
+        ]
+      ],
+      "proc": [
+        [
+          "Analysis",
+          "Audit of the accounts and competitors."
+        ],
+        [
+          "Workshop",
+          "Miro workshop with the client."
+        ],
+        [
+          "Strategy",
+          "Goals, audiences and content pillars."
+        ],
+        [
+          "Tools",
+          "Ready-to-use templates and calendar."
+        ]
+      ],
+      "met": [
+        [
+          "3",
+          "brands clarified"
+        ],
+        [
+          "12",
+          "templates created"
+        ],
+        [
+          "3 months",
+          "of content planned"
+        ]
+      ],
+      "learn": "Working directly with the client taught me to turn gut feelings into measurable goals."
+    },
+    "stack": [
+      "Miro",
+      "Canva",
+      "Photoshop",
+      "Illustrator"
+    ]
+  },
+  {
+    "slug": "mosaique",
+    "name": "Mosaïque",
+    "year": "2025",
+    "cat": "design",
+    "pal": [
+      "#F2DC86",
+      "#B5D1EE",
+      "#F2B7C7"
+    ],
+    "gal": [
+      "idn",
+      "desk"
+    ],
+    "fr": {
+      "cat": "Design & web",
+      "tag": "Identité visuelle et site d'un festival de quartier.",
+      "client": "Festival de quartier",
+      "role": "Designer & intégrateur",
+      "team": "2 personnes",
+      "deliv": "Logo, système graphique, affiches, site vitrine",
+      "ctx": "Le festival changeait d'image chaque année. Il lui fallait une identité reconnaissable et déclinable par des bénévoles.",
+      "quote": "Une identité modulaire, comme le quartier qu'elle représente.",
+      "feat": [
+        [
+          "Système de formes",
+          "Un jeu de formes géométriques qui se combinent à l'infini."
+        ],
+        [
+          "Affiches & réseaux",
+          "Déclinaisons pour l'affichage, les réseaux et les supports imprimés."
+        ],
+        [
+          "Site vitrine",
+          "Programme, infos pratiques et galerie, intégrés en HTML/CSS."
+        ]
+      ],
+      "proc": [
+        [
+          "Recherche",
+          "Moodboard et entretiens avec les organisateurs."
+        ],
+        [
+          "Pistes",
+          "3 pistes graphiques présentées."
+        ],
+        [
+          "Système",
+          "Formes, couleurs, typographie et règles d'usage."
+        ],
+        [
+          "Déclinaisons",
+          "Affiches, réseaux et site."
+        ]
+      ],
+      "met": [
+        [
+          "3",
+          "pistes proposées"
+        ],
+        [
+          "1",
+          "charte graphique"
+        ],
+        [
+          "8",
+          "supports déclinés"
+        ]
+      ],
+      "learn": "Un bon système graphique se juge à ce que d'autres en font sans vous."
+    },
+    "en": {
+      "cat": "Design & web",
+      "tag": "Visual identity and website for a neighbourhood festival.",
+      "client": "Neighbourhood festival",
+      "role": "Designer & front-end developer",
+      "team": "2 people",
+      "deliv": "Logo, graphic system, posters, showcase site",
+      "ctx": "The festival changed its look every year. It needed an identity people could recognise and volunteers could reuse.",
+      "quote": "A modular identity, like the neighbourhood it stands for.",
+      "feat": [
+        [
+          "Shape system",
+          "A set of geometric shapes that combine endlessly."
+        ],
+        [
+          "Posters & social",
+          "Variations for posters, social media and print."
+        ],
+        [
+          "Showcase site",
+          "Programme, practical info and gallery, built in HTML/CSS."
+        ]
+      ],
+      "proc": [
+        [
+          "Research",
+          "Moodboard and interviews with the organisers."
+        ],
+        [
+          "Directions",
+          "3 graphic directions presented."
+        ],
+        [
+          "System",
+          "Shapes, colours, type and usage rules."
+        ],
+        [
+          "Rollout",
+          "Posters, social media and website."
+        ]
+      ],
+      "met": [
+        [
+          "3",
+          "directions proposed"
+        ],
+        [
+          "1",
+          "brand guide"
+        ],
+        [
+          "8",
+          "formats produced"
+        ]
+      ],
+      "learn": "A good graphic system is judged by what others make with it without you."
+    },
+    "stack": [
+      "Illustrator",
+      "InDesign",
+      "Figma",
+      "HTML",
+      "CSS"
+    ]
+  }
+]
