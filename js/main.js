@@ -2,8 +2,8 @@
 const EMAIL = "pierre@exemple.ch";
 const LINKEDIN = "https://www.linkedin.com/";
 const GITHUB = "https://github.com/";
-/* Envoi direct : colle ici ton endpoint Formspree (ex. "https://formspree.io/f/abcdwxyz").
-   Vide = mode mailto. Si l'envoi échoue (ex. aperçu Claude), repli automatique sur mailto. */
+/* Envoi du formulaire : endpoint Formspree (ex. "https://formspree.io/f/abcdwxyz").
+   L'adresse de réception se définit dans le compte Formspree. */
 const FORM_ENDPOINT = "";
 
 /* ============ TEXTES ============ */
@@ -39,10 +39,9 @@ fr:{
   c_type:"Votre demande concerne",
   types:["Projet","Collaboration","Stage / Emploi","Travail de Bachelor","Autre"],
   c_name:"Nom", c_email:"E-mail", c_company:"Entreprise (optionnel)", c_msg:"Votre message",
-  c_send:FORM_ENDPOINT?"Envoyer le message":"Préparer le message", sending:"Envoi…", sent_t:"Message envoyé.", sent_p:"Merci, je vous réponds rapidement.", send_err:"L'envoi direct n'a pas fonctionné.",
+  c_send:"Envoyer le message", sending:"Envoi…", sent_t:"Message envoyé.", sent_p:"Merci, je vous réponds rapidement.", send_err:"L'envoi n'a pas fonctionné. Réessayez dans un instant.",
   e_name:"Indiquez votre nom.", e_email:"Indiquez une adresse e-mail valide.", e_msg:"Écrivez quelques mots sur votre demande.",
-  ready:"Votre message est prêt. Ouvrez-le dans votre messagerie, ou copiez-le et envoyez-le à l'adresse ci-contre.",
-  open_mail:"Ouvrir dans ma messagerie", copy_msg:"Copier le message", copied:"Copié", copy:"Copier", open:"Ouvrir ↗",
+  copied:"Copié", copy:"Copier", open:"Ouvrir ↗",
   k_email:"E-mail", k_linkedin:"LinkedIn", k_github:"GitHub", k_loc:"Localisation", loc:"Neuchâtel, Suisse"
 },
 en:{
@@ -76,10 +75,9 @@ en:{
   c_type:"Your request is about",
   types:["Project","Collaboration","Internship / Job","Bachelor thesis","Other"],
   c_name:"Name", c_email:"Email", c_company:"Company (optional)", c_msg:"Your message",
-  c_send:FORM_ENDPOINT?"Send the message":"Prepare the message", sending:"Sending…", sent_t:"Message sent.", sent_p:"Thanks, I'll get back to you soon.", send_err:"Direct sending didn't work.",
+  c_send:"Send the message", sending:"Sending…", sent_t:"Message sent.", sent_p:"Thanks, I'll get back to you soon.", send_err:"Sending didn't work. Please try again in a moment.",
   e_name:"Enter your name.", e_email:"Enter a valid email address.", e_msg:"Write a few words about your request.",
-  ready:"Your message is ready. Open it in your email app, or copy it and send it to the address on the right.",
-  open_mail:"Open in my email app", copy_msg:"Copy the message", copied:"Copied", copy:"Copy", open:"Open ↗",
+  copied:"Copied", copy:"Copy", open:"Open ↗",
   k_email:"Email", k_linkedin:"LinkedIn", k_github:"GitHub", k_loc:"Location", loc:"Neuchâtel, Switzerland"
 }};
 
@@ -307,9 +305,8 @@ function viewContact(){
           <div class="field full"><label for="f-msg">${t("c_msg")} *</label><textarea id="f-msg" name="msg"></textarea><span class="err" id="e-msg"></span></div>
         </div>
         <input type="text" name="_gotcha" id="f-gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
-        <div class="send"><button class="pill" type="submit" id="f-submit">${t("c_send")}</button></div>
+        <div class="send"><button class="pill" type="submit" id="f-submit">${t("c_send")}</button><span class="err" id="e-send" role="alert"></span></div>
         <div class="ready" id="sent" hidden><b style="font-family:var(--f-display);font-size:1.3rem">${t("sent_t")}</b><p>${t("sent_p")}</p></div>
-        <div class="ready" id="ready" hidden><p><span id="err-pre"></span>${t("ready")}</p><div style="display:flex;gap:8px;flex-wrap:wrap"><a class="pill" id="mailto" href="#">${t("open_mail")}</a><button class="pill ghost" type="button" id="copymsg">${t("copy_msg")}</button></div></div>
       </form>
       <div class="coords">
         <div class="coord"><i></i><div><div class="k">${t("k_email")}</div><div class="v" id="mail-v">${esc(EMAIL)}</div></div><button type="button" data-copy="${esc(EMAIL)}">${t("copy")}</button></div>
@@ -352,7 +349,6 @@ function bind(){
   if(matchMedia("(hover: none)").matches) app.querySelectorAll(".sk").forEach(el => el.onclick = () => el.classList.toggle("open"));
   app.querySelectorAll("[data-copy]").forEach(b => b.onclick = () => copyText(b.dataset.copy, b));
   const f = document.getElementById("cform"); if(!f) return;
-  let body = "";
   f.addEventListener("submit", async e => {
     e.preventDefault();
     const v = id => f.querySelector(id).value.trim();
@@ -361,25 +357,19 @@ function bind(){
     Object.keys(errs).forEach(k => document.getElementById("e-"+k).textContent = errs[k]);
     if(Object.values(errs).some(Boolean)) return;
     const subject = `[${type}] ${name}${comp?" — "+comp:""}`;
-    body = `${msg}\n\n${name}${comp?" · "+comp:""}\n${mail}`;
-    const btn = document.getElementById("f-submit");
-    if(FORM_ENDPOINT){
-      const label = btn.textContent; btn.textContent = t("sending"); btn.disabled = true;
-      try{
-        const res = await fetch(FORM_ENDPOINT, {method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"},
-          body: JSON.stringify({type, name, email:mail, company:comp, message:msg, _subject:subject, _replyto:mail, _gotcha:v("#f-gotcha")})});
-        if(!res.ok) throw new Error(res.status);
-        f.querySelector(".fields").hidden = true; f.querySelector("fieldset").hidden = true; f.querySelector(".send").hidden = true;
-        document.getElementById("ready").hidden = true; document.getElementById("sent").hidden = false;
-        return;
-      }catch(err){
-        btn.textContent = label; btn.disabled = false;
-        document.getElementById("err-pre").textContent = t("send_err") + " ";
-      }
+    const btn = document.getElementById("f-submit"), sendErr = document.getElementById("e-send");
+    const label = btn.textContent; btn.textContent = t("sending"); btn.disabled = true; sendErr.textContent = "";
+    try{
+      if(!FORM_ENDPOINT) throw new Error("FORM_ENDPOINT vide");
+      const res = await fetch(FORM_ENDPOINT, {method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"},
+        body: JSON.stringify({type, name, email:mail, company:comp, message:msg, _subject:subject, _replyto:mail, _gotcha:v("#f-gotcha")})});
+      if(!res.ok) throw new Error(res.status);
+      f.querySelector(".fields").hidden = true; f.querySelector("fieldset").hidden = true; f.querySelector(".send").hidden = true;
+      document.getElementById("sent").hidden = false;
+    }catch(err){
+      btn.textContent = label; btn.disabled = false;
+      sendErr.textContent = t("send_err");
     }
-    document.getElementById("mailto").href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    document.getElementById("ready").hidden = false;
-    document.getElementById("copymsg").onclick = ev => copyText(`${subject}\n\n${body}`, ev.currentTarget);
   });
 }
 document.querySelectorAll("[data-lang]").forEach(b => b.addEventListener("click", () => {
