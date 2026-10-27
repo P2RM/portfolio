@@ -30,8 +30,8 @@ fr:{
   g_desk:"Site desktop", g_mob:"Version mobile", g_idn:"Identité visuelle", palette:"Palette",
   prev:"Projet précédent", next:"Projet suivant",
   about_title:"À propos",
-  bio:["Je suis Pierre, étudiant en Bachelor Ingénierie des médias à la HEIG-VD. Je travaille à la frontière entre la technique et la communication : je développe des applications web, je conçois des interfaces et je construis les stratégies qui les font exister.","En projet d'équipe, j'occupe souvent le rôle de Scrum Master en parallèle du développement back-end. J'aime structurer un projet, faciliter les échanges entre client et équipe, et livrer un produit qui tient la route.","Je cherche aujourd'hui un stage ou un premier emploi, et je reste ouvert aux mandats ponctuels."],
-  tl:[["En cours","Bachelor of Science HES-SO en Ingénierie des médias","HEIG-VD, Yverdon-les-Bains. Développement web et mobile, UX/UI, communication et marketing digital, gestion de projet."],["Projets","Mandats et projets en équipe","Plateforme web pour un partenaire hospitalier, analyse d'écosystème digital, stratégie réseaux sociaux, tests d'utilisabilité."]],
+  bio:["Je suis Pierre, étudiant en Bachelor Ingénierie des médias à la HEIG-VD. Avant le numérique, je me suis formé au graphisme : CFC de graphiste à l'École d'arts appliqués de La Chaux-de-Fonds, avec une maturité professionnelle.", "Curieux et rigoureux, j'aime faire le lien entre le design et la technique : partir d'une idée, lui donner une forme, puis la développer jusqu'au produit fini.", "Aujourd'hui, je travaille à la frontière entre la technique et la communication : je développe des applications web, je conçois des interfaces et je construis les stratégies qui les font exister.", "En parallèle des études, je travaille pour la Ville de La Chaux-de-Fonds, sur des manifestations officielles et en logistique scolaire. Ces postes m'apprennent à m'organiser sous pression, à collaborer avec des équipes très différentes et à représenter une institution face au public : des réflexes que j'applique directement dans mes projets."],
+  tl:[["Formation", [["2024 – en cours", "Bachelor HES-SO en Ingénierie des médias", "HEIG-VD, Yverdon-les-Bains. Développement web et mobile, UX/UI, communication et marketing digital, gestion de projet."], ["2019 – 2023", "CFC de graphiste", "École d'arts appliqués, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Maturité professionnelle", "CPNE, La Chaux-de-Fonds."]]], ["Expérience", [["Depuis 07.2025", "Auxiliaire logistique scolaire", "École obligatoire de La Chaux-de-Fonds, en parallèle des études. Préparation et livraison des fournitures, aménagement et déménagement des classes."], ["Depuis 01.2025", "Auxiliaire manifestation", "Ville de La Chaux-de-Fonds, Chancellerie communale, en parallèle des études. Coordination logistique sur le terrain, représentation de la Ville et accueil des invités."], ["02 – 06.2024", "Opérateur en ébavurage", "EIC Ébavurage Industriel & Conseils SA. Ébavurage de pièces horlogères, préparation des colis, entretien des machines CNC."], ["12.2023 – 01.2024", "Employé en intendance", "Réseau hospitalier neuchâtelois. Entretien des chambres et des locaux, ravitaillement des étages."], ["06 – 10.2022", "Stage de graphiste", "Numéro10, agence de communication. Concepts et éléments graphiques, contenus pour les réseaux sociaux, storyboards, montage vidéo et shootings photo."]]], ["Langues & intérêts", [["Langues", "Français, anglais, allemand", "Langue maternelle · B2 · B1"], ["Intérêts", "Sport, musique, cinéma", "Boxe et football."]]]],
   values:[["Comprendre avant de produire","Chaque projet commence par le besoin réel des utilisateurs et du client."],["Livrer proprement","Code lisible, documentation, décisions justifiées. Ce qui est livré peut être repris."],["Faire avancer l'équipe","Rituels clairs, priorités visibles, communication directe."]],
   cv:"CV bientôt disponible", photo:"Votre photo ici",
   c_title1:"Parlons de votre", c_title2:'pr<i class="gl gl-o c-ink"></i>chain projet.',
@@ -66,8 +66,8 @@ en:{
   g_desk:"Desktop site", g_mob:"Mobile version", g_idn:"Visual identity", palette:"Palette",
   prev:"Previous project", next:"Next project",
   about_title:"About",
-  bio:["I'm Pierre, a BSc Media Engineering student at HEIG-VD in Switzerland. I work where technology meets communication: I build web applications, design interfaces and shape the strategies that bring them to life.","In team projects I often act as Scrum Master alongside back-end development. I like structuring a project, keeping client and team aligned, and shipping a product that holds up.","I'm currently looking for an internship or a first job, and I'm open to freelance work."],
-  tl:[["Ongoing","BSc HES-SO in Media Engineering","HEIG-VD, Yverdon-les-Bains. Web and mobile development, UX/UI, digital communication and marketing, project management."],["Projects","Client work and team projects","Web platform for a hospital partner, digital ecosystem audit, social media strategy, usability testing."]],
+  bio:["I'm Pierre, a BSc Media Engineering student at HEIG-VD in Switzerland. Before going digital, I trained as a graphic designer: a Federal VET Diploma in graphic design from the School of Applied Arts in La Chaux-de-Fonds, with a vocational baccalaureate.", "Curious and rigorous, I like bridging design and technology: taking an idea, giving it a shape, then building it into a finished product.", "Today I work where technology meets communication: I build web applications, design interfaces and shape the strategies that bring them to life.", "Alongside my studies, I work for the City of La Chaux-de-Fonds, at official events and in school logistics. These roles teach me to stay organised under pressure, work with very different teams and represent an institution in front of the public: habits I bring straight into my projects."],
+  tl:[["Education", [["2024 – ongoing", "BSc HES-SO in Media Engineering", "HEIG-VD, Yverdon-les-Bains. Web and mobile development, UX/UI, digital communication and marketing, project management."], ["2019 – 2023", "Federal VET Diploma in graphic design", "School of Applied Arts, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Vocational baccalaureate", "CPNE, La Chaux-de-Fonds."]]], ["Experience", [["Since 07.2025", "School logistics assistant", "Compulsory schools of La Chaux-de-Fonds, alongside my studies. Preparing and delivering school supplies, setting up and moving classrooms."], ["Since 01.2025", "Events assistant", "City of La Chaux-de-Fonds, Town Chancellery, alongside my studies. On-site logistics, representing the City and welcoming guests."], ["02 – 06.2024", "Deburring operator", "EIC Ébavurage Industriel & Conseils SA. Deburring watch parts, preparing parcels, maintaining CNC machines."], ["12.2023 – 01.2024", "Housekeeping staff", "Neuchâtel Hospital Network. Cleaning rooms and premises, restocking wards."], ["06 – 10.2022", "Graphic design internship", "Numéro10, communication agency. Graphic concepts and assets, social media content, storyboards, video editing and photo shoots."]]], ["Languages & interests", [["Languages", "French, English, German", "Native · B2 · B1"], ["Interests", "Sport, music, cinema", "Boxing and football."]]]],
   values:[["Understand before building","Every project starts with what users and the client actually need."],["Ship clean work","Readable code, documentation, decisions explained. What I deliver can be picked up by others."],["Move the team forward","Clear rituals, visible priorities, direct communication."]],
   cv:"CV coming soon", photo:"Your photo here",
   c_title1:"Let's talk about", c_title2:'y<i class="gl gl-o c-ink"></i>ur next project.',
@@ -279,11 +279,11 @@ function viewProject(p){
 }
 function viewAbout(){
   const vc = [["o","lilac"],["q","mint"],["s","peach"]];
-  return `<section class="wrap page-head fade"><span class="mono">Pierre · ${t("role")}</span><h1 style="margin-top:10px">${t("about_title")}</h1></section>
-  <section class="wrap about">
-    <div><div class="portrait">${art("portrait",[COL.lilac,COL.peach,COL.mint],4,5)}<span class="demo-note">${t("photo")}</span></div></div>
+  return `<section class="wrap about fade">
+    <div class="about-side"><div class="about-head"><span class="mono">Pierre · ${t("role")}</span><h1 style="margin-top:10px">${t("about_title")}</h1></div>
+      <div class="portrait">${art("portrait",[COL.lilac,COL.peach,COL.mint],4,5)}<span class="demo-note">${t("photo")}</span></div></div>
     <div class="bio">${t("bio").map(p=>`<p>${esc(p)}</p>`).join("")}
-      <div class="tl">${t("tl").map(r=>`<div><span class="mono">${esc(r[0])}</span><div><b>${esc(r[1])}</b><p>${esc(r[2])}</p></div></div>`).join("")}</div>
+      ${t("tl").map(g=>`<h3 class="tl-h">${esc(g[0])}</h3><div class="tl">${g[1].map(r=>`<div><span class="mono">${esc(r[0])}</span><div><b>${esc(r[1])}</b><p>${esc(r[2])}</p></div></div>`).join("")}</div>`).join("")}
       <div class="values">${t("values").map((v,k)=>`<div class="value">${shapeEl(vc[k][0],vc[k][1])}<b>${esc(v[0])}</b><p>${esc(v[1])}</p></div>`).join("")}</div>
       <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap"><span class="pill ghost" aria-disabled="true" style="opacity:.6;cursor:default">${t("cv")}</span><a class="pill" href="#contact">${t("get_in_touch")}</a></div>
     </div>
@@ -334,6 +334,24 @@ function route(){
   document.querySelector("footer").style.marginTop = nav==="contact" ? "0" : "";
   bind(); startRot();
   window.scrollTo({top:0, behavior:"instant"});
+  pinAbout();
+}
+/* À propos : titre + photo bloqués exactement à leur position, seul le texte défile */
+function pinAbout(){
+  const side = app.querySelector(".about-side"); if(!side) return;
+  const pic = side.querySelector(".portrait"), bio = app.querySelector(".bio");
+  const fit = () => {
+    side.style.top = ""; pic.style.maxHeight = ""; bio.style.marginTop = "";
+    if(!matchMedia("(min-width: 821px)").matches) return;
+    const top = side.getBoundingClientRect().top + scrollY;
+    side.style.top = top + "px";
+    const picTop = pic.getBoundingClientRect().top + scrollY;
+    pic.style.maxHeight = (innerHeight - picTop - 24) + "px";
+    bio.style.marginTop = (picTop - top) + "px";
+  };
+  fit();
+  window.onresize = fit;
+  if(document.fonts) document.fonts.ready.then(fit);
 }
 function applyStatic(){
   document.documentElement.lang = lang;
@@ -344,7 +362,25 @@ async function copyText(txt, btn){
   try{ await navigator.clipboard.writeText(txt); if(btn){ const o=btn.innerHTML; btn.textContent=t("copied"); setTimeout(()=>btn.innerHTML=o,1400);} }
   catch(e){ const el=document.getElementById("mail-v"); if(el){ const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r);} }
 }
+/* Apparition discrète des blocs au scroll */
+const REVEAL = ".sec-head, .skills .intro, .acc .sk, .marquee, .index .row, .more, .cta, .cover, .facts, .p-sec, .quote, .pn, .bio > p, .tl-h, .tl > div, .values .value";
+let revealObs = null;
+function reveal(){
+  if(revealObs) revealObs.disconnect();
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  revealObs = new IntersectionObserver(entries => {
+    entries.filter(e => e.isIntersecting).forEach((e, k) => {
+      const el = e.target; revealObs.unobserve(el);
+      el.style.transitionDelay = Math.min(k, 5) * 70 + "ms";
+      el.classList.add("in");
+      /* une fois apparu, l'élément retrouve ses transitions de survol normales */
+      setTimeout(() => { el.classList.remove("rv", "in"); el.style.transitionDelay = ""; }, 1200);
+    });
+  }, {rootMargin: "0px 0px -8% 0px"});
+  app.querySelectorAll(REVEAL).forEach(el => { el.classList.add("rv"); revealObs.observe(el); });
+}
 function bind(){
+  reveal();
   app.querySelectorAll("[data-filter]").forEach(b => b.onclick = () => { filter = b.dataset.filter; app.innerHTML = viewProjects(); bind(); });
   if(matchMedia("(hover: none)").matches) app.querySelectorAll(".sk").forEach(el => el.onclick = () => el.classList.toggle("open"));
   app.querySelectorAll("[data-copy]").forEach(b => b.onclick = () => copyText(b.dataset.copy, b));
