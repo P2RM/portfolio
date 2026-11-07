@@ -345,7 +345,7 @@ function viewAbout(){
   const vc = [["o","lilac"],["q","mint"],["s","peach"]];
   return `<section class="wrap about fade">
     <div class="about-side"><div class="about-head"><span class="mono">Pierre Matthey · ${t("role")}</span><h1 style="margin-top:10px">${t("about_title")}</h1></div>
-      <div class="portrait"><img src="img/about/portrait.webp" alt="${t("photo")}" width="941" height="1671"></div></div>
+      <div class="portrait"><img src="img/about/portrait.webp" alt="${t("photo")}" width="941" height="1670"></div></div>
     <div class="bio">${t("bio").map(p=>`<p>${esc(p)}</p>`).join("")}
       ${t("tl").map(g=>`<h3 class="tl-h">${esc(g[0])}</h3><div class="tl">${g[1].map(r=>`<div><span class="mono">${esc(r[0])}</span><div><b>${esc(r[1])}</b><p>${esc(r[2])}</p></div></div>`).join("")}</div>`).join("")}
       <div class="values">${t("values").map((v,k)=>`<div class="value">${shapeEl(vc[k][0],vc[k][1])}<b>${esc(v[0])}</b><p>${esc(v[1])}</p></div>`).join("")}</div>
