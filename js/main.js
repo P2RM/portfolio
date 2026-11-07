@@ -31,7 +31,7 @@ fr:{
   prev:"Projet précédent", next:"Projet suivant",
   visit:"Voir le site", s_brief:"En bref", b_defi:"Défi", b_done:"Ce que j'ai fait", b_res:"Résultat",
   s_flow:"Déroulement", s_dec:"Décisions", s_render:"Rendu", s_result:"Résultat", s_learn:"Ce que j'en retiens", delivered:"Livré",
-  car_prev:"Image précédente", car_next:"Image suivante",
+  car_prev:"Image précédente", car_next:"Image suivante", fs_open:"Afficher en plein écran", fs_close:"Fermer",
   about_title:"À propos",
   bio:["Je suis Pierre Matthey, étudiant en Bachelor Ingénierie des médias à la HEIG-VD. Avant le numérique, je me suis formé au graphisme : CFC de graphiste à l'École d'arts appliqués de La Chaux-de-Fonds, avec une maturité professionnelle.", "Curieux et rigoureux, j'aime faire le lien entre le design et la technique : partir d'une idée, lui donner une forme, puis la développer jusqu'au produit fini.", "Aujourd'hui, je travaille à la frontière entre la technique et la communication : je développe des applications web, je conçois des interfaces et je construis les stratégies qui les font exister.", "En parallèle des études, je travaille pour la Ville de La Chaux-de-Fonds, sur des manifestations officielles et en logistique scolaire. Ces postes m'apprennent à m'organiser sous pression, à collaborer avec des équipes très différentes et à représenter une institution face au public : des réflexes que j'applique directement dans mes projets."],
   tl:[["Formation", [["2024 – en cours", "Bachelor HES-SO en Ingénierie des médias", "HEIG-VD, Yverdon-les-Bains. Développement web et mobile, UX/UI, communication et marketing digital, gestion de projet."], ["2019 – 2023", "CFC de graphiste", "École d'arts appliqués, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Maturité professionnelle", "CPNE, La Chaux-de-Fonds."]]], ["Expérience", [["Depuis 07.2025", "Auxiliaire logistique scolaire", "École obligatoire de La Chaux-de-Fonds, en parallèle des études. Préparation et livraison des fournitures, aménagement et déménagement des classes."], ["Depuis 01.2025", "Auxiliaire manifestation", "Ville de La Chaux-de-Fonds, Chancellerie communale, en parallèle des études. Coordination logistique sur le terrain, représentation de la Ville et accueil des invités."], ["02 – 06.2024", "Opérateur en ébavurage", "EIC Ébavurage Industriel & Conseils SA. Ébavurage de pièces horlogères, préparation des colis, entretien des machines CNC."], ["12.2023 – 01.2024", "Employé en intendance", "Réseau hospitalier neuchâtelois. Entretien des chambres et des locaux, ravitaillement des étages."], ["06 – 10.2022", "Stage de graphiste", "Numéro10, agence de communication. Concepts et éléments graphiques, contenus pour les réseaux sociaux, storyboards, montage vidéo et shootings photo."]]], ["Langues & intérêts", [["Langues", "Français, anglais, allemand", "Langue maternelle · B2 · B1"], ["Intérêts", "Sport, musique, cinéma", "Boxe et football."]]]],
@@ -70,7 +70,7 @@ en:{
   prev:"Previous project", next:"Next project",
   visit:"Visit the site", s_brief:"At a glance", b_defi:"Challenge", b_done:"What I did", b_res:"Outcome",
   s_flow:"Process", s_dec:"Key decisions", s_render:"Deliverables", s_result:"Outcome", s_learn:"What I took away", delivered:"Delivered",
-  car_prev:"Previous image", car_next:"Next image",
+  car_prev:"Previous image", car_next:"Next image", fs_open:"View full screen", fs_close:"Close",
   about_title:"About",
   bio:["I'm Pierre Matthey, a BSc Media Engineering student at HEIG-VD in Switzerland. Before going digital, I trained as a graphic designer: a Federal VET Diploma in graphic design from the School of Applied Arts in La Chaux-de-Fonds, with a vocational baccalaureate.", "Curious and rigorous, I like bridging design and technology: taking an idea, giving it a shape, then building it into a finished product.", "Today I work where technology meets communication: I build web applications, design interfaces and shape the strategies that bring them to life.", "Alongside my studies, I work for the City of La Chaux-de-Fonds, at official events and in school logistics. These roles teach me to stay organised under pressure, work with very different teams and represent an institution in front of the public: habits I bring straight into my projects."],
   tl:[["Education", [["2024 – ongoing", "BSc HES-SO in Media Engineering", "HEIG-VD, Yverdon-les-Bains. Web and mobile development, UX/UI, digital communication and marketing, project management."], ["2019 – 2023", "Federal VET Diploma in graphic design", "School of Applied Arts, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Vocational baccalaureate", "CPNE, La Chaux-de-Fonds."]]], ["Experience", [["Since 07.2025", "School logistics assistant", "Compulsory schools of La Chaux-de-Fonds, alongside my studies. Preparing and delivering school supplies, setting up and moving classrooms."], ["Since 01.2025", "Events assistant", "City of La Chaux-de-Fonds, Town Chancellery, alongside my studies. On-site logistics, representing the City and welcoming guests."], ["02 – 06.2024", "Deburring operator", "EIC Ébavurage Industriel & Conseils SA. Deburring watch parts, preparing parcels, maintaining CNC machines."], ["12.2023 – 01.2024", "Housekeeping staff", "Neuchâtel Hospital Network. Cleaning rooms and premises, restocking wards."], ["06 – 10.2022", "Graphic design internship", "Numéro10, communication agency. Graphic concepts and assets, social media content, storyboards, video editing and photo shoots."]]], ["Languages & interests", [["Languages", "French, English, German", "Native · B2 · B1"], ["Interests", "Sport, music, cinema", "Boxing and football."]]]],
@@ -343,7 +343,7 @@ function viewCase(p){
   <section class="wrap c-sec">${head(t("s_render"))}
     <div class="c-render">${L.render.map(g=> g[0]==="§" ? `<div class="c-sub"><h3>${esc(g[1])}</h3>${g[2] ? `<p>${esc(g[2])}</p>` : ""}</div>` : `<div class="car${g[2] ? " wide" : ""}">
       <h3>${esc(g[0])}</h3>
-      <div class="car-track"${g[1].length>1 ? ` tabindex="0"` : ""}>${g[1].map(it=>`<figure${it[2] ? ` style="background:${it[2]}"` : ""}>${img(it[0], it[1])}</figure>`).join("")}</div>
+      <div class="car-track"${g[1].length>1 ? ` tabindex="0"` : ""}>${g[1].map(it=>`<figure${it[2] ? ` style="background:${it[2]}"` : ""}>${img(it[0], it[1])}<button type="button" class="car-fs" aria-label="${t("fs_open")}">${FS_ICON}</button></figure>`).join("")}</div>
       <div class="car-bar"><span class="car-cap">${esc(g[1][0][1])}</span>${g[1].length>1 ? `<div class="car-nav"><span class="mono car-n">1 / ${g[1].length}</span><button type="button" data-d="-1" aria-label="${t("car_prev")}">←</button><button type="button" data-d="1" aria-label="${t("car_next")}">→</button></div>` : ""}</div></div>`).join("")}</div></section>
   <section class="wrap c-sec">${head(t("s_result"))}
     <div class="c-result">
@@ -457,6 +457,45 @@ function reveal(){
   }, {rootMargin: "0px 0px -8% 0px"});
   app.querySelectorAll(REVEAL).forEach(el => { el.classList.add("rv"); revealObs.observe(el); });
 }
+/* Plein écran des galeries : clic sur l'image ou sur le picto, flèches et Échap au clavier */
+const FS_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+let lb = null;
+function lightbox(imgs, start, back){
+  if(!lb){
+    lb = document.createElement("div"); lb.className = "lb"; lb.hidden = true;
+    lb.setAttribute("role", "dialog"); lb.setAttribute("aria-modal", "true");
+    lb.innerHTML = `<figure><img alt=""><figcaption class="mono"></figcaption></figure>
+      <button type="button" class="lb-x">✕</button><button type="button" class="lb-p">←</button><button type="button" class="lb-n">→</button>`;
+    document.body.append(lb);
+  }
+  let k = start;
+  const im = lb.querySelector("img"), cap = lb.querySelector("figcaption"), multi = imgs.length > 1;
+  const show = () => { im.src = imgs[k].src; im.alt = imgs[k].alt; cap.textContent = imgs[k].alt + (multi ? `  ·  ${k+1} / ${imgs.length}` : ""); };
+  const go = d => { k = (k + d + imgs.length) % imgs.length; show(); };
+  const close = () => {
+    if(lb.hidden) return;
+    lb.hidden = true; document.body.style.overflow = "";
+    document.removeEventListener("keydown", key); document.removeEventListener("fullscreenchange", fsc);
+    if(document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    back && back.focus();
+  };
+  /* Échap quitte d'abord le plein écran du navigateur : on ferme la visionneuse en même temps */
+  const fsc = () => { if(!document.fullscreenElement) close(); };
+  const key = e => { if(e.key === "Escape") close(); else if(multi && e.key === "ArrowRight") go(1); else if(multi && e.key === "ArrowLeft") go(-1); };
+  lb.querySelector(".lb-x").setAttribute("aria-label", t("fs_close"));
+  lb.querySelector(".lb-p").setAttribute("aria-label", t("car_prev"));
+  lb.querySelector(".lb-n").setAttribute("aria-label", t("car_next"));
+  lb.querySelector(".lb-x").onclick = close;
+  lb.querySelector(".lb-p").onclick = () => go(-1);
+  lb.querySelector(".lb-n").onclick = () => go(1);
+  lb.querySelector(".lb-p").hidden = lb.querySelector(".lb-n").hidden = !multi;
+  lb.onclick = e => { if(e.target === lb) close(); };
+  document.addEventListener("keydown", key);
+  show(); lb.hidden = false; document.body.style.overflow = "hidden";
+  lb.querySelector(".lb-x").focus();
+  /* vrai plein écran (comme une vidéo) quand le navigateur le permet, sinon la visionneuse couvre la fenêtre */
+  if(lb.requestFullscreen) lb.requestFullscreen().then(() => document.addEventListener("fullscreenchange", fsc)).catch(() => {});
+}
 /* Décisions : le texte au centre de l'écran choisit l'image affichée dans le cadre fixe */
 let decObs = null;
 function bindCase(){
@@ -469,6 +508,8 @@ function bindCase(){
   }
   /* Rendu : carrousels à défilement horizontal, flèches + compteur */
   app.querySelectorAll(".car").forEach(c => {
+    const all = [...c.querySelectorAll(".car-track img")];
+    c.querySelectorAll(".car-track figure").forEach((f,j) => f.onclick = e => lightbox(all, j, e.target.closest("button") || f.querySelector("button")));
     const tr = c.querySelector(".car-track"), num = c.querySelector(".car-n"), cap = c.querySelector(".car-cap"); if(!num) return;
     const count = tr.children.length, idx = () => Math.round(tr.scrollLeft / tr.clientWidth);
     const caps = [...tr.querySelectorAll("img")].map(i => i.alt);
