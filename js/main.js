@@ -9,7 +9,7 @@ const FORM_ENDPOINT = "";
 /* ============ TEXTES ============ */
 const T = {
 fr:{
-  role:"Ingénieur des médias",
+  role:"Ingénieur <span>des médias</span>",
   nav_projects:"Projets", nav_about:"À propos", nav_contact:"Contact",
   hero_a:'Vos <span class="ins ins-img">{IMG}</span> idées,',
   hero_b:'<span style="white-space:nowrap">de A à Z <i class="ins ins-star"></i></span>',
@@ -36,7 +36,7 @@ fr:{
   bio:["Je suis Pierre Matthey, étudiant en Bachelor Ingénierie des médias à la HEIG-VD. Avant le numérique, je me suis formé au graphisme : CFC de graphiste à l'École d'arts appliqués de La Chaux-de-Fonds, avec une maturité professionnelle.", "Curieux et rigoureux, j'aime faire le lien entre le design et la technique : partir d'une idée, lui donner une forme, puis la développer jusqu'au produit fini.", "Aujourd'hui, je travaille à la frontière entre la technique et la communication : je développe des applications web, je conçois des interfaces et je construis les stratégies qui les font exister.", "En parallèle des études, je travaille pour la Ville de La Chaux-de-Fonds, sur des manifestations officielles et en logistique scolaire. Ces postes m'apprennent à m'organiser sous pression, à collaborer avec des équipes très différentes et à représenter une institution face au public : des réflexes que j'applique directement dans mes projets."],
   tl:[["Formation", [["2024 – en cours", "Bachelor HES-SO en Ingénierie des médias", "HEIG-VD, Yverdon-les-Bains. Développement web et mobile, UX/UI, communication et marketing digital, gestion de projet."], ["2019 – 2023", "CFC de graphiste", "École d'arts appliqués, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Maturité professionnelle", "CPNE, La Chaux-de-Fonds."]]], ["Expérience", [["Depuis 07.2025", "Auxiliaire logistique scolaire", "École obligatoire de La Chaux-de-Fonds, en parallèle des études. Préparation et livraison des fournitures, aménagement et déménagement des classes."], ["Depuis 01.2025", "Auxiliaire manifestation", "Ville de La Chaux-de-Fonds, Chancellerie communale, en parallèle des études. Coordination logistique sur le terrain, représentation de la Ville et accueil des invités."], ["02 – 06.2024", "Opérateur en ébavurage", "EIC Ébavurage Industriel & Conseils SA. Ébavurage de pièces horlogères, préparation des colis, entretien des machines CNC."], ["12.2023 – 01.2024", "Employé en intendance", "Réseau hospitalier neuchâtelois. Entretien des chambres et des locaux, ravitaillement des étages."], ["06 – 10.2022", "Stage de graphiste", "Numéro10, agence de communication. Concepts et éléments graphiques, contenus pour les réseaux sociaux, storyboards, montage vidéo et shootings photo."]]], ["Langues & intérêts", [["Langues", "Français, anglais, allemand", "Langue maternelle · B2 · B1"], ["Intérêts", "Sport, musique, cinéma", "Boxe et football."]]]],
   values:[["Comprendre avant de produire","Chaque projet commence par le besoin réel des utilisateurs et du client."],["Livrer proprement","Code lisible, documentation, décisions justifiées. Ce qui est livré peut être repris."],["Faire avancer l'équipe","Rituels clairs, priorités visibles, communication directe."]],
-  cv:"CV bientôt disponible", photo:"Portrait de Pierre Matthey",
+  cv:"Télécharger mon CV", photo:"Portrait de Pierre Matthey",
   c_title1:"Parlons de votre", c_title2:'pr<i class="gl gl-o c-ink"></i>chain projet.',
   c_intro:"Un projet, une collaboration, un stage ou un emploi ? Écrivez-moi, je reviens vers vous rapidement.",
   c_type:"Votre demande concerne",
@@ -48,9 +48,9 @@ fr:{
   k_email:"E-mail", k_linkedin:"LinkedIn", k_github:"GitHub", k_loc:"Localisation", loc:"Neuchâtel, Suisse"
 },
 en:{
-  role:"Media engineer",
+  role:"Media <span>engineer</span>",
   nav_projects:"Work", nav_about:"About", nav_contact:"Contact",
-  hero_a:'Your <span class="ins ins-img">{IMG}</span> ideas,',
+  hero_a:'<span style="white-space:nowrap">Your <span class="ins ins-img">{IMG}</span> ideas,</span><br>',
   hero_b:'<br><span style="white-space:nowrap">from start to finish <i class="ins ins-star"></i></span>',
   rot:["designed","prototyped","developed","managed","promoted"],
   sub:["BSc Media Engineering · HEIG-VD","Based in Neuchâtel, Switzerland"],
@@ -75,7 +75,7 @@ en:{
   bio:["I'm Pierre Matthey, a BSc Media Engineering student at HEIG-VD in Switzerland. Before going digital, I trained as a graphic designer: a Federal VET Diploma in graphic design from the School of Applied Arts in La Chaux-de-Fonds, with a vocational baccalaureate.", "Curious and rigorous, I like bridging design and technology: taking an idea, giving it a shape, then building it into a finished product.", "Today I work where technology meets communication: I build web applications, design interfaces and shape the strategies that bring them to life.", "Alongside my studies, I work for the City of La Chaux-de-Fonds, at official events and in school logistics. These roles teach me to stay organised under pressure, work with very different teams and represent an institution in front of the public: habits I bring straight into my projects."],
   tl:[["Education", [["2024 – ongoing", "BSc HES-SO in Media Engineering", "HEIG-VD, Yverdon-les-Bains. Web and mobile development, UX/UI, digital communication and marketing, project management."], ["2019 – 2023", "Federal VET Diploma in graphic design", "School of Applied Arts, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Vocational baccalaureate", "CPNE, La Chaux-de-Fonds."]]], ["Experience", [["Since 07.2025", "School logistics assistant", "Compulsory schools of La Chaux-de-Fonds, alongside my studies. Preparing and delivering school supplies, setting up and moving classrooms."], ["Since 01.2025", "Events assistant", "City of La Chaux-de-Fonds, Town Chancellery, alongside my studies. On-site logistics, representing the City and welcoming guests."], ["02 – 06.2024", "Deburring operator", "EIC Ébavurage Industriel & Conseils SA. Deburring watch parts, preparing parcels, maintaining CNC machines."], ["12.2023 – 01.2024", "Housekeeping staff", "Neuchâtel Hospital Network. Cleaning rooms and premises, restocking wards."], ["06 – 10.2022", "Graphic design internship", "Numéro10, communication agency. Graphic concepts and assets, social media content, storyboards, video editing and photo shoots."]]], ["Languages & interests", [["Languages", "French, English, German", "Native · B2 · B1"], ["Interests", "Sport, music, cinema", "Boxing and football."]]]],
   values:[["Understand before building","Every project starts with what users and the client actually need."],["Ship clean work","Readable code, documentation, decisions explained. What I deliver can be picked up by others."],["Move the team forward","Clear rituals, visible priorities, direct communication."]],
-  cv:"CV coming soon", photo:"Portrait of Pierre Matthey",
+  cv:"Download my CV", photo:"Portrait of Pierre Matthey",
   c_title1:"Let's talk about", c_title2:'y<i class="gl gl-o c-ink"></i>ur next project.',
   c_intro:"A project, a collaboration, an internship or a job? Write to me and I'll get back to you quickly.",
   c_type:"Your request is about",
@@ -341,7 +341,7 @@ function viewCase(p){
   ${(L.more || []).map(m=>`<section class="wrap c-sec">${head(esc(m[0]))}
     <div class="c-ctx">${m[1].map(c=>`<div><h3>${esc(c[0])}</h3>${para(c[1])}</div>`).join("")}</div></section>`).join("")}
   <section class="wrap c-sec">${head(t("s_render"))}
-    <div class="c-render">${L.render.map(g=> g[0]==="§" ? `<div class="c-sub"><h3>${esc(g[1])}</h3>${g[2] ? `<p>${esc(g[2])}</p>` : ""}</div>` : `<div class="car${g[2] ? " wide" : ""}">
+    <div class="c-render">${L.render.map(g=> g[0]==="§" ? `<div class="c-sub"><h3>${esc(g[1])}</h3>${g[2] ? `<p>${esc(g[2])}</p>` : ""}</div>` : `<div class="car${g[2] ? " wide" : ""}${g[2] === "large" ? " large" : ""}">
       <h3>${esc(g[0])}</h3>
       <div class="car-track"${g[1].length>1 ? ` tabindex="0"` : ""}>${g[1].map(it=>`<figure${it[2] ? ` style="background:${it[2]}"` : ""}>${img(it[0], it[1])}<button type="button" class="car-fs" aria-label="${t("fs_open")}">${FS_ICON}</button></figure>`).join("")}</div>
       <div class="car-bar"><span class="car-cap">${esc(g[1][0][1])}</span>${g[1].length>1 ? `<div class="car-nav"><span class="mono car-n">1 / ${g[1].length}</span><button type="button" data-d="-1" aria-label="${t("car_prev")}">←</button><button type="button" data-d="1" aria-label="${t("car_next")}">→</button></div>` : ""}</div></div>`).join("")}</div></section>
@@ -354,6 +354,7 @@ function viewCase(p){
   <div class="wrap"><nav class="pn" aria-label="Projets"><a href="#p-${prev.slug}"><span class="mono">← ${t("prev")}</span><b>${esc(prev.name)}</b></a><a href="#p-${next.slug}"><span class="mono">${t("next")} →</span><b>${esc(next.name)}</b></a></nav></div>
   ${cta()}</div>`;
 }
+const CV = "docs/CV_Pierre_Matthey.pdf";
 function viewAbout(){
   const vc = [["o","lilac"],["q","mint"],["s","peach"]];
   return `<section class="wrap about fade">
@@ -362,7 +363,7 @@ function viewAbout(){
     <div class="bio">${t("bio").map(p=>`<p>${esc(p)}</p>`).join("")}
       ${t("tl").map(g=>`<h3 class="tl-h">${esc(g[0])}</h3><div class="tl">${g[1].map(r=>`<div><span class="mono">${esc(r[0])}</span><div><b>${esc(r[1])}</b><p>${esc(r[2])}</p></div></div>`).join("")}</div>`).join("")}
       <div class="values">${t("values").map((v,k)=>`<div class="value">${shapeEl(vc[k][0],vc[k][1])}<b>${esc(v[0])}</b><p>${esc(v[1])}</p></div>`).join("")}</div>
-      <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap"><span class="pill ghost" aria-disabled="true" style="opacity:.6;cursor:default">${t("cv")}</span><a class="pill" href="#contact">${t("get_in_touch")}</a></div>
+      <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap"><a class="pill ghost" href="${CV}" download>${t("cv")}</a><a class="pill" href="#contact">${t("get_in_touch")}</a></div>
     </div>
   </section>`;
 }
@@ -556,6 +557,14 @@ document.querySelectorAll("[data-lang]").forEach(b => b.addEventListener("click"
   applyStatic(); const y = scrollY; route(); window.scrollTo(0,y);
 }));
 window.addEventListener("hashchange", route);
+/* Menu burger (mobile) */
+const burger = document.querySelector(".burger"), menu = document.getElementById("menu");
+function setMenu(o){ burger.setAttribute("aria-expanded", o); menu.classList.toggle("open", o); }
+burger.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
+menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+window.addEventListener("hashchange", () => setMenu(false));
+document.addEventListener("keydown", e => { if(e.key==="Escape" && menu.classList.contains("open")){ setMenu(false); burger.focus(); } });
+document.addEventListener("click", e => { if(menu.classList.contains("open") && !menu.contains(e.target) && !burger.contains(e.target)) setMenu(false); });
 /* Lien vers la page déjà affichée : pas de changement de hash, on remonte en haut en douceur */
 document.addEventListener("click", e => {
   const a = e.target.closest('a[href^="#"]'); if(!a) return;

@@ -76,7 +76,8 @@ nav.main{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content
 /* Hero plein écran, formes sur toute la surface */
 .hero{position:relative;overflow:hidden;min-height:calc(100vh - 90px);min-height:calc(100svh - 90px);display:grid;place-items:center;text-align:center;padding-block:56px}
 .hero .wrap{position:relative;z-index:1;width:100%}
-.hero h1{font-size:clamp(1.9rem,7.2vw,6.2rem);font-weight:650;max-width:16ch;margin:0 auto;line-height:1.08}
+.hero h1{font-size:max(1.9rem,min(calc((100vw - 40px) / 9.9),8.6rem,15svh));font-weight:650;max-width:16ch;margin:0 auto;line-height:1.08}
+@media (max-width:720px){.hero h1{font-size:calc((100vw - 40px) / 7.42)}html[lang="en"] .hero h1{font-size:calc((100vw - 40px) / 9.5)}}
 .rot{display:inline-grid;height:1.18em;clip-path:inset(0 -.2em);margin:0 .06em}
 .rot span{grid-area:1/1;padding:0 .22em;border-radius:.3em;white-space:nowrap;line-height:1.18;transform:translateY(115%);justify-self:center;will-change:transform}
 .rot span.on{transform:translateY(0)}
@@ -148,7 +149,7 @@ section.block{padding-block:clamp(56px,8vw,96px)}
 .row:hover .pop > *,.row:focus-visible .pop > *{transform:scale(1)}
 .row .demo{font:500 .62rem var(--f-mono);padding:3px 7px;border-radius:999px;background:var(--butter);color:var(--ink);white-space:nowrap}
 @media (hover:none){.row .pop{width:1.4em;margin:0 .14em}.row .pop > *{transform:scale(1);width:1.4em}}
-@media (max-width:640px){.row{grid-template-columns:minmax(0,1fr)}.row .meta{display:none}.row .name{font-size:clamp(1.8rem,10vw,3rem)}}
+@media (max-width:640px){.row{grid-template-columns:minmax(0,1fr) auto}.row .meta:not(.r){display:none}.row .meta.r{max-width:8.5em}.row .name{justify-content:flex-start;font-size:clamp(1.8rem,10vw,3rem)}}
 .more{margin-top:26px;display:flex;justify-content:flex-end}
 
 /* CTA band */
@@ -313,6 +314,8 @@ section.block{padding-block:clamp(56px,8vw,96px)}
 .c-sub + .car:not(.wide):has(+ .c-sub),.c-sub + .car:not(.wide):last-child{grid-column:1/-1}
 /* images à leur format d'origine, centrées (projets aux visuels carrés ou portrait) */
 .c-sub + .car.wide:has(+ .c-sub),.c-sub + .car.wide:last-child{grid-column:1/-1;width:min(100%,640px);justify-self:center}
+/* image en paysage (planche de croquis) : plus large que les visuels carrés */
+.c-sub + .car.wide.large:has(+ .c-sub){width:min(100%,1000px)}
 .case.natural .car-track{align-items:center}
 .case.natural .c-cover{aspect-ratio:auto;width:min(100%,720px);margin-inline:auto}
 .case.natural .c-cover img{height:auto}
@@ -466,3 +469,23 @@ footer nav a:hover{background-size:100% 1.5px}
 .fade{animation:fade .5s ease both}
 @keyframes fade{from{opacity:.001;transform:translateY(8px)}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+
+/* Header mobile : menu burger, nom et rôle sur deux lignes */
+.burger{display:none}
+@media (max-width:720px){
+  header.top .burger{pointer-events:auto}
+  .brand .nm span,.brand small span{display:block}
+  .brand{line-height:1.15;font-size:1rem}
+  .brand .who{display:flex;align-items:center;gap:12px}
+  .brand small{margin:0;line-height:1.3}
+  .burger{display:inline-grid;place-content:center;gap:6px;width:52px;height:52px;flex:none;border:0;border-radius:50%;background:var(--ink);cursor:pointer;position:relative;z-index:2}
+  .burger i{display:block;width:20px;height:2px;border-radius:2px;background:var(--paper);transition:transform .35s cubic-bezier(.65,0,.25,1)}
+  .burger[aria-expanded="true"] i:first-child{transform:translateY(4px) rotate(45deg)}
+  .burger[aria-expanded="true"] i:last-child{transform:translateY(-4px) rotate(-45deg)}
+  nav.main{position:absolute;top:calc(100% + 10px);left:16px;right:16px;flex-direction:column;align-items:stretch;gap:10px;padding:14px;border-radius:28px;background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--ink);
+    opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .25s ease,transform .3s cubic-bezier(.65,0,.25,1),visibility 0s .3s}
+  nav.main.open{opacity:1;visibility:visible;transform:none;transition:opacity .25s ease,transform .3s cubic-bezier(.65,0,.25,1)}
+  nav.main .pill{justify-content:flex-start;font-size:1.15rem;padding:16px 22px}
+  nav.main .lang{align-self:flex-start;margin:4px 0 0}
+  .top .wrap{position:relative}
+}

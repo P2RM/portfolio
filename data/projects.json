@@ -1966,6 +1966,22 @@
       "render": [
         [
           "§",
+          "Les recherches",
+          "Une seule feuille parmi les dizaines de pages de croquis : chercher le A, la montagne et la flèche, à la main, avant de passer à l'ordinateur."
+        ],
+        [
+          "Une page de croquis",
+          [
+            [
+              "croquis",
+              "Exemple de recherche",
+              "#FFFFFF"
+            ]
+          ],
+          "large"
+        ],
+        [
+          "§",
           "Le logo",
           "Le symbole, le logotype et leurs déclinaisons."
         ],
@@ -2029,23 +2045,33 @@
           "Photos de la marque",
           [
             [
-              "photo-4",
-              "Les deux coloris · photo FERA Boxing",
-              "#000000"
-            ],
-            [
               "photo-1",
-              "Gant noir · photo FERA Boxing",
+              "Les deux coloris, noir et blanc · photo FERA Boxing",
               "#000000"
             ],
             [
               "photo-2",
-              "Gants blancs · photo FERA Boxing",
+              "Les gants blancs · photo FERA Boxing",
               "#000000"
             ],
             [
               "photo-3",
-              "Équipement FERA · photo FERA Boxing",
+              "Gros plan sur la sangle et le nom FERA · photo FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-4",
+              "Le logotype sur le cuir · photo FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-5",
+              "En garde · photo FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-6",
+              "L'équipement complet sur le ring · photo FERA Boxing",
               "#000000"
             ]
           ],
@@ -2147,6 +2173,22 @@
       "render": [
         [
           "§",
+          "The research",
+          "Just one sheet out of dozens of sketch pages: exploring the A, the mountain and the arrow by hand, before moving to the computer."
+        ],
+        [
+          "A page of sketches",
+          [
+            [
+              "croquis",
+              "Research sample",
+              "#FFFFFF"
+            ]
+          ],
+          "large"
+        ],
+        [
+          "§",
           "The logo",
           "The symbol, the wordmark and their variations."
         ],
@@ -2210,23 +2252,33 @@
           "Brand photos",
           [
             [
-              "photo-4",
-              "Both colours · photo by FERA Boxing",
-              "#000000"
-            ],
-            [
               "photo-1",
-              "Black glove · photo by FERA Boxing",
+              "Both colours, black and white · photo by FERA Boxing",
               "#000000"
             ],
             [
               "photo-2",
-              "White gloves · photo by FERA Boxing",
+              "The white gloves · photo by FERA Boxing",
               "#000000"
             ],
             [
               "photo-3",
-              "FERA gear · photo by FERA Boxing",
+              "Close-up of the strap and the FERA name · photo by FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-4",
+              "The wordmark on the leather · photo by FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-5",
+              "In guard · photo by FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-6",
+              "Full gear in the ring · photo by FERA Boxing",
               "#000000"
             ]
           ],
