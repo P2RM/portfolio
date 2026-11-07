@@ -29,6 +29,9 @@ fr:{
   s_context:"Contexte", s_feat:"Réalisations", s_process:"Méthode", s_gallery:"Galerie", s_results:"Résultats & apprentissages",
   g_desk:"Site desktop", g_mob:"Version mobile", g_idn:"Identité visuelle", palette:"Palette",
   prev:"Projet précédent", next:"Projet suivant",
+  visit:"Voir le site", s_brief:"En bref", b_defi:"Défi", b_done:"Ce que j'ai fait", b_res:"Résultat",
+  s_flow:"Déroulement", s_dec:"Décisions", s_render:"Rendu", s_result:"Résultat", s_learn:"Ce que j'en retiens", delivered:"Livré",
+  car_prev:"Image précédente", car_next:"Image suivante",
   about_title:"À propos",
   bio:["Je suis Pierre Matthey, étudiant en Bachelor Ingénierie des médias à la HEIG-VD. Avant le numérique, je me suis formé au graphisme : CFC de graphiste à l'École d'arts appliqués de La Chaux-de-Fonds, avec une maturité professionnelle.", "Curieux et rigoureux, j'aime faire le lien entre le design et la technique : partir d'une idée, lui donner une forme, puis la développer jusqu'au produit fini.", "Aujourd'hui, je travaille à la frontière entre la technique et la communication : je développe des applications web, je conçois des interfaces et je construis les stratégies qui les font exister.", "En parallèle des études, je travaille pour la Ville de La Chaux-de-Fonds, sur des manifestations officielles et en logistique scolaire. Ces postes m'apprennent à m'organiser sous pression, à collaborer avec des équipes très différentes et à représenter une institution face au public : des réflexes que j'applique directement dans mes projets."],
   tl:[["Formation", [["2024 – en cours", "Bachelor HES-SO en Ingénierie des médias", "HEIG-VD, Yverdon-les-Bains. Développement web et mobile, UX/UI, communication et marketing digital, gestion de projet."], ["2019 – 2023", "CFC de graphiste", "École d'arts appliqués, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Maturité professionnelle", "CPNE, La Chaux-de-Fonds."]]], ["Expérience", [["Depuis 07.2025", "Auxiliaire logistique scolaire", "École obligatoire de La Chaux-de-Fonds, en parallèle des études. Préparation et livraison des fournitures, aménagement et déménagement des classes."], ["Depuis 01.2025", "Auxiliaire manifestation", "Ville de La Chaux-de-Fonds, Chancellerie communale, en parallèle des études. Coordination logistique sur le terrain, représentation de la Ville et accueil des invités."], ["02 – 06.2024", "Opérateur en ébavurage", "EIC Ébavurage Industriel & Conseils SA. Ébavurage de pièces horlogères, préparation des colis, entretien des machines CNC."], ["12.2023 – 01.2024", "Employé en intendance", "Réseau hospitalier neuchâtelois. Entretien des chambres et des locaux, ravitaillement des étages."], ["06 – 10.2022", "Stage de graphiste", "Numéro10, agence de communication. Concepts et éléments graphiques, contenus pour les réseaux sociaux, storyboards, montage vidéo et shootings photo."]]], ["Langues & intérêts", [["Langues", "Français, anglais, allemand", "Langue maternelle · B2 · B1"], ["Intérêts", "Sport, musique, cinéma", "Boxe et football."]]]],
@@ -65,6 +68,9 @@ en:{
   s_context:"Context", s_feat:"What I built", s_process:"Process", s_gallery:"Gallery", s_results:"Results & takeaways",
   g_desk:"Desktop site", g_mob:"Mobile version", g_idn:"Visual identity", palette:"Palette",
   prev:"Previous project", next:"Next project",
+  visit:"Visit the site", s_brief:"At a glance", b_defi:"Challenge", b_done:"What I did", b_res:"Outcome",
+  s_flow:"Process", s_dec:"Key decisions", s_render:"Deliverables", s_result:"Outcome", s_learn:"What I took away", delivered:"Delivered",
+  car_prev:"Previous image", car_next:"Next image",
   about_title:"About",
   bio:["I'm Pierre Matthey, a BSc Media Engineering student at HEIG-VD in Switzerland. Before going digital, I trained as a graphic designer: a Federal VET Diploma in graphic design from the School of Applied Arts in La Chaux-de-Fonds, with a vocational baccalaureate.", "Curious and rigorous, I like bridging design and technology: taking an idea, giving it a shape, then building it into a finished product.", "Today I work where technology meets communication: I build web applications, design interfaces and shape the strategies that bring them to life.", "Alongside my studies, I work for the City of La Chaux-de-Fonds, at official events and in school logistics. These roles teach me to stay organised under pressure, work with very different teams and represent an institution in front of the public: habits I bring straight into my projects."],
   tl:[["Education", [["2024 – ongoing", "BSc HES-SO in Media Engineering", "HEIG-VD, Yverdon-les-Bains. Web and mobile development, UX/UI, digital communication and marketing, project management."], ["2019 – 2023", "Federal VET Diploma in graphic design", "School of Applied Arts, CPNE, La Chaux-de-Fonds."], ["2019 – 2022", "Vocational baccalaureate", "CPNE, La Chaux-de-Fonds."]]], ["Experience", [["Since 07.2025", "School logistics assistant", "Compulsory schools of La Chaux-de-Fonds, alongside my studies. Preparing and delivering school supplies, setting up and moving classrooms."], ["Since 01.2025", "Events assistant", "City of La Chaux-de-Fonds, Town Chancellery, alongside my studies. On-site logistics, representing the City and welcoming guests."], ["02 – 06.2024", "Deburring operator", "EIC Ébavurage Industriel & Conseils SA. Deburring watch parts, preparing parcels, maintaining CNC machines."], ["12.2023 – 01.2024", "Housekeeping staff", "Neuchâtel Hospital Network. Cleaning rooms and premises, restocking wards."], ["06 – 10.2022", "Graphic design internship", "Numéro10, communication agency. Graphic concepts and assets, social media content, storyboards, video editing and photo shoots."]]], ["Languages & interests", [["Languages", "French, English, German", "Native · B2 · B1"], ["Interests", "Sport, music, cinema", "Boxing and football."]]]],
@@ -157,8 +163,8 @@ function rowsHTML(list){
     const L = p[lang], n = p.name.toUpperCase(), m = Math.ceil(n.length/2);
     return `<a class="row" href="#p-${p.slug}">
       <span class="meta">${esc(p.year)}</span>
-      <span class="name" aria-label="${esc(p.name)}"><span>${esc(n.slice(0,m))}</span><span class="pop">${art(p.slug, p.pal, 6, 2)}</span><span>${esc(n.slice(m))}</span></span>
-      <span class="meta r"><span>${esc(L.cat)}</span><span class="demo">${t("demo")}</span></span></a>`;
+      <span class="name" aria-label="${esc(p.name)}"><span>${esc(n.slice(0,m))}</span><span class="pop">${p.cover ? `<img src="${p.cover}" alt="">` : art(p.slug, p.pal, 6, 2)}</span><span>${esc(n.slice(m))}</span></span>
+      <span class="meta r"><span>${esc(L.cat)}</span>${p.demo ? `<span class="demo">${t("demo")}</span>` : ""}</span></a>`;
   }).join("") + `</div>`;
 }
 function cta(){
@@ -241,6 +247,7 @@ function viewProjects(){
     <section class="wrap" style="padding-bottom:20px">${rowsHTML(list)}</section>${cta()}`;
 }
 function viewProject(p){
+  if(p.case) return viewCase(p);
   const L = p[lang], i = P.indexOf(p), prev = P[(i-1+P.length)%P.length], next = P[(i+1)%P.length];
   const shapes = ["o","q","t","s"];
   const gal = p.gal.map((g,k) => {
@@ -279,6 +286,60 @@ function viewProject(p){
     <p class="lead">${esc(L.learn)}</p></div></div></section>
   <div class="wrap"><nav class="pn" aria-label="Projets"><a href="#p-${prev.slug}"><span class="mono">← ${t("prev")}</span><b>${esc(prev.name)}</b></a><a href="#p-${next.slug}"><span class="mono">${t("next")} →</span><b>${esc(next.name)}</b></a></nav></div>
   ${cta()}`;
+}
+/* Étude de cas : en-tête, en bref, contexte, déroulement, décisions (image fixe), rendu, résultat */
+function viewCase(p){
+  const L = p[lang], i = P.indexOf(p), prev = P[(i-1+P.length)%P.length], next = P[(i+1)%P.length];
+  const src = k => `img/projets/${p.slug}/${k}.webp`;
+  const img = (k, alt) => `<img src="${src(k)}" alt="${esc(alt)}" loading="lazy" decoding="async">`;
+  const head = label => `<div class="c-head"><span class="mono">${label}</span></div>`;
+  const shapes = ["o","q","t","s"], cols = ["lilac","mint","peach","butter"];
+  const n = (L.dec || []).length, pad = k => String(k).padStart(2,"0");
+  const para = v => Array.isArray(v) ? `<ul class="c-list">${v.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>` : `<p>${esc(v)}</p>`;
+  return `<div class="case${p.natural ? " natural" : ""}" style="--c-bg:${p.bg || "var(--paper)"}">
+  <section class="wrap c-hero fade">
+    <a class="back mono" href="#projets">${t("back")}</a>
+    <span class="mono">${esc(L.kicker)} · ${esc(p.year)}</span>
+    <div class="c-title"><h1>${esc(p.name)}</h1>${p.url ? `<a class="pill" href="${p.url}" target="_blank" rel="noopener">${t("visit")} ↗</a>` : ""}</div>
+    <p class="c-intro">${esc(L.intro)}</p>${L.with ? `<p class="c-with">${esc(L.with)}</p>` : ""}
+    <dl class="c-facts">${L.facts.map(f=>`<div><dt class="mono">${esc(f[0])}</dt><dd>${esc(f[1])}</dd></div>`).join("")}</dl>
+    ${L.credit ? `<div class="c-credit">${shapeEl("s","butter")}<p>${esc(L.credit)}${p.insta ? ` <a href="${p.insta}" target="_blank" rel="noopener">${esc(p.instaLabel || "Instagram")} ↗</a>` : ""}</p></div>` : ""}
+  </section>
+  <div class="wrap">${p.coverKeys ? `<div class="c-duo">${p.coverKeys.map((k,i)=>`<div class="c-cover">${img(k, L.cover_alts[i])}</div>`).join("")}</div>` : `<div class="c-cover">${img(p.coverKey, L.cover_alt)}</div>`}</div>
+  <section class="wrap c-sec">${head(t("s_brief"))}
+    <div class="c-brief">
+      <div>${shapeEl("o","lilac")}<h3 class="mono">${t("b_defi")}</h3><p>${esc(L.brief[0])}</p></div>
+      <div>${shapeEl("q","mint")}<h3 class="mono">${t("b_done")}</h3><p>${esc(L.brief[1])}</p></div>
+      <div class="res">${shapeEl("t","peach")}<h3 class="mono">${t("b_res")}</h3><b>${esc(L.brief[2][0])}</b><p>${esc(L.brief[2][1])}</p></div>
+    </div></section>
+  <section class="wrap c-sec">${head(t("s_context"))}
+    <div class="c-ctx">${(L.ctx || []).map(c=>`<div><h3>${esc(c[0])}</h3>${para(c[1])}</div>`).join("")}</div></section>
+  ${L.quote ? `<section class="wrap quote"><div class="mark">${shapes.slice(0,3).map((s,k)=>`<i class="sh-${s} c-${cols[k]}"></i>`).join("")}</div><blockquote>« ${esc(L.quote)} »</blockquote><span class="mono">${esc(L.quote_by)}</span></section>` : ""}
+  ${L.flow ? `<section class="wrap c-sec">${head(t("s_flow"))}
+    <ol class="c-flow">${L.flow.map((f,k)=>`<li>${shapeEl(shapes[k%4],cols[k%4])}<span class="mono">${pad(k+1)}</span><b>${esc(f)}</b></li>`).join("")}</ol>
+    ${L.photo ? `<figure class="c-photo">${img(L.photo[0], L.photo[1])}<figcaption class="car-cap">${esc(L.photo[1])}</figcaption></figure>` : ""}</section>` : ""}
+  ${n ? `<section class="wrap c-sec dec-sec">${head(t("s_dec"))}
+    <div class="dec">
+      <div class="dec-media" aria-hidden="true"><div class="dec-stick"><div class="dec-frame">${L.dec.map((d,k)=>`<img class="dec-img${k?"":" on"}" src="${src(d[2])}" alt="" decoding="async">`).join("")}</div></div></div>
+      <ol class="dec-steps">${L.dec.map((d,k)=>`<li class="dec-step${k?"":" on"}" data-k="${k}">
+        <figure class="dec-m">${img(d[2], d[3])}</figure>
+        <span class="mono">${pad(k+1)} / ${pad(n)}</span><h3>${esc(d[0])}</h3><p>${esc(d[1])}</p></li>`).join("")}</ol>
+    </div></section>` : ""}
+  ${(L.more || []).map(m=>`<section class="wrap c-sec">${head(esc(m[0]))}
+    <div class="c-ctx">${m[1].map(c=>`<div><h3>${esc(c[0])}</h3>${para(c[1])}</div>`).join("")}</div></section>`).join("")}
+  <section class="wrap c-sec">${head(t("s_render"))}
+    <div class="c-render">${L.render.map(g=> g[0]==="§" ? `<div class="c-sub"><h3>${esc(g[1])}</h3>${g[2] ? `<p>${esc(g[2])}</p>` : ""}</div>` : `<div class="car${g[2] ? " wide" : ""}">
+      <h3>${esc(g[0])}</h3>
+      <div class="car-track"${g[1].length>1 ? ` tabindex="0"` : ""}>${g[1].map(it=>`<figure${it[2] ? ` style="background:${it[2]}"` : ""}>${img(it[0], it[1])}</figure>`).join("")}</div>
+      <div class="car-bar"><span class="car-cap">${esc(g[1][0][1])}</span>${g[1].length>1 ? `<div class="car-nav"><span class="mono car-n">1 / ${g[1].length}</span><button type="button" data-d="-1" aria-label="${t("car_prev")}">←</button><button type="button" data-d="1" aria-label="${t("car_next")}">→</button></div>` : ""}</div></div>`).join("")}</div></section>
+  <section class="wrap c-sec">${head(t("s_result"))}
+    <div class="c-result">
+      <div class="metrics">${L.res.met.map((m,k)=>`<div class="metric c-${cols[k%4]}"><b>${esc(m[0])}</b><span>${esc(m[1])}</span></div>`).join("")}</div>
+      <div class="c-ctx"><div><h3>${t("delivered")}</h3><p>${esc(L.res.deliv)}</p></div>${p.url ? `<div><span></span><div><a class="pill ghost" href="${p.url}" target="_blank" rel="noopener">${t("visit")} ↗</a>${L.res.note ? `<p class="c-note">${esc(L.res.note)}</p>` : ""}</div></div>` : ""}</div>
+    </div></section>
+  <section class="wrap c-sec">${head(t("s_learn"))}<p class="c-learn">${esc(L.learn)}</p></section>
+  <div class="wrap"><nav class="pn" aria-label="Projets"><a href="#p-${prev.slug}"><span class="mono">← ${t("prev")}</span><b>${esc(prev.name)}</b></a><a href="#p-${next.slug}"><span class="mono">${t("next")} →</span><b>${esc(next.name)}</b></a></nav></div>
+  ${cta()}</div>`;
 }
 function viewAbout(){
   const vc = [["o","lilac"],["q","mint"],["s","peach"]];
@@ -367,7 +428,7 @@ async function copyText(txt, btn){
   catch(e){ const el=document.getElementById("mail-v"); if(el){ const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r);} }
 }
 /* Apparition discrète des blocs au scroll */
-const REVEAL = ".sec-head, .skills .intro, .acc .sk, .marquee, .index .row, .more, .cta, .cover, .facts, .p-sec, .quote, .pn, .bio > p, .tl-h, .tl > div, .values .value";
+const REVEAL = ".sec-head, .skills .intro, .acc .sk, .marquee, .index .row, .more, .cta, .cover, .facts, .p-sec, .c-cover, .c-sec:not(.dec-sec), .c-facts, .quote, .pn, .bio > p, .tl-h, .tl > div, .values .value";
 let revealObs = null;
 function reveal(){
   if(revealObs) revealObs.disconnect();
@@ -383,8 +444,30 @@ function reveal(){
   }, {rootMargin: "0px 0px -8% 0px"});
   app.querySelectorAll(REVEAL).forEach(el => { el.classList.add("rv"); revealObs.observe(el); });
 }
+/* Décisions : le texte au centre de l'écran choisit l'image affichée dans le cadre fixe */
+let decObs = null;
+function bindCase(){
+  if(decObs) decObs.disconnect();
+  const steps = [...app.querySelectorAll(".dec-step")], imgs = [...app.querySelectorAll(".dec-img")];
+  if(steps.length && "IntersectionObserver" in window){
+    const set = k => { steps.forEach((s,j) => s.classList.toggle("on", j===k)); imgs.forEach((m,j) => m.classList.toggle("on", j===k)); };
+    decObs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting) set(+e.target.dataset.k); }), {rootMargin:"-45% 0px -45% 0px"});
+    steps.forEach(s => decObs.observe(s));
+  }
+  /* Rendu : carrousels à défilement horizontal, flèches + compteur */
+  app.querySelectorAll(".car").forEach(c => {
+    const tr = c.querySelector(".car-track"), num = c.querySelector(".car-n"), cap = c.querySelector(".car-cap"); if(!num) return;
+    const count = tr.children.length, idx = () => Math.round(tr.scrollLeft / tr.clientWidth);
+    const caps = [...tr.querySelectorAll("img")].map(i => i.alt);
+    c.querySelectorAll("[data-d]").forEach(b => b.onclick = () => {
+      const k = (idx() + +b.dataset.d + count) % count;
+      tr.scrollTo({left: k * tr.clientWidth, behavior: "smooth"});
+    });
+    tr.addEventListener("scroll", () => { const k = idx(); num.textContent = `${k+1} / ${count}`; cap.textContent = caps[k]; }, {passive:true});
+  });
+}
 function bind(){
-  reveal();
+  reveal(); bindCase();
   app.querySelectorAll("[data-filter]").forEach(b => b.onclick = () => { filter = b.dataset.filter; app.innerHTML = viewProjects(); bind(); });
   if(matchMedia("(hover: none)").matches) app.querySelectorAll(".sk").forEach(el => el.onclick = () => el.classList.toggle("open"));
   app.querySelectorAll("[data-copy]").forEach(b => b.onclick = () => copyText(b.dataset.copy, b));

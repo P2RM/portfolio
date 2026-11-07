@@ -138,11 +138,11 @@ section.block{padding-block:clamp(56px,8vw,96px)}
 .row .meta.r{display:flex;flex-direction:column;align-items:flex-end;gap:6px;text-align:right}
 .row .name{display:flex;justify-content:center;align-items:center;font-family:var(--f-display);font-weight:780;font-size:clamp(2.1rem,7.4vw,5.6rem);line-height:1;letter-spacing:-.03em;text-transform:uppercase;min-width:0}
 .row .pop{display:inline-block;width:0;height:.72em;border-radius:999px;overflow:hidden;transition:width .5s cubic-bezier(.6,0,.2,1),margin .5s cubic-bezier(.6,0,.2,1);flex:none}
-.row .pop svg{width:2.3em;height:.72em;display:block;transform:scale(.4);transition:transform .5s cubic-bezier(.6,0,.2,1)}
+.row .pop > *{width:2.3em;object-fit:cover;height:.72em;display:block;transform:scale(.4);transition:transform .5s cubic-bezier(.6,0,.2,1)}
 .row:hover .pop,.row:focus-visible .pop{width:2.3em;margin:0 .18em}
-.row:hover .pop svg,.row:focus-visible .pop svg{transform:scale(1)}
+.row:hover .pop > *,.row:focus-visible .pop > *{transform:scale(1)}
 .row .demo{font:500 .62rem var(--f-mono);padding:3px 7px;border-radius:999px;background:var(--butter);color:var(--ink);white-space:nowrap}
-@media (hover:none){.row .pop{width:1.4em;margin:0 .14em}.row .pop svg{transform:scale(1);width:1.4em}}
+@media (hover:none){.row .pop{width:1.4em;margin:0 .14em}.row .pop > *{transform:scale(1);width:1.4em}}
 @media (max-width:640px){.row{grid-template-columns:minmax(0,1fr)}.row .meta{display:none}.row .name{font-size:clamp(1.8rem,10vw,3rem)}}
 .more{margin-top:26px;display:flex;justify-content:flex-end}
 
@@ -226,6 +226,108 @@ section.block{padding-block:clamp(56px,8vw,96px)}
 .pn a + a{text-align:right;border-left:1.5px solid var(--ink);padding-left:20px}
 .pn b{font-family:var(--f-display);font-size:clamp(1.4rem,3.4vw,2.6rem);text-transform:uppercase;letter-spacing:-.02em;font-weight:760}
 .demo-note{display:inline-flex;gap:8px;align-items:center;font:500 .72rem var(--f-mono);background:var(--butter);padding:5px 10px;border-radius:999px}
+
+/* Étude de cas (vrais projets) */
+.c-hero{padding-block:clamp(36px,6vw,70px) 34px;display:grid;gap:14px}
+.c-hero .back{display:inline-flex;gap:8px;align-items:center;text-decoration:none;margin-bottom:14px;justify-self:start}
+.c-title{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.c-title h1{font-size:clamp(3rem,10vw,8rem);font-weight:780;text-transform:uppercase;letter-spacing:-.035em;line-height:.9}
+.c-intro{font-family:var(--f-display);font-size:clamp(1.2rem,2.4vw,1.8rem);font-weight:500;max-width:36ch;line-height:1.2;margin-top:8px}
+.c-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px 24px;margin:22px 0 0;padding-top:18px;border-top:1.5px solid var(--ink)}
+.c-with{color:var(--ink-2)}
+.c-facts dt{margin-bottom:6px}
+/* mention de crédits (photos d'un client, périmètre du mandat) */
+.c-credit{display:flex;gap:12px;align-items:flex-start;margin-top:10px;padding:14px 18px;border-radius:16px;background:var(--paper);max-width:760px}
+.c-credit i{width:16px;height:16px;flex:none;display:block;margin-top:4px}
+.c-credit p{font-size:.95rem}
+.c-credit a{white-space:nowrap}
+.c-facts dd{margin:0;font-weight:500}
+.c-cover{border-radius:var(--r);overflow:hidden;aspect-ratio:16/9;background:var(--c-bg)}
+/* contain : le mockup entier reste visible, le fond du cadre prolonge celui de l'image */
+.c-cover img{width:100%;height:100%;object-fit:contain;display:block}
+.c-sec{padding-top:clamp(48px,7vw,88px)}
+.c-head{border-bottom:1.5px solid var(--ink);padding-bottom:12px;margin-bottom:clamp(24px,4vw,40px)}
+.c-head .mono{color:var(--ink)}
+.c-brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.c-brief > div{background:var(--paper);border-radius:var(--r);padding:clamp(20px,3vw,30px);display:grid;gap:10px;align-content:start}
+.c-brief i{width:22px;height:22px;display:block;margin-bottom:6px}
+.c-brief h3{margin:0}
+.c-brief .res b{font-family:var(--f-display);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:700;line-height:1;letter-spacing:-.03em}
+.c-brief .res p{color:var(--ink-2)}
+.c-ctx{display:grid;gap:clamp(24px,4vw,40px)}
+.c-ctx > div{display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px}
+.c-ctx h3{font-size:1.15rem}
+.c-ctx p,.c-ctx ul{max-width:62ch;font-size:1.08rem}
+.c-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.c-list li{position:relative;padding-left:22px}
+.c-list li::before{content:"";position:absolute;left:0;top:.5em;width:9px;height:9px;border-radius:2px;background:var(--ink);transform:rotate(45deg) scale(.85)}
+.quote .mono{display:block;margin-top:18px}
+.c-flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.c-flow li{background:var(--paper);border-radius:16px;padding:16px 18px;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:4px 12px}
+.c-flow li i{width:20px;height:20px;display:block;grid-row:span 2}
+.c-flow b{font-family:var(--f-display);font-size:1.05rem;font-weight:600}
+.dec{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,64px)}
+.dec-media{order:2}
+.dec-stick{position:sticky;top:96px;height:calc(100vh - 130px);display:flex;align-items:center}
+.dec-frame{position:relative;width:100%;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:var(--c-bg)}
+/* fondu : la nouvelle image apparaît par-dessus, l'ancienne ne disparaît qu'ensuite (pas de flash gris) */
+.dec-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 0s .6s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.dec-img.on{opacity:1;z-index:1;transition:opacity .6s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.dec-steps{list-style:none;margin:0;padding:0}
+.dec-step{min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:12px;opacity:.3;transition:opacity .5s ease}
+.dec-step.on{opacity:1}
+.dec-step h3{font-size:clamp(1.5rem,2.8vw,2.2rem)}
+.dec-step p{color:var(--ink-2);font-size:1.05rem;max-width:44ch}
+.dec-m{display:none;margin:0 0 8px;border-radius:var(--r);overflow:hidden}
+.dec-m img{display:block;width:100%;height:auto}
+/* Rendu : grille de carrousels, légende + compteur + flèches sous l'image */
+.c-render{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(36px,5vw,56px) clamp(20px,3vw,32px)}
+.car{min-width:0}
+.car h3{font-size:clamp(1.3rem,2.4vw,1.8rem);margin-bottom:14px}
+.car-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:var(--r)}
+.car-track::-webkit-scrollbar{display:none}
+.car figure{flex:0 0 100%;margin:0;scroll-snap-align:start;position:relative;overflow:hidden;aspect-ratio:16/9;background:var(--c-bg)}
+.car figure img{width:100%;height:100%;object-fit:contain;display:block}
+.car-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px;min-height:42px}
+.car-cap{font-size:.92rem;color:var(--ink-2)}
+.car-nav{display:flex;align-items:center;gap:8px;flex:none}
+.car-nav .mono{margin-right:6px}
+.car-nav button{width:42px;height:42px;border:0;border-radius:50%;background:var(--ink);color:var(--paper);font-size:1rem;cursor:pointer;transition:transform .2s ease}
+.car-nav button:hover{transform:translateY(-3px)}
+/* schémas (user flow, design system) : image entière à sa vraie proportion, dans une colonne de la grille */
+.c-render{align-items:start}
+/* une galerie seule juste avant les schémas prend toute la ligne, pour que les schémas restent côte à côte */
+.car:not(.wide):has(+ .car.wide + .car.wide){grid-column:1/-1}
+.car.wide figure{aspect-ratio:auto}
+.car.wide figure img{height:auto}
+/* sous-titre d'espace (site public, entreprise, admin) ; un carrousel seul dans son espace prend toute la ligne */
+.c-sub{grid-column:1/-1;display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;padding-top:18px;border-top:1px solid var(--line)}
+.c-sub:first-child{border-top:0;padding-top:0}
+.c-sub h3{font-size:clamp(1.5rem,2.8vw,2.2rem)}
+.c-sub p{color:var(--ink-2);max-width:56ch;font-size:1.05rem;align-self:end}
+.c-sub + .car:not(.wide):has(+ .c-sub),.c-sub + .car:not(.wide):last-child{grid-column:1/-1}
+/* images à leur format d'origine, centrées (projets aux visuels carrés ou portrait) */
+.c-sub + .car.wide:has(+ .c-sub),.c-sub + .car.wide:last-child{grid-column:1/-1;width:min(100%,640px);justify-self:center}
+.case.natural .car-track{align-items:center}
+.case.natural .c-cover{aspect-ratio:auto;width:min(100%,720px);margin-inline:auto}
+.case.natural .c-cover img{height:auto}
+/* deux visuels côte à côte en tête de page (ex. les deux coloris) */
+.c-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.case.natural .c-duo .c-cover{width:100%}
+@media (max-width:640px){.c-duo{grid-template-columns:1fr}}
+.case.natural .dec-frame{aspect-ratio:1/1}
+.c-photo{margin:clamp(28px,4vw,40px) 0 0}
+.c-photo img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 70%;border-radius:var(--r)}
+.c-photo figcaption{display:block;margin-top:12px}
+@media (max-width:760px){.c-render{grid-template-columns:1fr}.c-sub{grid-template-columns:1fr;gap:8px}}
+.c-result{display:grid;gap:clamp(28px,4vw,40px)}
+.c-result .metrics{margin:0}
+.c-note{margin-top:12px;color:var(--ink-2);font-size:.95rem}
+.case .pn{margin-top:clamp(48px,7vw,88px);border-top:1.5px solid var(--ink)}
+.c-learn{font-family:var(--f-display);font-size:clamp(1.3rem,2.6vw,2rem);font-weight:500;line-height:1.25;max-width:40ch}
+@media (max-width:900px){.c-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.dec{grid-template-columns:1fr}.dec-media{display:none}.dec-step{min-height:0;opacity:1;padding-bottom:28px}.dec-m{display:block}.c-brief{grid-template-columns:1fr}}
+@media (max-width:760px){.c-ctx > div{grid-template-columns:1fr;gap:10px}.c-facts{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.c-flow{grid-template-columns:1fr}}
 
 /* À propos */
 .about{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(28px,5vw,64px);padding-block:clamp(40px,7vw,80px) 40px;align-items:start}
@@ -320,15 +422,15 @@ footer nav a:hover{background-size:100% 1.5px}
 .step{transition:transform .3s ease}
 .step:hover{transform:translateY(-3px)}
 /* Valeurs : la forme tourne, comme dans les compétences (rotate garde le transform propre au losange) */
-.value i{transition:rotate .35s}
-.value:hover i{rotate:90deg}
+.value i,.c-brief i,.c-flow i{transition:rotate .35s}
+.value:hover i,.c-brief > div:hover i,.c-flow li:hover i{rotate:90deg}
 .tl > div > div{transition:transform .3s ease}
 .tl > div .mono{transition:color .3s}
 .tl > div:hover > div{transform:translateX(6px)}
 .tl > div:hover .mono{color:var(--ink)}
 /* Zoom fluide au survol de toutes les images */
-.portrait img,.cover svg,.feat .vis svg,.screen svg,.idn-box .frame > svg{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
-.portrait:hover img,.cover:hover svg,.feat .vis:hover svg,.screen:hover svg,.idn-box .frame:hover > svg{transform:scale(1.06)}
+.portrait img,.cover svg,.feat .vis svg,.screen svg,.idn-box .frame > svg,.c-cover img,.car figure img,.dec-frame img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.portrait:hover img,.cover:hover svg,.feat .vis:hover svg,.screen:hover svg,.idn-box .frame:hover > svg,.c-cover:hover img,.car figure:hover img,.dec-frame:hover img{transform:scale(1.06)}
 .pn b{display:inline-block;transition:transform .3s ease}
 .pn a:hover b{transform:translateX(-6px)}
 .pn a + a:hover b{transform:translateX(6px)}

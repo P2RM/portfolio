@@ -1,5 +1,2265 @@
 [
   {
+    "slug": "ambral",
+    "name": "Ambral",
+    "year": "2025",
+    "cat": "web",
+    "case": true,
+    "url": "https://ambral.ch/",
+    "cover": "img/projets/ambral/accueil.webp",
+    "coverKey": "accueil",
+    "fr": {
+      "cat": "E-commerce",
+      "kicker": "Projet académique",
+      "intro": "AMBRAL est une marque de parfums inspirés des grandes maisons, vendus à prix accessibles. J'ai créé la marque et sa boutique en ligne de A à Z, de la stratégie au marketing.",
+      "facts": [
+        [
+          "Cadre",
+          "Cours d'e-commerce · HEIG-VD"
+        ],
+        [
+          "Durée",
+          "Un semestre"
+        ],
+        [
+          "Équipe",
+          "Projet individuel"
+        ]
+      ],
+      "cover_alt": "Page d'accueil d'AMBRAL sur un ordinateur portable",
+      "brief": [
+        "Créer une boutique en ligne crédible et la piloter comme un vrai commerce : produits, paiement, logistique et marketing.",
+        "J'ai tout mené seul : la stratégie, l'identité visuelle, le site WordPress et WooCommerce, les fiches produit, le SEO, les réseaux sociaux et la newsletter.",
+        [
+          "98/100",
+          "performance de la page d'accueil (Google PageSpeed)"
+        ]
+      ],
+      "ctx": [
+        [
+          "Cadre",
+          "Cours d'e-commerce de 2e année du Bachelor en Ingénierie des médias à la HEIG-VD. Chaque étudiant crée et gère sa propre boutique en ligne, fictive mais complète."
+        ],
+        [
+          "Point de départ",
+          "Le marché des dupes de parfums grandit vite, mais les cinq concurrents analysés laissaient de la place : Fragrenza ne vend que des parfums, Éclat n'existe qu'en allemand, Byoucosmétiques disperse son offre et Perfume Oil Expressions reste très cher. Il manquait une marque claire, abordable et pensée pour la Suisse."
+        ],
+        [
+          "Contraintes",
+          [
+            "trois modes de vente : produits en nom propre, impression à la demande et affiliation Amazon ;",
+            "WordPress et WooCommerce, avec un thème gratuit, rapide et adapté au mobile ;",
+            "le paiement par PayPal et par virement bancaire ;",
+            "le SEO, Google Analytics, trois réseaux sociaux, une newsletter et un plan publicitaire de 3 000 CHF ;",
+            "l'IA générative pour les contenus et les fiches produit ;",
+            "la mention « site fictif » sur toutes les pages."
+          ]
+        ]
+      ],
+      "quote": "Vivre l'émotion des grands parfums, à portée de main.",
+      "quote_by": "Positionnement d'AMBRAL",
+      "flow": [
+        "Stratégie",
+        "Identité visuelle",
+        "Maquettes",
+        "Boutique",
+        "Fiches produit",
+        "Contenus",
+        "Marketing",
+        "Mesure"
+      ],
+      "dec": [
+        [
+          "Un luxe accessible pour les 18–35 ans",
+          "J'ai étudié cinq concurrents pour trouver une place libre : des parfums fidèles aux grandes maisons et qui tiennent, à 15 CHF en 35 ml et 35 CHF en 100 ml.",
+          "accueil",
+          "Page d'accueil d'AMBRAL"
+        ],
+        [
+          "Trois rayons, trois façons de vendre",
+          "Les parfums AMBRAL en vente directe, les produits dérivés imprimés à la demande avec Printful et les produits partenaires en affiliation Amazon. Chaque rayon est séparé, pour que le modèle reste lisible.",
+          "officiels",
+          "Rayon des produits officiels AMBRAL"
+        ],
+        [
+          "Des fiches produit pensées pour Google",
+          "Chaque fiche suit la même structure : description, raisons de choisir AMBRAL, conseils d'utilisation et produits similaires. L'IA a proposé une première version, que j'ai retravaillée avec Yoast SEO.",
+          "fiche-seo",
+          "Édition d'une fiche produit dans WordPress"
+        ],
+        [
+          "Rassurer à chaque étape de l'achat",
+          "Avis clients, livraison gratuite en Suisse, retours, paiements reconnus : les pages de réassurance sont regroupées dans le pied de page, accessibles partout sans alourdir le menu.",
+          "avis",
+          "Page des avis clients d'AMBRAL"
+        ],
+        [
+          "Des contenus qui conseillent avant de vendre",
+          "Un blog, une page conseils, une FAQ et des avis clients répondent aux vraies questions : choisir un parfum, le faire durer, comprendre ce qu'est un dupe. Chaque article renvoie vers la boutique.",
+          "blog",
+          "Page du blog d'AMBRAL"
+        ],
+        [
+          "Une newsletter qui accueille avec −10 %",
+          "À la première visite, un pop-in Brevo propose de s'inscrire et offre un code de bienvenue. Le formulaire reste accessible en pied de page.",
+          "newsletter",
+          "Pop-in d'inscription à la newsletter"
+        ]
+      ],
+      "render": [
+        [
+          "Le site",
+          [
+            [
+              "accueil",
+              "Accueil"
+            ],
+            [
+              "avis",
+              "Avis clients"
+            ],
+            [
+              "contact",
+              "Contact"
+            ]
+          ]
+        ],
+        [
+          "Trois façons de vendre",
+          [
+            [
+              "officiels",
+              "Parfums AMBRAL, en vente directe"
+            ],
+            [
+              "derives",
+              "Produits dérivés, imprimés à la demande"
+            ],
+            [
+              "partenaires",
+              "Produits partenaires, en affiliation Amazon"
+            ]
+          ]
+        ],
+        [
+          "Le blog",
+          [
+            [
+              "blog",
+              "Accueil du blog"
+            ]
+          ]
+        ],
+        [
+          "Identité visuelle",
+          [
+            [
+              "identite",
+              "Logo, monogramme « A », motif et typographies"
+            ]
+          ]
+        ],
+        [
+          "Les fiches produit",
+          [
+            [
+              "fiche-seo",
+              "Rédaction et optimisation SEO"
+            ]
+          ]
+        ],
+        [
+          "Newsletter",
+          [
+            [
+              "newsletter",
+              "Pop-in d'inscription"
+            ]
+          ]
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "98/100",
+            "performance de l'accueil"
+          ],
+          [
+            "100/100",
+            "bonnes pratiques"
+          ],
+          [
+            "3",
+            "modes de vente"
+          ]
+        ],
+        "deliv": "Une boutique en ligne complète : trois rayons, deux formats par parfum, le paiement par PayPal, carte et virement, un blog, une newsletter et trois réseaux sociaux (Instagram, TikTok, X)."
+      },
+      "learn": "Changer de thème WordPress en cours de route m'a coûté du temps, mais m'a appris à valider les choix techniques tôt. J'ai aussi compris qu'une marque tient par sa cohérence, du visuel au discours, et qu'il faut mesurer pour décider."
+    },
+    "en": {
+      "cat": "E-commerce",
+      "kicker": "Academic project",
+      "intro": "AMBRAL is a brand of fragrances inspired by the great perfume houses, sold at accessible prices. I built the brand and its online shop from start to finish, from strategy to marketing.",
+      "facts": [
+        [
+          "Setting",
+          "E-commerce course · HEIG-VD"
+        ],
+        [
+          "Duration",
+          "One semester"
+        ],
+        [
+          "Team",
+          "Solo project"
+        ]
+      ],
+      "cover_alt": "AMBRAL home page on a laptop",
+      "brief": [
+        "Build a credible online shop and run it like a real business: products, payment, logistics and marketing.",
+        "I handled everything myself: strategy, visual identity, the WordPress and WooCommerce site, product pages, SEO, social media and the newsletter.",
+        [
+          "98/100",
+          "home page performance (Google PageSpeed)"
+        ]
+      ],
+      "ctx": [
+        [
+          "Setting",
+          "Second-year e-commerce course in the BSc Media Engineering at HEIG-VD. Each student creates and runs their own online shop: fictional, but complete."
+        ],
+        [
+          "Starting point",
+          "The market for designer-fragrance dupes is growing fast, but the five competitors I studied left room: Fragrenza only sells perfume, Éclat is German-only, Byoucosmétiques spreads its range too thin and Perfume Oil Expressions stays very expensive. What was missing was a clear, affordable brand built for Switzerland."
+        ],
+        [
+          "Constraints",
+          [
+            "three sales models: own-brand products, print on demand and Amazon affiliation;",
+            "WordPress and WooCommerce, with a free, fast, mobile-friendly theme;",
+            "payment by PayPal and bank transfer;",
+            "SEO, Google Analytics, three social networks, a newsletter and a CHF 3,000 ad plan;",
+            "generative AI for content and product pages;",
+            "a \"fictional site\" notice on every page."
+          ]
+        ]
+      ],
+      "quote": "The emotion of great perfumes, within reach.",
+      "quote_by": "AMBRAL's positioning",
+      "flow": [
+        "Strategy",
+        "Visual identity",
+        "Wireframes",
+        "Shop",
+        "Product pages",
+        "Content",
+        "Marketing",
+        "Measurement"
+      ],
+      "dec": [
+        [
+          "Accessible luxury for 18–35 year-olds",
+          "I studied five competitors to find an open spot: fragrances true to the great houses and long-lasting, at CHF 15 for 35 ml and CHF 35 for 100 ml.",
+          "accueil",
+          "AMBRAL home page"
+        ],
+        [
+          "Three sections, three ways to sell",
+          "AMBRAL fragrances sold directly, merchandise printed on demand with Printful, and partner products through Amazon affiliation. Each section stands apart so the model stays clear.",
+          "officiels",
+          "AMBRAL official products section"
+        ],
+        [
+          "Product pages built for Google",
+          "Every page follows the same structure: description, why choose AMBRAL, how to wear it and similar products. AI drafted a first version, which I reworked with Yoast SEO.",
+          "fiche-seo",
+          "Editing a product page in WordPress"
+        ],
+        [
+          "Reassurance at every step of the purchase",
+          "Customer reviews, free delivery in Switzerland, returns, trusted payment methods: the reassurance pages sit in the footer, always within reach without cluttering the menu.",
+          "avis",
+          "AMBRAL customer reviews page"
+        ],
+        [
+          "Content that advises before it sells",
+          "A blog, a tips page, an FAQ and customer reviews answer real questions: choosing a perfume, making it last, understanding what a dupe is. Every article links back to the shop.",
+          "blog",
+          "AMBRAL blog page"
+        ],
+        [
+          "A newsletter that welcomes with 10% off",
+          "On the first visit, a Brevo pop-in invites people to subscribe and offers a welcome code. The form stays available in the footer.",
+          "newsletter",
+          "Newsletter sign-up pop-in"
+        ]
+      ],
+      "render": [
+        [
+          "The website",
+          [
+            [
+              "accueil",
+              "Home"
+            ],
+            [
+              "avis",
+              "Customer reviews"
+            ],
+            [
+              "contact",
+              "Contact"
+            ]
+          ]
+        ],
+        [
+          "Three ways to sell",
+          [
+            [
+              "officiels",
+              "AMBRAL fragrances, sold directly"
+            ],
+            [
+              "derives",
+              "Merchandise, printed on demand"
+            ],
+            [
+              "partenaires",
+              "Partner products, via Amazon affiliation"
+            ]
+          ]
+        ],
+        [
+          "The blog",
+          [
+            [
+              "blog",
+              "Blog home"
+            ]
+          ]
+        ],
+        [
+          "Visual identity",
+          [
+            [
+              "identite",
+              "Logo, \"A\" monogram, pattern and typefaces"
+            ]
+          ]
+        ],
+        [
+          "Product pages",
+          [
+            [
+              "fiche-seo",
+              "Writing and SEO optimisation"
+            ]
+          ]
+        ],
+        [
+          "Newsletter",
+          [
+            [
+              "newsletter",
+              "Sign-up pop-in"
+            ]
+          ]
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "98/100",
+            "home page performance"
+          ],
+          [
+            "100/100",
+            "best practices"
+          ],
+          [
+            "3",
+            "sales models"
+          ]
+        ],
+        "deliv": "A complete online shop: three sections, two sizes per fragrance, payment by PayPal, card and bank transfer, a blog, a newsletter and three social networks (Instagram, TikTok, X)."
+      },
+      "learn": "Switching WordPress themes midway cost me time, but taught me to validate technical choices early. I also learned that a brand holds together through consistency, from visuals to tone, and that you have to measure to decide."
+    },
+    "bg": "#7D7D7D"
+  },
+  {
+    "slug": "freedge",
+    "name": "Freedge",
+    "year": "2026",
+    "cat": "ux",
+    "case": true,
+    "bg": "#677A5D",
+    "cover": "img/projets/freedge/carte.webp",
+    "coverKey": "carte",
+    "fr": {
+      "cat": "UX/UI design",
+      "kicker": "Projet académique",
+      "intro": "En Suisse, 2,8 millions de tonnes de nourriture sont gaspillées chaque année, pendant que 708 000 personnes vivent sous le seuil de pauvreté. Nous avons conçu Freedge : une app mobile pour trouver les frigos solidaires de son quartier, y déposer ses surplus ou s'y servir.",
+      "with": "En collaboration avec Ella Maiburg, Carla Hobeiche et Raul Gomez",
+      "facts": [
+        [
+          "Cadre",
+          "Cours Bases UX/UI · HEIG-VD"
+        ],
+        [
+          "Durée",
+          "Un semestre"
+        ],
+        [
+          "Équipe",
+          "4 étudiants"
+        ],
+        [
+          "Mon rôle",
+          "Conception UX/UI"
+        ]
+      ],
+      "cover_alt": "Carte des frigos solidaires de Freedge sur un smartphone",
+      "brief": [
+        "Partir d'un objectif de développement durable de l'ONU, puis concevoir une app mobile qui y répond, jusqu'au prototype cliquable.",
+        "À quatre, nous avons mené la recherche, les personas, l'idéation, le user flow, les wireframes, le design system et le prototype Figma.",
+        [
+          "3 → 1",
+          "idées explorées, une seule retenue"
+        ]
+      ],
+      "ctx": [
+        [
+          "Cadre",
+          "Cours Bases UX puis Bases UI de 2e année du Bachelor en Ingénierie des médias à la HEIG-VD, évalués en deux volets : la démarche UX, puis l'interface."
+        ],
+        [
+          "Point de départ",
+          "Nous avons choisi l'objectif n° 2 de l'ONU, Faim Zéro. Un paradoxe nous a frappés : chaque jour, de la nourriture encore bonne est jetée, alors qu'une partie de la population ne mange pas à sa faim. Et ceux qui en ont besoin hésitent à demander de l'aide, par peur d'être jugés."
+        ],
+        [
+          "Contraintes",
+          [
+            "partir d'un objectif de développement durable de l'ONU, au choix du groupe ;",
+            "livrer un moodboard, un user flow et des wireframes de 5 à 8 écrans ;",
+            "construire un design system accessible, puis un prototype cliquable ;",
+            "présenter le projet comme à un client, lors d'une soutenance."
+          ]
+        ]
+      ],
+      "quote": "Comment permettre aux personnes d'accéder facilement à des surplus alimentaires près de chez elles, pour limiter le gaspillage et soutenir celles dans le besoin ?",
+      "quote_by": "Notre How Might We",
+      "flow": [
+        "Choix de l'ODD",
+        "Recherche",
+        "Personas",
+        "How Might We",
+        "Idéation",
+        "User flow",
+        "Wireframes",
+        "Design system",
+        "Prototype",
+        "Test utilisateur"
+      ],
+      "dec": [
+        [
+          "Trois personas, un même besoin de discrétion",
+          "Sofia, étudiante, compte chaque franc en fin de mois. Isabelle cuisine trop le week-end et ne sait pas où donner. Karim, père de trois enfants, a honte de faire la queue dans une épicerie sociale. Tous veulent une solution proche, simple et sans démarches.",
+          "splash",
+          "Écran d'accueil de Freedge"
+        ],
+        [
+          "Des frigos solidaires, plutôt qu'une mise en relation",
+          "Nous avons écarté les dons entre particuliers et la redistribution des invendus des commerces. Les frigos solidaires évitent toute rencontre, restent accessibles 24 h/24 et valorisent les surplus des habitants comme des commerces.",
+          "carte",
+          "Carte des frigos solidaires"
+        ],
+        [
+          "Savoir avant de se déplacer",
+          "La fiche d'un frigo montre son contenu, la date de dépôt de chaque aliment et un repère de fraîcheur. On sait tout de suite si le trajet en vaut la peine.",
+          "frigo",
+          "Fiche d'un frigo et des aliments disponibles"
+        ],
+        [
+          "Des ingrédients obligatoires pour les plats maison",
+          "Pour déposer, on ajoute une photo, une catégorie, une quantité et une date de péremption. Pour un plat cuisiné, la liste des ingrédients est obligatoire : elle protège les personnes allergiques.",
+          "ajout",
+          "Formulaire d'ajout d'un produit"
+        ],
+        [
+          "Un profil pour voir sa contribution",
+          "Le profil compte les produits donnés et récupérés, et regroupe les notifications, la confidentialité et l'aide.",
+          "profil",
+          "Profil d'un utilisateur"
+        ]
+      ],
+      "render": [
+        [
+          "Le prototype",
+          [
+            [
+              "splash",
+              "Écran d'accueil"
+            ],
+            [
+              "inscription",
+              "Création de compte"
+            ],
+            [
+              "carte",
+              "Carte des frigos"
+            ],
+            [
+              "frigo",
+              "Fiche d'un frigo"
+            ],
+            [
+              "ajout",
+              "Ajout d'un produit"
+            ],
+            [
+              "profil",
+              "Profil"
+            ]
+          ]
+        ],
+        [
+          "Le user flow",
+          [
+            [
+              "user-flow",
+              "Parcours de l'utilisateur, de l'ouverture de l'app au dépôt",
+              "#E3E3E3"
+            ]
+          ],
+          "wide"
+        ],
+        [
+          "Le design system",
+          [
+            [
+              "design-system",
+              "Boutons, chips, tags, champs et glissière de confirmation, dans tous leurs états",
+              "#FFFFFF"
+            ]
+          ],
+          "wide"
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "3",
+            "personas étudiées"
+          ],
+          [
+            "3 → 1",
+            "idées explorées, une retenue"
+          ],
+          [
+            "6",
+            "écrans clés prototypés"
+          ]
+        ],
+        "deliv": "Un moodboard, un user flow, des wireframes, un design system et un prototype Figma cliquable, testé puis présenté comme à un client."
+      },
+      "learn": "Partir des personnes plutôt que de l'idée a tout changé : la discrétion, ressortie de la recherche, a guidé chaque écran. Le test m'a aussi montré qu'un simple libellé, comme « Je dépose » ou « Je récupère », suffit à faire hésiter.",
+      "more": [
+        [
+          "Test utilisateur",
+          [
+            [
+              "Le scénario",
+              "« Tu rentres chez toi et tu réalises que ton frigo est vide. Tu ouvres l'application. Montre-moi ce que tu fais. » Une personne externe au groupe a suivi ce scénario, sans aide, puis a répondu à quelques questions ouvertes."
+            ],
+            [
+              "Ce que nous avons observé",
+              [
+                "la carte et le concept ont été compris tout de suite ;",
+                "le contenu du frigo a été consulté avant de décider de s'y rendre ;",
+                "la fraîcheur des aliments a soulevé des questions ;",
+                "« Je dépose » et « Je récupère » ont créé une légère hésitation."
+              ]
+            ],
+            [
+              "Les pistes retenues",
+              [
+                "afficher le contenu et la date de dépôt directement sur la carte ;",
+                "proposer des notifications quand un frigo proche est réapprovisionné ;",
+                "permettre de signaler un frigo vide, mal entretenu ou un aliment périmé."
+              ]
+            ]
+          ]
+        ]
+      ]
+    },
+    "en": {
+      "cat": "UX/UI design",
+      "kicker": "Academic project",
+      "intro": "In Switzerland, 2.8 million tonnes of food are wasted every year, while 708,000 people live below the poverty line. We designed Freedge: a mobile app to find the community fridges in your neighbourhood, drop off your surplus or help yourself.",
+      "with": "With Ella Maiburg, Carla Hobeiche and Raul Gomez",
+      "facts": [
+        [
+          "Setting",
+          "Bases UX/UI course · HEIG-VD"
+        ],
+        [
+          "Duration",
+          "One semester"
+        ],
+        [
+          "Team",
+          "4 students"
+        ],
+        [
+          "My role",
+          "UX/UI design"
+        ]
+      ],
+      "cover_alt": "Freedge map of community fridges on a smartphone",
+      "brief": [
+        "Start from one of the UN Sustainable Development Goals, then design a mobile app that answers it, up to a clickable prototype.",
+        "As a team of four, we handled the research, personas, ideation, user flow, wireframes, design system and Figma prototype.",
+        [
+          "3 → 1",
+          "ideas explored, one kept"
+        ]
+      ],
+      "ctx": [
+        [
+          "Setting",
+          "Second-year Bases UX then Bases UI courses in the BSc Media Engineering at HEIG-VD, graded in two parts: the UX process, then the interface."
+        ],
+        [
+          "Starting point",
+          "We chose the UN's Goal 2, Zero Hunger. One paradox struck us: every day, food that is still good gets thrown away while part of the population goes hungry. And those who need help hesitate to ask, for fear of being judged."
+        ],
+        [
+          "Constraints",
+          [
+            "start from a UN Sustainable Development Goal chosen by the group;",
+            "deliver a moodboard, a user flow and wireframes of 5 to 8 screens;",
+            "build an accessible design system, then a clickable prototype;",
+            "present the project as if to a client, in a final review."
+          ]
+        ]
+      ],
+      "quote": "How might we help people easily access food surplus near their home, to limit waste and support those in need?",
+      "quote_by": "Our How Might We",
+      "flow": [
+        "Choosing the SDG",
+        "Research",
+        "Personas",
+        "How Might We",
+        "Ideation",
+        "User flow",
+        "Wireframes",
+        "Design system",
+        "Prototype",
+        "User testing"
+      ],
+      "dec": [
+        [
+          "Three personas, one shared need for discretion",
+          "Sofia, a student, counts every franc at the end of the month. Isabelle cooks too much at weekends and doesn't know where to give it. Karim, a father of three, feels ashamed queuing at a social grocery. All of them want something close, simple and free of paperwork.",
+          "splash",
+          "Freedge splash screen"
+        ],
+        [
+          "Community fridges rather than matchmaking",
+          "We set aside donations between individuals and redistribution of shop leftovers. Community fridges need no meeting, stay open 24/7 and make use of surplus from residents and shops alike.",
+          "carte",
+          "Map of community fridges"
+        ],
+        [
+          "Know before you go",
+          "A fridge's page shows its contents, when each item was dropped off and a freshness marker. You see straight away whether the trip is worth it.",
+          "frigo",
+          "A fridge page with available food"
+        ],
+        [
+          "Ingredients required for home-cooked dishes",
+          "To drop something off, you add a photo, a category, a quantity and a best-before date. For a cooked dish, the ingredient list is mandatory: it protects people with allergies.",
+          "ajout",
+          "Add-a-product form"
+        ],
+        [
+          "A profile to see your contribution",
+          "The profile counts the products given and collected, and gathers notifications, privacy and help.",
+          "profil",
+          "User profile"
+        ]
+      ],
+      "render": [
+        [
+          "The prototype",
+          [
+            [
+              "splash",
+              "Splash screen"
+            ],
+            [
+              "inscription",
+              "Sign-up"
+            ],
+            [
+              "carte",
+              "Fridge map"
+            ],
+            [
+              "frigo",
+              "Fridge page"
+            ],
+            [
+              "ajout",
+              "Adding a product"
+            ],
+            [
+              "profil",
+              "Profile"
+            ]
+          ]
+        ],
+        [
+          "The user flow",
+          [
+            [
+              "user-flow",
+              "User journey, from opening the app to dropping off food",
+              "#E3E3E3"
+            ]
+          ],
+          "wide"
+        ],
+        [
+          "The design system",
+          [
+            [
+              "design-system",
+              "Buttons, chips, tags, fields and swipe-to-confirm, in every state",
+              "#FFFFFF"
+            ]
+          ],
+          "wide"
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "3",
+            "personas studied"
+          ],
+          [
+            "3 → 1",
+            "ideas explored, one kept"
+          ],
+          [
+            "6",
+            "key screens prototyped"
+          ]
+        ],
+        "deliv": "A moodboard, a user flow, wireframes, a design system and a clickable Figma prototype, tested and then presented as if to a client."
+      },
+      "learn": "Starting from people rather than the idea changed everything: discretion, which came out of the research, shaped every screen. Testing also showed me that a single label, like \"Drop off\" or \"Collect\", is enough to make someone hesitate.",
+      "more": [
+        [
+          "User testing",
+          [
+            [
+              "The scenario",
+              "\"You get home and realise your fridge is empty. You open the app. Show me what you do.\" Someone outside the group followed this scenario without help, then answered a few open questions."
+            ],
+            [
+              "What we observed",
+              [
+                "the map and the concept were understood straight away;",
+                "the fridge's contents were checked before deciding to go;",
+                "food freshness raised questions;",
+                "\"Drop off\" and \"Collect\" caused a slight hesitation."
+              ]
+            ],
+            [
+              "What we would improve",
+              [
+                "show contents and drop-off dates right on the map;",
+                "offer notifications when a nearby fridge is restocked;",
+                "let people report an empty or poorly kept fridge, or expired food."
+              ]
+            ]
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "hug",
+    "name": "HUG",
+    "year": "2026",
+    "cat": "web",
+    "case": true,
+    "bg": "#95B4AC",
+    "cover": "img/projets/hug/accueil.webp",
+    "coverKey": "accueil",
+    "fr": {
+      "cat": "Plateforme web",
+      "kicker": "Projet d'intégration · mandat réel",
+      "intro": "Les collectes de sang en entreprise représentent environ 10 % des dons à Genève, et les HUG veulent les développer. Pour leur Centre de transfusion sanguine, nous avons conçu et développé une plateforme qui relance le Trophée de la générosité, crée un label CTS et accompagne chaque employé jusqu'au don.",
+      "with": "Avec Raul Gomez, Luka Stojanovic, Chloé Mühlemann, Nuno Amaro et Loann Juillerat · équipe Pulse",
+      "facts": [
+        [
+          "Mandant",
+          "HUG · Centre de transfusion sanguine"
+        ],
+        [
+          "Cadre",
+          "Projet d'intégration · HEIG-VD"
+        ],
+        [
+          "Durée",
+          "4 semaines"
+        ],
+        [
+          "Équipe",
+          "6 étudiants"
+        ],
+        [
+          "Mon rôle",
+          "Scrum Master · développeur"
+        ]
+      ],
+      "cover_alt": "Page d'accueil du site du Trophée de la générosité et du label CTS",
+      "brief": [
+        "Dynamiser les collectes de sang en entreprise et réduire les inscrits non éligibles, avec un site complet, de la conception au déploiement.",
+        "Scrum Master de l'équipe, j'ai organisé les sprints, animé les rituels et fait le lien entre design et développement, tout en codant en Laravel et Vue.js.",
+        [
+          "3",
+          "espaces : site public, entreprise et admin CTS"
+        ]
+      ],
+      "ctx": [
+        [
+          "Cadre",
+          "Projet d'intégration de 2e année du Bachelor en Ingénierie des médias à la HEIG-VD, pour un vrai mandant : le Centre de transfusion sanguine (CTS) des HUG. Il est évalué sur la gestion de projet, la modélisation, l'UX/UI, le back-end, le front-end et la communication."
+        ],
+        [
+          "Point de départ",
+          "Le CTS ne fournit aucun outil de communication aux entreprises, le Trophée de la générosité a disparu depuis 2010, et 30 % des inscrits ne remplissent pas les critères le jour du don. Nos recherches ont fait ressortir cinq freins."
+        ],
+        [
+          "Les cinq freins",
+          [
+            "dispersion : des informations éparpillées entre PDF et outils ;",
+            "complexité : un parcours lourd et peu intuitif ;",
+            "invisibilité : des entreprises partenaires absentes en ligne ;",
+            "éligibilité : 30 % d'inscrits finalement non éligibles ;",
+            "froideur : aucune émotion autour du don."
+          ]
+        ],
+        [
+          "Contraintes",
+          [
+            "relancer le Trophée de la générosité et créer un label CTS ;",
+            "une page co-brandée par entreprise, accessible par un lien unique ;",
+            "un kit de communication pour les entreprises et pour le CTS ;",
+            "un moyen ludique de présenter les conditions du don ;",
+            "un back-office pour gérer les contenus et suivre les KPI ;",
+            "Laravel, Vue.js, MySQL, Git et Infomaniak, en Scrum avec des sprints d'une semaine."
+          ]
+        ]
+      ],
+      "quote": "Comment dynamiser les collectes de sang au sein des entreprises partenaires afin d'en maximiser le taux de participation ?",
+      "quote_by": "La problématique du mandat",
+      "flow": [
+        "Kick-off",
+        "Recherche",
+        "Personas",
+        "Priorisation",
+        "Architecture",
+        "Maquettes",
+        "Modélisation",
+        "Sprints",
+        "Tests",
+        "Soutenance"
+      ],
+      "photo": [
+        "equipe",
+        "L'équipe Pulse en atelier de recherche"
+      ],
+      "dec": [
+        [
+          "Trois personas, trois parcours",
+          "Camille, employée, hésite à donner et ne sait pas si elle est éligible. Sandra, aux RH, organise la collecte de son entreprise. Eustache, au CTS, gère l'ensemble. Chaque profil a son espace sur la plateforme.",
+          "accueil",
+          "Page d'accueil du site"
+        ],
+        [
+          "Courage, un castor pour rendre le don chaleureux",
+          "Le castor transforme son environnement et ne travaille jamais seul, comme les donneurs. En blouse médicale, Courage fait le lien entre le CTS et quelque chose de rassurant. Son prénom rappelle ce qu'il faut pour franchir le pas.",
+          "quiz-intro",
+          "Courage présente le quiz d'éligibilité"
+        ],
+        [
+          "Un quiz d'éligibilité en dix questions",
+          "Chaque question s'accompagne d'une explication. À la fin, Courage donne l'un des trois résultats : probablement éligible, temporairement non éligible, ou vérification médicale nécessaire. Il guide, sans juger.",
+          "quiz-question",
+          "Une question du quiz d'éligibilité"
+        ],
+        [
+          "Un label pour toutes, un trophée pour les plus engagées",
+          "Toute entreprise qui atteint 5 % de participation reçoit le label CTS, valable un an et renouvelé à chaque collecte, avec un badge à afficher. Les entreprises labellisées peuvent concourir au Trophée d'une simple case à cocher.",
+          "label",
+          "Page du label CTS"
+        ],
+        [
+          "Une page aux couleurs de chaque entreprise",
+          "Chaque entreprise reçoit un lien unique vers une page co-brandée : son logo, ses couleurs, la collecte en cours et le bouton pour prendre rendez-vous. Le kit de communication se télécharge en un clic.",
+          "entreprise",
+          "Page co-brandée UBS × HUG"
+        ],
+        [
+          "Un back-office pour piloter les collectes",
+          "Depuis son tableau de bord, le CTS valide les collectes, gère les entreprises et les labels, met à jour le palmarès et suit l'évolution des inscriptions.",
+          "admin-vue",
+          "Tableau de bord de l'admin CTS"
+        ]
+      ],
+      "more": [
+        [
+          "Gestion de projet",
+          [
+            [
+              "Scrum",
+              "Des sprints d'une semaine, chacun avec son backlog, sa revue avec l'équipe enseignante, sa rétrospective et son burn-down chart."
+            ],
+            [
+              "Mon rôle de Scrum Master",
+              "Animer les rituels, faire circuler l'information entre design et développement, et veiller à ce que chacun ait ce qu'il faut pour avancer."
+            ],
+            [
+              "Les outils",
+              [
+                "Miro pour les recherches, les personas et les user stories ;",
+                "une matrice d'Eisenhower et un MoSCoW page par page pour prioriser ;",
+                "Git avec des branches, puis un déploiement chez Infomaniak."
+              ]
+            ]
+          ]
+        ]
+      ],
+      "render": [
+        [
+          "§",
+          "Le site public",
+          "Pour les employés et les entreprises : découvrir le label et le Trophée, puis vérifier son éligibilité avec Courage."
+        ],
+        [
+          "Les pages",
+          [
+            [
+              "accueil",
+              "Accueil"
+            ],
+            [
+              "label",
+              "Label CTS"
+            ],
+            [
+              "trophee",
+              "Trophée de la générosité"
+            ],
+            [
+              "contact",
+              "Contact"
+            ]
+          ]
+        ],
+        [
+          "Le quiz avec Courage",
+          [
+            [
+              "quiz-intro",
+              "Courage se présente"
+            ],
+            [
+              "quiz-question",
+              "Une question du quiz"
+            ],
+            [
+              "quiz-informe",
+              "Courage explique"
+            ],
+            [
+              "quiz-remercie",
+              "Résultat : probablement éligible"
+            ],
+            [
+              "quiz-reviendra",
+              "Résultat : temporairement non éligible"
+            ],
+            [
+              "quiz-soutient",
+              "Résultat : vérification médicale"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "L'espace entreprise",
+          "Une version co-brandée du site, accessible par un lien unique, pour annoncer la collecte aux collaborateurs."
+        ],
+        [
+          "La page co-brandée",
+          [
+            [
+              "entreprise",
+              "Page UBS × HUG",
+              "#BF7F83"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "L'espace admin CTS",
+          "Le back-office du CTS : gérer les collectes, les entreprises et les labels, et suivre les indicateurs."
+        ],
+        [
+          "Le back-office",
+          [
+            [
+              "admin-vue",
+              "Vue globale et KPI"
+            ],
+            [
+              "admin-collecte",
+              "Modifier une collecte"
+            ],
+            [
+              "admin-entreprises",
+              "Coordinateurs et entreprises"
+            ],
+            [
+              "admin-labels",
+              "Labels CTS"
+            ]
+          ]
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "3",
+            "espaces sur une même plateforme"
+          ],
+          [
+            "10",
+            "questions dans le quiz de Courage"
+          ],
+          [
+            "6",
+            "étudiants en Scrum"
+          ]
+        ],
+        "deliv": "Une plateforme Laravel et Vue.js fonctionnelle : pages du label et du Trophée, quiz d'éligibilité, pages co-brandées par entreprise, kit de communication et back-office avec KPI, présentée au mandant lors d'une soutenance."
+      },
+      "learn": "Être Scrum Master tout en codant m'a appris à protéger le temps de l'équipe : des sprints courts, des priorités visibles et une information qui circule. Travailler pour un vrai mandant m'a aussi montré qu'il faut pouvoir justifier chaque choix face au client."
+    },
+    "en": {
+      "cat": "Web platform",
+      "kicker": "Integration project · real client",
+      "intro": "Workplace blood drives account for around 10% of donations in Geneva, and the HUG want to grow them. For their Blood Transfusion Centre, we designed and built a platform that revives the Generosity Trophy, creates a CTS label and guides every employee all the way to donating.",
+      "with": "With Raul Gomez, Luka Stojanovic, Chloé Mühlemann, Nuno Amaro and Loann Juillerat · team Pulse",
+      "facts": [
+        [
+          "Client",
+          "HUG · Blood Transfusion Centre"
+        ],
+        [
+          "Setting",
+          "Integration project · HEIG-VD"
+        ],
+        [
+          "Duration",
+          "4 weeks"
+        ],
+        [
+          "Team",
+          "6 students"
+        ],
+        [
+          "My role",
+          "Scrum Master · developer"
+        ]
+      ],
+      "cover_alt": "Home page of the Generosity Trophy and CTS label site",
+      "brief": [
+        "Boost workplace blood drives and cut the number of ineligible sign-ups, with a complete site, from design to deployment.",
+        "As the team's Scrum Master, I ran the sprints and rituals and bridged design and development, while coding in Laravel and Vue.js.",
+        [
+          "3",
+          "spaces: public site, company and CTS admin"
+        ]
+      ],
+      "ctx": [
+        [
+          "Setting",
+          "Second-year integration project in the BSc Media Engineering at HEIG-VD, for a real client: the HUG Blood Transfusion Centre (CTS). It is graded on project management, modelling, UX/UI, back end, front end and communication."
+        ],
+        [
+          "Starting point",
+          "The CTS gives companies no communication tools, the Generosity Trophy has been gone since 2010, and 30% of sign-ups don't meet the criteria on the day. Our research brought out five obstacles."
+        ],
+        [
+          "The five obstacles",
+          [
+            "dispersion: information scattered across PDFs and tools;",
+            "complexity: a heavy, unintuitive journey;",
+            "invisibility: partner companies absent online;",
+            "eligibility: 30% of sign-ups turn out ineligible;",
+            "coldness: no emotion around giving blood."
+          ]
+        ],
+        [
+          "Constraints",
+          [
+            "revive the Generosity Trophy and create a CTS label;",
+            "a co-branded page per company, reached through a unique link;",
+            "a communication kit for companies and for the CTS;",
+            "a playful way to present donation requirements;",
+            "a back office to manage content and track KPIs;",
+            "Laravel, Vue.js, MySQL, Git and Infomaniak, in Scrum with one-week sprints."
+          ]
+        ]
+      ],
+      "quote": "How can we boost blood drives within partner companies to maximise participation?",
+      "quote_by": "The brief's problem statement",
+      "flow": [
+        "Kick-off",
+        "Research",
+        "Personas",
+        "Prioritisation",
+        "Architecture",
+        "Wireframes",
+        "Modelling",
+        "Sprints",
+        "Testing",
+        "Final review"
+      ],
+      "photo": [
+        "equipe",
+        "Team Pulse in a research workshop"
+      ],
+      "dec": [
+        [
+          "Three personas, three journeys",
+          "Camille, an employee, hesitates to donate and doesn't know if she's eligible. Sandra, in HR, organises her company's blood drive. Eustache, at the CTS, runs it all. Each profile has its own space on the platform.",
+          "accueil",
+          "Site home page"
+        ],
+        [
+          "Courage, a beaver to make giving feel warm",
+          "Beavers reshape their environment and never work alone, just like donors. In a lab coat, Courage links the CTS with something reassuring. His name echoes what it takes to take the step.",
+          "quiz-intro",
+          "Courage introduces the eligibility quiz"
+        ],
+        [
+          "A ten-question eligibility quiz",
+          "Each question comes with an explanation. At the end, Courage gives one of three results: probably eligible, temporarily ineligible, or medical check needed. He guides without judging.",
+          "quiz-question",
+          "An eligibility quiz question"
+        ],
+        [
+          "A label for all, a trophy for the most committed",
+          "Any company reaching 5% participation earns the CTS label, valid for a year and renewed with each drive, with a badge to display. Labelled companies can enter the Trophy with a single checkbox.",
+          "label",
+          "CTS label page"
+        ],
+        [
+          "A page in each company's colours",
+          "Each company gets a unique link to a co-branded page: its logo, its colours, the current drive and the button to book a slot. The communication kit downloads in one click.",
+          "entreprise",
+          "UBS × HUG co-branded page"
+        ],
+        [
+          "A back office to run the drives",
+          "From the dashboard, the CTS approves drives, manages companies and labels, updates the winners' list and follows sign-up trends.",
+          "admin-vue",
+          "CTS admin dashboard"
+        ]
+      ],
+      "more": [
+        [
+          "Project management",
+          [
+            [
+              "Scrum",
+              "One-week sprints, each with its backlog, a review with the teaching team, a retrospective and a burn-down chart."
+            ],
+            [
+              "My role as Scrum Master",
+              "Running the rituals, keeping information flowing between design and development, and making sure everyone had what they needed to move forward."
+            ],
+            [
+              "Tools",
+              [
+                "Miro for research, personas and user stories;",
+                "an Eisenhower matrix and a page-by-page MoSCoW to prioritise;",
+                "Git with branches, then deployment on Infomaniak."
+              ]
+            ]
+          ]
+        ]
+      ],
+      "render": [
+        [
+          "§",
+          "The public site",
+          "For employees and companies: discover the label and the Trophy, then check eligibility with Courage."
+        ],
+        [
+          "The pages",
+          [
+            [
+              "accueil",
+              "Home"
+            ],
+            [
+              "label",
+              "CTS label"
+            ],
+            [
+              "trophee",
+              "Generosity Trophy"
+            ],
+            [
+              "contact",
+              "Contact"
+            ]
+          ]
+        ],
+        [
+          "The quiz with Courage",
+          [
+            [
+              "quiz-intro",
+              "Courage introduces himself"
+            ],
+            [
+              "quiz-question",
+              "A quiz question"
+            ],
+            [
+              "quiz-informe",
+              "Courage explains"
+            ],
+            [
+              "quiz-remercie",
+              "Result: probably eligible"
+            ],
+            [
+              "quiz-reviendra",
+              "Result: temporarily ineligible"
+            ],
+            [
+              "quiz-soutient",
+              "Result: medical check needed"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "The company space",
+          "A co-branded version of the site, reached through a unique link, to announce the drive to staff."
+        ],
+        [
+          "The co-branded page",
+          [
+            [
+              "entreprise",
+              "UBS × HUG page",
+              "#BF7F83"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "The CTS admin space",
+          "The CTS back office: manage drives, companies and labels, and track the indicators."
+        ],
+        [
+          "The back office",
+          [
+            [
+              "admin-vue",
+              "Overview and KPIs"
+            ],
+            [
+              "admin-collecte",
+              "Editing a drive"
+            ],
+            [
+              "admin-entreprises",
+              "Coordinators and companies"
+            ],
+            [
+              "admin-labels",
+              "CTS labels"
+            ]
+          ]
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "3",
+            "spaces on one platform"
+          ],
+          [
+            "10",
+            "questions in Courage's quiz"
+          ],
+          [
+            "6",
+            "students working in Scrum"
+          ]
+        ],
+        "deliv": "A working Laravel and Vue.js platform: label and Trophy pages, eligibility quiz, co-branded company pages, communication kit and a back office with KPIs, presented to the client in a final review."
+      },
+      "learn": "Being Scrum Master while coding taught me to protect the team's time: short sprints, visible priorities and information that keeps flowing. Working for a real client also showed me that every choice has to be justified in front of them."
+    },
+    "url": "https://dondusang.loannjuillerat.ch/"
+  },
+  {
+    "slug": "visualdon",
+    "name": "Data viz",
+    "year": "2026",
+    "cat": "data",
+    "case": true,
+    "bg": "#18361C",
+    "cover": "img/projets/visualdon/accueil.webp",
+    "coverKey": "accueil",
+    "fr": {
+      "cat": "Data visualisation",
+      "kicker": "Projet académique",
+      "intro": "En trente ans, les droits TV, les billets et le merchandising ont fait du football européen une industrie à 37 milliards d'euros par an. Pendant ce temps, le supporter paie de plus en plus cher. Nous avons raconté cette histoire avec un site de data storytelling.",
+      "with": "En collaboration avec Raul Gomez",
+      "facts": [
+        [
+          "Cadre",
+          "Cours VisualDon · HEIG-VD"
+        ],
+        [
+          "Durée",
+          "Un semestre"
+        ],
+        [
+          "Équipe",
+          "2 étudiants"
+        ],
+        [
+          "Mon rôle",
+          "Conception et développement"
+        ]
+      ],
+      "cover_alt": "Page d'accueil de The Price of the Game",
+      "brief": [
+        "Choisir des données, leur donner un point de vue et en faire une visualisation interactive, publiée en ligne avec son code.",
+        "À deux, nous avons rassemblé et nettoyé les données, dessiné le wireframe sur Figma, puis développé le site en D3.js et GSAP.",
+        [
+          "+1 340 %",
+          "de droits TV pour les cinq grands championnats, de 1990 à 2026"
+        ]
+      ],
+      "ctx": [
+        [
+          "Cadre",
+          "Cours de visualisation de données (VisualDon) de 2e année du Bachelor en Ingénierie des médias à la HEIG-VD. Le projet compte pour la moitié de la note : thématique, wireframe, présentation, puis site publié."
+        ],
+        [
+          "Point de départ",
+          "Le football d'élite brasse des milliards, mais qu'est-ce que ça change pour celui qui achète un billet ou un maillot ? Nous avons suivi l'économie des cinq grands championnats européens, de 1990 à 2026, et l'avons comparée aux revenus des supporters. La Super League suisse sert de point de comparaison."
+        ],
+        [
+          "Contraintes",
+          [
+            "choisir un ou plusieurs jeux de données et raconter une histoire avec un point de vue ;",
+            "documenter le contexte, les sources et les biais des données dans un README ;",
+            "dessiner un wireframe avec les graphiques, les textes et les interactions ;",
+            "publier le site, avec le code et la préparation des données sur GitHub."
+          ]
+        ]
+      ],
+      "quote": "Comment l'économie du football d'élite européen a-t-elle évolué, et qu'est-ce que cela implique pour l'accès des supporters ordinaires ?",
+      "quote_by": "Notre question de départ",
+      "flow": [
+        "Thématique",
+        "Sources",
+        "Nettoyage des données",
+        "Wireframe",
+        "Développement D3.js",
+        "Animations GSAP",
+        "Présentation",
+        "Mise en ligne"
+      ],
+      "dec": [
+        [
+          "Un titre qui pose le problème",
+          "The Price of the Game s'ouvre sur quatre chiffres animés : +1 340 % de droits TV, 49 € le billet moyen, 90 € le maillot officiel et 37 milliards d'euros de revenus. Le décor est posé en un écran.",
+          "accueil",
+          "Accueil et chiffres clés"
+        ],
+        [
+          "Une carte pour entrer par le pays",
+          "Chaque championnat a sa couleur. Un clic sur un pays ouvre un panneau avec les coûts pour les fans (billet, abonnement TV, maillot) et les revenus de la ligue.",
+          "carte",
+          "Carte interactive des cinq ligues"
+        ],
+        [
+          "Des barres circulaires pour trente-six ans",
+          "Chaque barre est une année, de 1990 à 2026. On choisit un championnat et le scroll fait défiler ses indicateurs : droits TV, masse salariale, billet moyen, maillot.",
+          "droits-tv",
+          "Droits TV d'un championnat en barres circulaires"
+        ],
+        [
+          "Un score d'accessibilité",
+          "Nous avons rapporté le budget annuel d'un supporter au salaire moyen de son pays. Plus le score baisse, plus le football devient un luxe.",
+          "accessibilite",
+          "Courbes du score d'accessibilité"
+        ],
+        [
+          "Le fan paie quand la ligue gagne",
+          "En indice base 100 en 1990, le budget du supporter et les revenus de la ligue montent ensemble. La corrélation se lit d'un coup d'œil.",
+          "correlation",
+          "Corrélation entre budget supporter et revenus de la ligue"
+        ],
+        [
+          "La Suisse, d'un simple interrupteur",
+          "Un bouton ajoute la Super League à toutes les vues. Elle reste dans une autre dimension économique, mais les mêmes logiques s'y installent.",
+          "billet-suisse",
+          "Billet moyen des cinq ligues et de la Suisse"
+        ],
+        [
+          "Un épilogue jusqu'en 2070",
+          "Le site se termine sur 1990, 2026 et une projection pour 2070, calculée à partir du taux de croissance annuel moyen. Trente ans ont suffi à changer le football.",
+          "epilogue",
+          "Épilogue et projection 2070"
+        ]
+      ],
+      "more": [
+        [
+          "Données et technique",
+          [
+            [
+              "Sources",
+              [
+                "Deloitte Football Money League pour les revenus ;",
+                "rapports des ligues (DFL, LFP, LaLiga, Lega Serie A, SFL) ;",
+                "Football Supporters Europe pour les coûts des supporters ;",
+                "Eurostat pour les revenus médians."
+              ]
+            ],
+            [
+              "Biais assumés",
+              "Les méthodes varient d'une ligue et d'une année à l'autre, les prix de billets sont des moyennes, et certains salaires sont estimés. Les données ne sont jamais neutres : nous l'avons écrit dans le README."
+            ],
+            [
+              "Technique",
+              [
+                "Vite pour le développement et le build ;",
+                "D3.js pour les échelles, les axes, la carte et les graphiques ;",
+                "GSAP et ScrollTrigger pour les animations au scroll ;",
+                "un seul fichier JSON partagé par tous les modules."
+              ]
+            ]
+          ]
+        ]
+      ],
+      "render": [
+        [
+          "§",
+          "L'ouverture",
+          "Le titre, les chiffres clés, puis la carte pour choisir son pays."
+        ],
+        [
+          "Accueil",
+          [
+            [
+              "accueil",
+              "Titre et chiffres clés"
+            ]
+          ]
+        ],
+        [
+          "La carte",
+          [
+            [
+              "carte",
+              "Panneau de l'Italie"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "Ligue par ligue",
+          "Des barres circulaires au scroll, une par indicateur, de 1990 à 2026."
+        ],
+        [
+          "Les revenus de la ligue",
+          [
+            [
+              "droits-tv",
+              "Droits TV du championnat"
+            ]
+          ]
+        ],
+        [
+          "Le coût du supporter",
+          [
+            [
+              "billet",
+              "Billet moyen"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "Le supporter face à la ligue",
+          "Deux courbes pour mesurer l'écart : l'accessibilité et la corrélation."
+        ],
+        [
+          "L'accessibilité",
+          [
+            [
+              "accessibilite",
+              "Score d'accessibilité, 1990–2026"
+            ]
+          ]
+        ],
+        [
+          "La corrélation",
+          [
+            [
+              "correlation",
+              "Budget supporter et revenus de la ligue"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "Le mode Suisse",
+          "Un interrupteur ajoute la Super League à toutes les vues du site."
+        ],
+        [
+          "Les vues avec la Suisse",
+          [
+            [
+              "suisse",
+              "La Suisse face aux géants"
+            ],
+            [
+              "carte-suisse",
+              "Carte : panneau de la Suisse"
+            ],
+            [
+              "billet-suisse",
+              "Billet moyen, Big 5 et Suisse"
+            ],
+            [
+              "accessibilite-suisse",
+              "Accessibilité avec la Super League"
+            ],
+            [
+              "correlation-suisse",
+              "Corrélation pour la Super League"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "L'épilogue",
+          "Trente ans de football résumés, et une projection jusqu'en 2070."
+        ],
+        [
+          "Trente ans, un football différent",
+          [
+            [
+              "epilogue",
+              "1990, 2026 et 2070"
+            ]
+          ]
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "+1 340 %",
+            "de droits TV, 1990–2026"
+          ],
+          [
+            "6",
+            "championnats comparés"
+          ],
+          [
+            "37",
+            "années de données"
+          ]
+        ],
+        "deliv": "Un site de data storytelling publié : carte interactive, barres circulaires animées au scroll, courbes d'accessibilité et de corrélation, mode Suisse et épilogue, avec le code et la préparation des données sur GitHub."
+      },
+      "learn": "Les données ne sont jamais neutres : chaque source avait sa méthode, et les rendre comparables a pris autant de temps que les graphiques. J'ai aussi appris qu'une visualisation convainc quand elle porte un point de vue, ici celui du supporter."
+    },
+    "en": {
+      "cat": "Data visualisation",
+      "kicker": "Academic project",
+      "intro": "In thirty years, TV rights, tickets and merchandising have turned European football into a €37-billion-a-year industry. Meanwhile, supporters pay more and more. We told that story through a data storytelling website.",
+      "with": "With Raul Gomez",
+      "facts": [
+        [
+          "Setting",
+          "VisualDon course · HEIG-VD"
+        ],
+        [
+          "Duration",
+          "One semester"
+        ],
+        [
+          "Team",
+          "2 students"
+        ],
+        [
+          "My role",
+          "Design and development"
+        ]
+      ],
+      "cover_alt": "The Price of the Game home page",
+      "brief": [
+        "Pick datasets, give them a point of view and turn them into an interactive visualisation, published online with its code.",
+        "As a pair, we gathered and cleaned the data, drew the wireframe in Figma, then built the site with D3.js and GSAP.",
+        [
+          "+1,340%",
+          "in TV rights for the five big leagues, 1990 to 2026"
+        ]
+      ],
+      "ctx": [
+        [
+          "Setting",
+          "Second-year data visualisation course (VisualDon) in the BSc Media Engineering at HEIG-VD. The project counts for half the grade: topic, wireframe, presentation, then a published website."
+        ],
+        [
+          "Starting point",
+          "Elite football moves billions, but what does that change for someone buying a ticket or a shirt? We followed the economics of Europe's five big leagues from 1990 to 2026 and compared them with supporters' incomes. The Swiss Super League serves as a point of comparison."
+        ],
+        [
+          "Constraints",
+          [
+            "choose one or more datasets and tell a story with a point of view;",
+            "document the data's context, sources and biases in a README;",
+            "draw a wireframe with the charts, texts and interactions;",
+            "publish the site, with the code and data preparation on GitHub."
+          ]
+        ]
+      ],
+      "quote": "How has the economics of elite European football evolved, and what does it mean for ordinary supporters' access to the game?",
+      "quote_by": "Our starting question",
+      "flow": [
+        "Topic",
+        "Sources",
+        "Data cleaning",
+        "Wireframe",
+        "D3.js development",
+        "GSAP animations",
+        "Presentation",
+        "Going live"
+      ],
+      "dec": [
+        [
+          "A title that states the problem",
+          "The Price of the Game opens on four animated figures: +1,340% in TV rights, a €49 average ticket, a €90 official shirt and €37 billion in revenue. One screen sets the scene.",
+          "accueil",
+          "Home and key figures"
+        ],
+        [
+          "A map to enter through a country",
+          "Each league has its colour. Clicking a country opens a panel with fan costs (ticket, TV subscription, shirt) and the league's revenue.",
+          "carte",
+          "Interactive map of the five leagues"
+        ],
+        [
+          "Circular bars for thirty-six years",
+          "Each bar is a year, from 1990 to 2026. You pick a league and scrolling runs through its indicators: TV rights, wage bill, average ticket, shirt.",
+          "droits-tv",
+          "A league's TV rights as circular bars"
+        ],
+        [
+          "An accessibility score",
+          "We compared a supporter's yearly budget with the average wage in their country. The lower the score, the more football becomes a luxury.",
+          "accessibilite",
+          "Accessibility score curves"
+        ],
+        [
+          "Fans pay when the league earns",
+          "Indexed to 100 in 1990, the supporter's budget and the league's revenue rise together. The correlation is clear at a glance.",
+          "correlation",
+          "Supporter budget vs league revenue"
+        ],
+        [
+          "Switzerland, with a single toggle",
+          "One switch adds the Super League to every view. It sits in another economic dimension, yet the same logic is taking hold.",
+          "billet-suisse",
+          "Average ticket for the five leagues and Switzerland"
+        ],
+        [
+          "An epilogue reaching 2070",
+          "The site ends on 1990, 2026 and a projection for 2070, based on the compound annual growth rate. Thirty years were enough to change football.",
+          "epilogue",
+          "Epilogue and 2070 projection"
+        ]
+      ],
+      "more": [
+        [
+          "Data and tech",
+          [
+            [
+              "Sources",
+              [
+                "Deloitte Football Money League for revenue;",
+                "league reports (DFL, LFP, LaLiga, Lega Serie A, SFL);",
+                "Football Supporters Europe for supporter costs;",
+                "Eurostat for median incomes."
+              ]
+            ],
+            [
+              "Acknowledged biases",
+              "Methods vary between leagues and years, ticket prices are averages and some wages are estimates. Data is never neutral: we wrote it down in the README."
+            ],
+            [
+              "Tech",
+              [
+                "Vite for development and build;",
+                "D3.js for scales, axes, the map and the charts;",
+                "GSAP and ScrollTrigger for scroll animations;",
+                "a single JSON file shared by every module."
+              ]
+            ]
+          ]
+        ]
+      ],
+      "render": [
+        [
+          "§",
+          "The opening",
+          "The title, the key figures, then the map to pick your country."
+        ],
+        [
+          "Home",
+          [
+            [
+              "accueil",
+              "Title and key figures"
+            ]
+          ]
+        ],
+        [
+          "The map",
+          [
+            [
+              "carte",
+              "Italy panel"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "League by league",
+          "Circular bars on scroll, one per indicator, from 1990 to 2026."
+        ],
+        [
+          "League revenue",
+          [
+            [
+              "droits-tv",
+              "League TV rights"
+            ]
+          ]
+        ],
+        [
+          "The cost of being a fan",
+          [
+            [
+              "billet",
+              "Average ticket"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "Supporters versus the league",
+          "Two curves to measure the gap: accessibility and correlation."
+        ],
+        [
+          "Accessibility",
+          [
+            [
+              "accessibilite",
+              "Accessibility score, 1990–2026"
+            ]
+          ]
+        ],
+        [
+          "Correlation",
+          [
+            [
+              "correlation",
+              "Supporter budget and league revenue"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "Swiss mode",
+          "A toggle adds the Super League to every view of the site."
+        ],
+        [
+          "Views with Switzerland",
+          [
+            [
+              "suisse",
+              "Switzerland versus the giants"
+            ],
+            [
+              "carte-suisse",
+              "Map: Switzerland panel"
+            ],
+            [
+              "billet-suisse",
+              "Average ticket, Big 5 and Switzerland"
+            ],
+            [
+              "accessibilite-suisse",
+              "Accessibility with the Super League"
+            ],
+            [
+              "correlation-suisse",
+              "Correlation for the Super League"
+            ]
+          ]
+        ],
+        [
+          "§",
+          "The epilogue",
+          "Thirty years of football in one screen, and a projection to 2070."
+        ],
+        [
+          "Thirty years, a different football",
+          [
+            [
+              "epilogue",
+              "1990, 2026 and 2070"
+            ]
+          ]
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "+1,340%",
+            "TV rights, 1990–2026"
+          ],
+          [
+            "6",
+            "leagues compared"
+          ],
+          [
+            "37",
+            "years of data"
+          ]
+        ],
+        "deliv": "A published data storytelling site: interactive map, circular bars animated on scroll, accessibility and correlation curves, Swiss mode and an epilogue, with the code and data preparation on GitHub."
+      },
+      "learn": "Data is never neutral: each source had its own method, and making them comparable took as long as the charts. I also learned that a visualisation convinces when it carries a point of view, here the supporter's."
+    }
+  },
+  {
+    "slug": "fera",
+    "name": "Fera",
+    "year": "2026",
+    "cat": "design",
+    "case": true,
+    "bg": "#C1C1C1",
+    "url": "https://www.feraboxing.ch",
+    "insta": "https://www.instagram.com/fera.boxing/",
+    "instaLabel": "@fera.boxing",
+    "cover": "img/projets/fera/gant-noir.webp",
+    "coverKey": "gant-noir",
+    "fr": {
+      "cat": "Identité visuelle",
+      "kicker": "Mandat client · hors études",
+      "intro": "FERA est une marque suisse d'équipement de boxe, portée par la détermination et le grind : l'effort répété, jour après jour, jusqu'au sommet. Pour ce client, en dehors de mes études, j'ai réalisé uniquement le logo de la marque et le design de ses gants de boxe.",
+      "facts": [
+        [
+          "Client",
+          "FERA Boxing"
+        ],
+        [
+          "Cadre",
+          "Mandat personnel, hors études"
+        ],
+        [
+          "Mon rôle",
+          "Logo et design des gants"
+        ],
+        [
+          "Équipe",
+          "Projet individuel"
+        ]
+      ],
+      "credit": "Ma contribution se limite au logo et au design des gants. Les photos de produits ne sont pas de moi : elles appartiennent à FERA Boxing et proviennent de son compte Instagram.",
+      "cover_alt": "Rendu 3D du gant de boxe FERA noir",
+      "brief": [
+        "Traduire les valeurs d'une jeune marque de boxe suisse, la détermination et le grind, en un logo reconnaissable et des gants qui le portent.",
+        "J'ai réalisé uniquement le logo et le design des gants. Les photos, le site et la communication de la marque ne sont pas de moi.",
+        [
+          "2",
+          "coloris de gants, en noir et en blanc"
+        ]
+      ],
+      "ctx": [
+        [
+          "Cadre",
+          "Un mandat réalisé à titre personnel, en dehors de la HEIG-VD, pour un client réel : FERA, une marque suisse d'équipement de boxe. Son univers tient en quelques mots : détermination, discipline et grind, cette idée qu'on progresse à force de répéter l'effort."
+        ],
+        [
+          "Ma mission",
+          [
+            "créer le logo de la marque et ses déclinaisons ;",
+            "dessiner les gants de boxe aux couleurs de la marque."
+          ]
+        ],
+        [
+          "Hors de ma mission",
+          [
+            "les photos de produits, prises par la marque et publiées sur son Instagram ;",
+            "le site web et la communication de FERA."
+          ]
+        ]
+      ],
+      "dec": [
+        [
+          "Une montagne dans le A",
+          "Le symbole fusionne le A de FERA et une montagne. La montagne, c'est le grind : une ascension longue, pas après pas, où l'on ne lâche rien. La seconde pointe, plus basse, rappelle les étapes franchies avant le sommet, et un clin d'œil aux Alpes suisses.",
+          "symbole",
+          "Symbole du logo FERA"
+        ],
+        [
+          "Une typographie qui avance",
+          "Le logotype est épais, serré et incliné vers l'avant, comme un boxeur en garde qui gagne du terrain. Il se décline seul, avec le symbole intégré dans le A, ou en version empilée, du réseau social à l'étiquette.",
+          "logo-complet",
+          "Version empilée du logo FERA"
+        ],
+        [
+          "Des gants qui portent la montagne",
+          "Sur les gants, le symbole se répète en grand, ton sur ton : discret de loin, présent à chaque coup. Le nom FERA s'affiche sur la sangle. Deux coloris sobres, noir et blanc, pour un équipement qui se concentre sur l'effort.",
+          "gant-noir",
+          "Rendu 3D du gant noir"
+        ]
+      ],
+      "render": [
+        [
+          "§",
+          "Le logo",
+          "Le symbole, le logotype et leurs déclinaisons."
+        ],
+        [
+          "Le logo et ses versions",
+          [
+            [
+              "symbole",
+              "Symbole",
+              "#FFFFFF"
+            ],
+            [
+              "logotype",
+              "Logotype",
+              "#FFFFFF"
+            ],
+            [
+              "logotype-symbole",
+              "Logotype avec le symbole",
+              "#FFFFFF"
+            ],
+            [
+              "logo-complet",
+              "Version empilée",
+              "#FFFFFF"
+            ]
+          ],
+          "wide"
+        ],
+        [
+          "§",
+          "Les gants",
+          "Mes rendus 3D du design, en noir et en blanc."
+        ],
+        [
+          "Le gant noir",
+          [
+            [
+              "gant-noir",
+              "Rendu 3D, coloris noir"
+            ]
+          ],
+          "wide"
+        ],
+        [
+          "Le gant blanc",
+          [
+            [
+              "gant-blanc",
+              "Rendu 3D, coloris blanc"
+            ]
+          ],
+          "wide"
+        ],
+        [
+          "§",
+          "Les gants produits",
+          "Photos : FERA Boxing, compte Instagram @fera.boxing. Je n'en suis pas l'auteur, elles sont montrées pour illustrer le design des gants."
+        ],
+        [
+          "Photos de la marque",
+          [
+            [
+              "photo-4",
+              "Les deux coloris · photo FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-1",
+              "Gant noir · photo FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-2",
+              "Gants blancs · photo FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-3",
+              "Équipement FERA · photo FERA Boxing",
+              "#000000"
+            ]
+          ],
+          "wide"
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "1",
+            "logo et ses déclinaisons"
+          ],
+          [
+            "2",
+            "coloris de gants"
+          ]
+        ],
+        "deliv": "Le logo de FERA et ses déclinaisons, et le design des gants de boxe en noir et en blanc, aujourd'hui produits par la marque.",
+        "note": "Ma contribution se limite au logo et au design des gants. Les photos de produits ne sont pas de moi : elles appartiennent à FERA Boxing et proviennent de son compte Instagram."
+      },
+      "learn": "Dessiner pour un objet physique m'a appris à penser un logo au-delà de l'écran : il doit rester lisible sur une sangle, en relief ou ton sur ton. Travailler pour un vrai client m'a aussi appris à présenter mes propositions et à intégrer ses retours.",
+      "cover_alts": [
+        "Rendu 3D du gant de boxe FERA noir",
+        "Rendu 3D du gant de boxe FERA blanc"
+      ]
+    },
+    "en": {
+      "cat": "Visual identity",
+      "kicker": "Client project · outside school",
+      "intro": "FERA is a Swiss boxing equipment brand built on determination and grind: repeated effort, day after day, all the way to the top. For this client, outside my studies, I created only the brand's logo and the design of its boxing gloves.",
+      "facts": [
+        [
+          "Client",
+          "FERA Boxing"
+        ],
+        [
+          "Setting",
+          "Personal project, outside school"
+        ],
+        [
+          "My role",
+          "Logo and glove design"
+        ],
+        [
+          "Team",
+          "Solo project"
+        ]
+      ],
+      "credit": "My work covers the logo and the glove design only. The product photos are not mine: they belong to FERA Boxing and come from its Instagram account.",
+      "cover_alt": "3D render of the black FERA boxing glove",
+      "brief": [
+        "Turn the values of a young Swiss boxing brand, determination and grind, into a recognisable logo and gloves that carry it.",
+        "I created only the logo and the glove design. The photos, website and brand communication are not mine.",
+        [
+          "2",
+          "glove colours, black and white"
+        ]
+      ],
+      "ctx": [
+        [
+          "Setting",
+          "A personal project, outside HEIG-VD, for a real client: FERA, a Swiss boxing equipment brand. Its world fits in a few words: determination, discipline and grind, the idea that you improve by repeating the effort."
+        ],
+        [
+          "My brief",
+          [
+            "create the brand's logo and its variations;",
+            "design the boxing gloves in the brand's colours."
+          ]
+        ],
+        [
+          "Not part of my work",
+          [
+            "the product photos, taken by the brand and published on its Instagram;",
+            "FERA's website and communication."
+          ]
+        ]
+      ],
+      "dec": [
+        [
+          "A mountain inside the A",
+          "The symbol merges the A of FERA with a mountain. The mountain stands for grind: a long climb, step by step, where you never give up. The second, lower peak recalls the stages cleared before the summit, and nods to the Swiss Alps.",
+          "symbole",
+          "FERA logo symbol"
+        ],
+        [
+          "Lettering that moves forward",
+          "The wordmark is heavy, tight and leaning forward, like a boxer in guard gaining ground. It comes alone, with the symbol inside the A, or stacked, from social media to labels.",
+          "logo-complet",
+          "Stacked FERA logo"
+        ],
+        [
+          "Gloves that carry the mountain",
+          "On the gloves, the symbol repeats large, tone on tone: subtle from afar, present with every punch. The FERA name sits on the strap. Two sober colours, black and white, for gear focused on the effort.",
+          "gant-noir",
+          "3D render of the black glove"
+        ]
+      ],
+      "render": [
+        [
+          "§",
+          "The logo",
+          "The symbol, the wordmark and their variations."
+        ],
+        [
+          "The logo and its versions",
+          [
+            [
+              "symbole",
+              "Symbol",
+              "#FFFFFF"
+            ],
+            [
+              "logotype",
+              "Wordmark",
+              "#FFFFFF"
+            ],
+            [
+              "logotype-symbole",
+              "Wordmark with the symbol",
+              "#FFFFFF"
+            ],
+            [
+              "logo-complet",
+              "Stacked version",
+              "#FFFFFF"
+            ]
+          ],
+          "wide"
+        ],
+        [
+          "§",
+          "The gloves",
+          "My 3D renders of the design, in black and white."
+        ],
+        [
+          "The black glove",
+          [
+            [
+              "gant-noir",
+              "3D render, black"
+            ]
+          ],
+          "wide"
+        ],
+        [
+          "The white glove",
+          [
+            [
+              "gant-blanc",
+              "3D render, white"
+            ]
+          ],
+          "wide"
+        ],
+        [
+          "§",
+          "The gloves in production",
+          "Photos: FERA Boxing, Instagram account @fera.boxing. I did not take them; they are shown to illustrate the glove design."
+        ],
+        [
+          "Brand photos",
+          [
+            [
+              "photo-4",
+              "Both colours · photo by FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-1",
+              "Black glove · photo by FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-2",
+              "White gloves · photo by FERA Boxing",
+              "#000000"
+            ],
+            [
+              "photo-3",
+              "FERA gear · photo by FERA Boxing",
+              "#000000"
+            ]
+          ],
+          "wide"
+        ]
+      ],
+      "res": {
+        "met": [
+          [
+            "1",
+            "logo and its variations"
+          ],
+          [
+            "2",
+            "glove colours"
+          ]
+        ],
+        "deliv": "The FERA logo and its variations, and the boxing glove design in black and white, now produced by the brand.",
+        "note": "My work covers the logo and the glove design only. The product photos are not mine: they belong to FERA Boxing and come from its Instagram account."
+      },
+      "learn": "Designing for a physical object taught me to think of a logo beyond the screen: it has to stay legible on a strap, embossed or tone on tone. Working for a real client also taught me to present my proposals and take their feedback on board.",
+      "cover_alts": [
+        "3D render of the black FERA boxing glove",
+        "3D render of the white FERA boxing glove"
+      ]
+    },
+    "natural": true,
+    "coverKeys": [
+      "gant-noir",
+      "gant-blanc"
+    ]
+  },
+  {
     "slug": "lumen",
     "name": "Lumen",
     "year": "2026",
@@ -134,7 +2394,8 @@
       "Figma",
       "Taiga",
       "GitHub"
-    ]
+    ],
+    "demo": true
   },
   {
     "slug": "flora",
@@ -270,7 +2531,8 @@
       "SVG",
       "Figma",
       "Excel"
-    ]
+    ],
+    "demo": true
   },
   {
     "slug": "tide",
@@ -404,7 +2666,8 @@
       "Figma",
       "Miro",
       "Illustrator"
-    ]
+    ],
+    "demo": true
   },
   {
     "slug": "cadence",
@@ -540,7 +2803,8 @@
       "CSS",
       "Figma",
       "Miro"
-    ]
+    ],
+    "demo": true
   },
   {
     "slug": "echo",
@@ -675,7 +2939,8 @@
       "Canva",
       "Photoshop",
       "Illustrator"
-    ]
+    ],
+    "demo": true
   },
   {
     "slug": "mosaique",
@@ -811,6 +3076,7 @@
       "Figma",
       "HTML",
       "CSS"
-    ]
+    ],
+    "demo": true
   }
 ]
