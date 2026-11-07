@@ -170,16 +170,18 @@ function rowsHTML(list){
 function cta(){
   return `<div class="wrap"><div class="cta"><div><h2>${t("cta_title")}</h2><p>${t("cta_text")}</p></div><a class="pill" href="#contact">${t("cta_btn")}</a></div></div>`;
 }
-let rotTimer = null;
+let rotTimer = null, imgTimer = null;
 function viewHome(){
   const words = t("rot"), wcol = ["lilac","mint","peach","sky","butter"];
   const subc = ["lilac","mint","peach"];
   const chips = cats => cats.flatMap(c => STACK[c].map(n => `<span class="chip">${shapeEl(CAT[c][0],CAT[c][1])}${esc(n)}</span>`)).join("");
   const r1 = chips(["dev","data"]), r2 = chips(["design","collab"]);
+  /* pastille du titre : les aperçus des projets défilent en boucle */
+  const reel = P.length ? P.map((p,i)=>`<img src="${p.cover}" alt=""${i ? "" : ` class="on"`}>`).join("") : art("hero", [COL.lilac,COL.peach,COL.mint], 4, 2);
   return `
   <section class="hero">
     <div class="wrap fade">
-    <h1>${t("hero_a").replace("{IMG}", art("hero", [COL.lilac,COL.peach,COL.mint], 4, 2))} <span class="rot" id="rot">${words.map((w,i)=>`<span class="c-${wcol[i]}${i===0?" on":""}">${esc(w)}</span>`).join("")}</span> ${t("hero_b").replace("{IMG}", art("hero", [COL.lilac,COL.peach,COL.mint], 4, 2))}</h1>
+    <h1>${t("hero_a").replace("{IMG}", reel)} <span class="rot" id="rot">${words.map((w,i)=>`<span class="c-${wcol[i]}${i===0?" on":""}">${esc(w)}</span>`).join("")}</span> ${t("hero_b").replace("{IMG}", art("hero", [COL.lilac,COL.peach,COL.mint], 4, 2))}</h1>
     <div class="sub mono">${t("sub").map((s,i)=>`<span><i class="c-${subc[i]}"></i>${esc(s)}</span>`).join("")}</div>
     <div class="actions"><a class="pill" href="#projets">${t("see_projects")}</a><a class="pill ghost" href="#contact">${t("get_in_touch")}</a></div>
   </div>
@@ -237,6 +239,17 @@ function startRot(){
     nx.style.transform = "translateY(0)"; cur.style.transform = "translateY(-115%)";
     i = (i+1) % items.length;
   }, 2600);
+  /* pastille : les aperçus de projets glissent vers le haut comme les mots, en plus rapide */
+  const imgs = [...document.querySelectorAll(".ins-img img")]; let k = 0;
+  if(imgs.length > 1) imgTimer = setInterval(() => {
+    if(document.hidden) return;
+    const cur = imgs[k], nx = imgs[(k+1) % imgs.length];
+    nx.style.transition = "none"; nx.style.transform = "translateY(115%)";
+    void nx.offsetHeight;
+    nx.style.transition = EASE; cur.style.transition = EASE;
+    nx.style.transform = "translateY(0)"; cur.style.transform = "translateY(-115%)";
+    k = (k+1) % imgs.length;
+  }, 1600);
 }
 let filter = "all";
 function viewProjects(){
@@ -385,7 +398,7 @@ function viewContact(){
 /* ============ ROUTEUR ============ */
 const app = document.getElementById("app");
 function route(){
-  clearInterval(rotTimer); window.onresize = null;
+  clearInterval(rotTimer); clearInterval(imgTimer); window.onresize = null;
   const h = location.hash.replace("#","");
   let html, nav = "";
   if(h==="projets"){ html = viewProjects(); nav="projets"; }
@@ -511,6 +524,7 @@ document.addEventListener("click", e => {
   window.scrollTo({top:0, behavior:"smooth"});
 });
 
-fetch("data/projects.json")
+/* no-cache : le navigateur revérifie toujours le fichier, une modification des projets apparaît tout de suite */
+fetch("data/projects.json", {cache: "no-cache"})
   .then(r => r.json())
   .then(d => { P = d; applyStatic(); route(); });
