@@ -86,8 +86,13 @@ nav.main{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content
 .hero .actions{margin-top:38px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .ins{display:inline-block;vertical-align:-.08em;margin:0 .04em}
 .ins-star{width:.78em;height:.78em;background:var(--butter);-webkit-mask:var(--m-star) center/100% 100% no-repeat;mask:var(--m-star) center/100% 100% no-repeat;animation:spin 14s linear infinite}
-.ins-img{width:1.7em;height:.82em;border-radius:999px;overflow:hidden;vertical-align:-.1em}
+/* même proportion que l'aperçu au survol des projets (2.3 × .72) */
+.ins-img{width:calc(.82em * 2.3 / .72);height:.82em;border-radius:999px;overflow:hidden;vertical-align:-.1em}
 .ins-img svg{width:100%;height:100%;display:block}
+.ins-img{position:relative}
+/* les images glissent comme les mots (#rot) : seule la première est en place au départ */
+.ins-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:translateY(115%)}
+.ins-img img.on{transform:none}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* Sections */

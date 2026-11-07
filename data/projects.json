@@ -6,7 +6,7 @@
     "cat": "web",
     "case": true,
     "url": "https://ambral.ch/",
-    "cover": "img/projets/ambral/accueil.webp",
+    "cover": "img/projets/ambral/preview.webp",
     "coverKey": "accueil",
     "fr": {
       "cat": "E-commerce",
@@ -395,7 +395,7 @@
     "cat": "ux",
     "case": true,
     "bg": "#677A5D",
-    "cover": "img/projets/freedge/carte.webp",
+    "cover": "img/projets/freedge/preview.webp",
     "coverKey": "carte",
     "fr": {
       "cat": "UX/UI design",
@@ -799,7 +799,7 @@
     "cat": "web",
     "case": true,
     "bg": "#95B4AC",
-    "cover": "img/projets/hug/accueil.webp",
+    "cover": "img/projets/hug/preview.webp",
     "coverKey": "accueil",
     "fr": {
       "cat": "Plateforme web",
@@ -1336,7 +1336,7 @@
     "cat": "data",
     "case": true,
     "bg": "#18361C",
-    "cover": "img/projets/visualdon/accueil.webp",
+    "cover": "img/projets/visualdon/preview.webp",
     "coverKey": "accueil",
     "fr": {
       "cat": "Data visualisation",
@@ -1889,7 +1889,7 @@
     "url": "https://www.feraboxing.ch",
     "insta": "https://www.instagram.com/fera.boxing/",
     "instaLabel": "@fera.boxing",
-    "cover": "img/projets/fera/gant-noir.webp",
+    "cover": "img/projets/fera/preview.webp",
     "coverKey": "gant-noir",
     "fr": {
       "cat": "Identité visuelle",
