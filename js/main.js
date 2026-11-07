@@ -243,7 +243,7 @@ function viewProjects(){
   const list = filter==="all" ? P : P.filter(p=>p.cat===filter);
   const btn = (k,l) => `<button type="button" data-filter="${k}" aria-pressed="${filter===k}">${esc(l)}</button>`;
   return `<section class="wrap page-head fade"><span class="mono">${P.length} ${lang==="fr"?"projets":"projects"} · 2025–2026</span><h1 style="margin-top:10px">${t("projects_title")}</h1><p>${t("projects_intro")}</p>
-    <div class="filters">${btn("all",t("all"))}${Object.keys(CATS).map(k=>btn(k,CATS[k][lang])).join("")}</div></section>
+    <div class="filters">${btn("all",t("all"))}${Object.keys(CATS).filter(k=>P.some(p=>p.cat===k)).map(k=>btn(k,CATS[k][lang])).join("")}</div></section>
     <section class="wrap" style="padding-bottom:20px">${rowsHTML(list)}</section>${cta()}`;
 }
 function viewProject(p){
