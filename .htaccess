@@ -1,0 +1,7 @@
+# Type correct pour les images WebP
+AddType image/webp .webp
+
+# Forcer HTTPS (Infomaniak passe par un proxy : on lit l'en-tête X-Forwarded-Proto)
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

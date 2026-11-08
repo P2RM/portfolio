@@ -43,7 +43,7 @@ fr:{
   c_name:"Nom", c_email:"E-mail", c_company:"Entreprise (optionnel)", c_msg:"Votre message",
   c_send:"Envoyer le message", sending:"Envoi…", sent_t:"Message envoyé.", sent_p:"Merci, je vous réponds rapidement.", send_err:"L'envoi n'a pas fonctionné. Réessayez dans un instant.",
   e_name:"Indiquez votre nom.", e_email:"Indiquez une adresse e-mail valide.", e_msg:"Écrivez quelques mots sur votre demande.",
-  copied:"Copié", copy:"Copier", open:"Ouvrir ↗",
+  copied:"Copié", copy:"Copier", open:"Ouvrir ↗︎",
   k_email:"E-mail", k_linkedin:"LinkedIn", k_github:"GitHub", k_loc:"Localisation", loc:"Neuchâtel, Suisse"
 },
 en:{
@@ -82,7 +82,7 @@ en:{
   c_name:"Name", c_email:"Email", c_company:"Company (optional)", c_msg:"Your message",
   c_send:"Send the message", sending:"Sending…", sent_t:"Message sent.", sent_p:"Thanks, I'll get back to you soon.", send_err:"Sending didn't work. Please try again in a moment.",
   e_name:"Enter your name.", e_email:"Enter a valid email address.", e_msg:"Write a few words about your request.",
-  copied:"Copied", copy:"Copy", open:"Open ↗",
+  copied:"Copied", copy:"Copy", open:"Open ↗︎",
   k_email:"Email", k_linkedin:"LinkedIn", k_github:"GitHub", k_loc:"Location", loc:"Neuchâtel, Switzerland"
 }};
 
@@ -284,7 +284,7 @@ function viewProject(p){
     <div><dt class="mono">${t("f_team")}</dt><dd>${esc(L.team)}</dd></div>
     <div class="wide"><dt class="mono">${t("f_stack")}</dt><dd class="tags">${p.stack.map(s=>`<span class="tag">${esc(s)}</span>`).join("")}</dd></div>
     <div><dt class="mono">${t("f_deliv")}</dt><dd>${esc(L.deliv)}</dd></div>
-    <div><dt class="mono">${t("f_links")}</dt><dd><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a><a href="https://example.com/" target="_blank" rel="noopener">Live ↗</a></dd></div>
+    <div><dt class="mono">${t("f_links")}</dt><dd><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗︎</a><a href="https://example.com/" target="_blank" rel="noopener">Live ↗︎</a></dd></div>
   </dl></div>
   <section class="wrap"><div class="p-sec"><span class="mono">${t("s_context")}</span><p class="lead">${esc(L.ctx)}</p></div></section>
   <section class="wrap quote"><div class="mark">${p.pal.map((c,k)=>`<i style="background:${c}" class="sh-${shapes[k]}"></i>`).join("")}</div><blockquote>${esc(L.quote)}</blockquote></section>
@@ -312,10 +312,10 @@ function viewCase(p){
   <section class="wrap c-hero fade">
     <a class="back mono" href="#projets">${t("back")}</a>
     <span class="mono">${esc(L.kicker)} · ${esc(p.year)}</span>
-    <div class="c-title"><h1>${esc(p.name)}</h1>${p.url ? `<a class="pill" href="${p.url}" target="_blank" rel="noopener">${t("visit")} ↗</a>` : ""}</div>
+    <div class="c-title"><h1>${esc(p.name)}</h1>${p.url ? `<a class="pill" href="${p.url}" target="_blank" rel="noopener">${t("visit")} ↗︎</a>` : ""}</div>
     <p class="c-intro">${esc(L.intro)}</p>${L.with ? `<p class="c-with">${esc(L.with)}</p>` : ""}
     <dl class="c-facts">${L.facts.map(f=>`<div><dt class="mono">${esc(f[0])}</dt><dd>${esc(f[1])}</dd></div>`).join("")}</dl>
-    ${L.credit ? `<div class="c-credit">${shapeEl("s","butter")}<p>${esc(L.credit)}${p.insta ? ` <a href="${p.insta}" target="_blank" rel="noopener">${esc(p.instaLabel || "Instagram")} ↗</a>` : ""}</p></div>` : ""}
+    ${L.credit ? `<div class="c-credit">${shapeEl("s","butter")}<p>${esc(L.credit)}${p.insta ? ` <a href="${p.insta}" target="_blank" rel="noopener">${esc(p.instaLabel || "Instagram")} ↗︎</a>` : ""}</p></div>` : ""}
   </section>
   <div class="wrap">${p.coverKeys ? `<div class="c-duo">${p.coverKeys.map((k,i)=>`<div class="c-cover">${img(k, L.cover_alts[i])}</div>`).join("")}</div>` : `<div class="c-cover">${img(p.coverKey, L.cover_alt)}</div>`}</div>
   <section class="wrap c-sec">${head(t("s_brief"))}
@@ -347,7 +347,7 @@ function viewCase(p){
   <section class="wrap c-sec">${head(t("s_result"))}
     <div class="c-result">
       <div class="metrics">${L.res.met.map((m,k)=>`<div class="metric c-${cols[k%4]}"><b>${esc(m[0])}</b><span>${esc(m[1])}</span></div>`).join("")}</div>
-      <div class="c-ctx"><div><h3>${t("delivered")}</h3><p>${esc(L.res.deliv)}</p></div>${p.url ? `<div><span></span><div><a class="pill ghost" href="${p.url}" target="_blank" rel="noopener">${t("visit")} ↗</a>${L.res.note ? `<p class="c-note">${esc(L.res.note)}</p>` : ""}</div></div>` : ""}</div>
+      <div class="c-ctx"><div><h3>${t("delivered")}</h3><p>${esc(L.res.deliv)}</p></div>${p.url ? `<div><span></span><div><a class="pill ghost" href="${p.url}" target="_blank" rel="noopener">${t("visit")} ↗︎</a>${L.res.note ? `<p class="c-note">${esc(L.res.note)}</p>` : ""}</div></div>` : ""}</div>
     </div></section>
   <section class="wrap c-sec">${head(t("s_learn"))}<p class="c-learn">${esc(L.learn)}</p></section>
   <div class="wrap"><nav class="pn" aria-label="Projets"><a href="#p-${prev.slug}"><span class="mono">← ${t("prev")}</span><b>${esc(prev.name)}</b></a><a href="#p-${next.slug}"><span class="mono">${t("next")} →</span><b>${esc(next.name)}</b></a></nav></div>
@@ -410,7 +410,7 @@ function route(){
   document.querySelectorAll("[data-nav]").forEach(a => { a.classList.toggle("on", a.dataset.nav===nav); if(a.dataset.nav===nav) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
   document.querySelector("footer").style.marginTop = nav==="contact" ? "0" : "";
   bind(); startRot();
-  window.scrollTo({top:0, behavior:"instant"});
+  const de = document.documentElement, sb = de.style.scrollBehavior; de.style.scrollBehavior = "auto"; window.scrollTo(0, 0); de.style.scrollBehavior = sb;
   pinAbout();
 }
 /* À propos : titre + photo bloqués exactement à leur position, seul le texte défile */
@@ -460,6 +460,7 @@ function reveal(){
 /* Plein écran des galeries : clic sur l'image ou sur le picto, flèches et Échap au clavier */
 const FS_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 let lb = null;
+const fsEl = () => document.fullscreenElement || document.webkitFullscreenElement;
 function lightbox(imgs, start, back){
   if(!lb){
     lb = document.createElement("div"); lb.className = "lb"; lb.hidden = true;
@@ -475,12 +476,12 @@ function lightbox(imgs, start, back){
   const close = () => {
     if(lb.hidden) return;
     lb.hidden = true; document.body.style.overflow = "";
-    document.removeEventListener("keydown", key); document.removeEventListener("fullscreenchange", fsc);
-    if(document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    document.removeEventListener("keydown", key); document.removeEventListener("fullscreenchange", fsc); document.removeEventListener("webkitfullscreenchange", fsc);
+    if(fsEl()){ const x = document.exitFullscreen || document.webkitExitFullscreen; try{ const r = x.call(document); if(r && r.catch) r.catch(() => {}); }catch(e){} }
     back && back.focus();
   };
   /* Échap quitte d'abord le plein écran du navigateur : on ferme la visionneuse en même temps */
-  const fsc = () => { if(!document.fullscreenElement) close(); };
+  const fsc = () => { if(!fsEl()) close(); };
   const key = e => { if(e.key === "Escape") close(); else if(multi && e.key === "ArrowRight") go(1); else if(multi && e.key === "ArrowLeft") go(-1); };
   lb.querySelector(".lb-x").setAttribute("aria-label", t("fs_close"));
   lb.querySelector(".lb-p").setAttribute("aria-label", t("car_prev"));
@@ -494,11 +495,25 @@ function lightbox(imgs, start, back){
   show(); lb.hidden = false; document.body.style.overflow = "hidden";
   lb.querySelector(".lb-x").focus();
   /* vrai plein écran (comme une vidéo) quand le navigateur le permet, sinon la visionneuse couvre la fenêtre */
-  if(lb.requestFullscreen) lb.requestFullscreen().then(() => document.addEventListener("fullscreenchange", fsc)).catch(() => {});
+  const req = lb.requestFullscreen || lb.webkitRequestFullscreen;
+  if(req){
+    const on = () => { document.addEventListener("fullscreenchange", fsc); document.addEventListener("webkitfullscreenchange", fsc); };
+    try{ const r = req.call(lb); if(r && r.then) r.then(on).catch(() => {}); else setTimeout(on, 300); }catch(e){}
+  }
 }
 /* Décisions : le texte au centre de l'écran choisit l'image affichée dans le cadre fixe */
 let decObs = null;
 function bindCase(){
+  /* mise en page des galeries (remplace :has(), absent de Firefox < 121 et Safari < 15.4) */
+  app.querySelectorAll(".c-render > .car").forEach(c => {
+    const p = c.previousElementSibling, n = c.nextElementSibling, wide = c.classList.contains("wide");
+    const isSub = el => !!el && el.classList.contains("c-sub"), isWide = el => !!el && el.classList.contains("car") && el.classList.contains("wide");
+    if(!wide && isWide(n) && isWide(n.nextElementSibling)) c.classList.add("span-all");
+    if(isSub(p) && (!n || isSub(n))){
+      if(wide){ c.classList.add("solo"); if(isSub(n) && c.classList.contains("large")) c.classList.add("solo-l"); }
+      else c.classList.add("span-all");
+    }
+  });
   if(decObs) decObs.disconnect();
   const steps = [...app.querySelectorAll(".dec-step")], imgs = [...app.querySelectorAll(".dec-img")];
   if(steps.length && "IntersectionObserver" in window){
