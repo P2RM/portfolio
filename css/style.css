@@ -75,9 +75,9 @@ nav.main{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content
 
 /* Hero plein écran, formes sur toute la surface */
 .hero{position:relative;overflow:hidden;min-height:calc(100vh - 90px);min-height:calc(100svh - 90px);display:grid;place-items:center;text-align:center;padding-block:56px}
-.hero .wrap{position:relative;z-index:1;width:100%}
+.hero .wrap{position:relative;z-index:1;width:100%;min-width:0}
 .hero h1{font-size:max(1.9rem,min(calc((100vw - 40px) / 9.9),8.6rem,15svh));font-weight:650;max-width:16ch;margin:0 auto;line-height:1.08}
-@media (max-width:720px){.hero h1{font-size:calc((100vw - 40px) / 7.42)}html[lang="en"] .hero h1{font-size:calc((100vw - 40px) / 9.5)}}
+@media (max-width:720px){.hero h1{font-size:calc((100vw - 40px) / 7.42)}.hero .rot{margin:0}html[lang="en"] .hero h1{font-size:calc((100vw - 40px) / 9.5)}}
 .rot{display:inline-grid;height:1.18em;clip-path:inset(0 -.2em);margin:0 .06em}
 .rot span{grid-area:1/1;padding:0 .22em;border-radius:.3em;white-space:nowrap;line-height:1.18;transform:translateY(115%);justify-self:center;will-change:transform}
 .rot span.on{transform:translateY(0)}

@@ -1,10 +1,9 @@
-/* ============ CONFIG (à remplacer) ============ */
-const EMAIL = "pierre@exemple.ch";
-const LINKEDIN = "https://www.linkedin.com/";
-const GITHUB = "https://github.com/";
-/* Envoi du formulaire : endpoint Formspree (ex. "https://formspree.io/f/abcdwxyz").
-   L'adresse de réception se définit dans le compte Formspree. */
-const FORM_ENDPOINT = "";
+/* ============ CONFIG ============ */
+const EMAIL = "contact@pierre-matthey.ch";
+const LINKEDIN = "https://www.linkedin.com/in/pierre-matthey-b56169341/";
+const GITHUB = "https://github.com/P2RM";
+/* Envoi du formulaire : script PHP sur l'hébergement Infomaniak (envoie à contact@pierre-matthey.ch) */
+const FORM_ENDPOINT = "contact.php";
 
 /* ============ TEXTES ============ */
 const T = {
@@ -388,8 +387,8 @@ function viewContact(){
       </form>
       <div class="coords">
         <div class="coord"><i></i><div><div class="k">${t("k_email")}</div><div class="v" id="mail-v">${esc(EMAIL)}</div></div><button type="button" data-copy="${esc(EMAIL)}">${t("copy")}</button></div>
-        <div class="coord"><i></i><div><div class="k">${t("k_linkedin")}</div><div class="v">linkedin.com/in/…</div></div><a class="go" href="${LINKEDIN}" target="_blank" rel="noopener">${t("open")}</a></div>
-        <div class="coord"><i></i><div><div class="k">${t("k_github")}</div><div class="v">github.com/…</div></div><a class="go" href="${GITHUB}" target="_blank" rel="noopener">${t("open")}</a></div>
+        <div class="coord"><i></i><div><div class="k">${t("k_linkedin")}</div><div class="v">linkedin.com/in/pierre-matthey</div></div><a class="go" href="${LINKEDIN}" target="_blank" rel="noopener">${t("open")}</a></div>
+        <div class="coord"><i></i><div><div class="k">${t("k_github")}</div><div class="v">github.com/P2RM</div></div><a class="go" href="${GITHUB}" target="_blank" rel="noopener">${t("open")}</a></div>
         <div class="coord"><i></i><div><div class="k">${t("k_loc")}</div><div class="v">${t("loc")}</div></div></div>
       </div>
     </div>
